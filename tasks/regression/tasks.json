@@ -1,0 +1,67 @@
+[
+  {
+    "id": "C01",
+    "requirement": "马尼拉至大连的业务需求从 0.60 升至 1.50 Mbit/s（UDP 含协议头的负载）。调整接入带宽，在两瓦发射功率下交付新增流量。",
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "initial": {
+      "bandwidth_hz": 500000,
+      "tx_w": 2
+    },
+    "old": {
+      "offered_mbps": 0.6,
+      "min_payload_mbps": 0.55,
+      "max_tx_w": 2
+    },
+    "new": {
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.4,
+      "max_tx_w": 2
+    }
+  },
+  {
+    "id": "C02",
+    "requirement": "更换接收终端后天线口径由 22 cm 缩至 11 cm。继续保障马尼拉至大连的业务，允许改变星上功率，峰值 8 W。",
+    "editable": [
+      "tx_w"
+    ],
+    "initial": {
+      "tx_w": 2
+    },
+    "old": {
+      "rx_diameter_m": 0.22,
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.4,
+      "max_tx_w": 8
+    },
+    "new": {
+      "rx_diameter_m": 0.11,
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.4,
+      "max_tx_w": 8
+    }
+  },
+  {
+    "id": "C03",
+    "requirement": "卫星下行发射功率上限从 4 W 收紧至 1 W。可调整发射功率和地面终端口径，保持业务吞吐和时延，口径上限 0.35 m。",
+    "editable": [
+      "tx_w",
+      "rx_diameter_m"
+    ],
+    "initial": {
+      "tx_w": 4,
+      "rx_diameter_m": 0.16
+    },
+    "old": {
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.4,
+      "max_tx_w": 4
+    },
+    "new": {
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.4,
+      "max_tx_w": 1
+    }
+  }
+]

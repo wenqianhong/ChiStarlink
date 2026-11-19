@@ -1,0 +1,7 @@
+{
+  "samples": 480,
+  "max_absolute_range_difference_m": 90.1032014740631,
+  "mean_absolute_range_difference_m": 39.86663956305444,
+  "range_tolerance_m": 2997.9245800000003,
+  "passed": true
+}

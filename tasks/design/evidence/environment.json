@@ -1,0 +1,22 @@
+{
+  "images": {
+    "chistarlink-repair:phase1": {
+      "id": "sha256:578229141ca78a3189c14ad3350308a23730b5aa973fd596d3b035375d0ffda1",
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    "chistarlink-hypatia:0ac531c": {
+      "id": "sha256:0d64f2c83a0a7c1227142b1755f65ecd220020341adc6af4d92a4b7bf90acb52",
+      "architecture": "arm64",
+      "os": "linux"
+    }
+  },
+  "sha256": {
+    "tasks/design/tasks.json": "c0043893a360f1955410c5000198d73f4b7f1f74471ca8d90ac45394948c5e77",
+    "tasks/design/judge.py": "7e6937bb68d78e32945d73db68c1d69f69dc63a6b43c16e289a7d639f2fe2833",
+    "tasks/design/replay.py": "ba4e87c4c0fb255d3ced021115d6952e63e842f02da8385aa43d37d1209b9403",
+    "tasks/design/radio.py": "d78d3e5a9c723e742804d123c85331bd3c37a614cfa43e1fbe0fffeef6f35ade",
+    "tasks/regression/service-link.cc": "3c26db415550fcb6cd3d5934f2bb63235f53231d3057c4cf124832cd3955f535",
+    "tasks/regression/network.py": "2fb360d934502bb45fa4a4ff6d660f5efdefa7483e001f547e04c335d1926559"
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "source_commit": "0ac531c313eba2335f6344b46347140c3a0d4230",
+  "basic_sim_commit": "3b32597c183e1039be7f0bede17d36d354696776",
+  "fixture": "test_data/end_to_end",
+  "images": {
+    "chistarlink-hypatia:0ac531c": "sha256:0d64f2c83a0a7c1227142b1755f65ecd220020341adc6af4d92a4b7bf90acb52 linux/arm64",
+    "chistarlink-repair:phase1": "sha256:578229141ca78a3189c14ad3350308a23730b5aa973fd596d3b035375d0ffda1 linux/arm64"
+  },
+  "native_200s": {
+    "sent_packets": 16667,
+    "received_packets": 16665,
+    "delivery_ratio": 0.999880002399952,
+    "payload_mbps": 0.981235,
+    "p95_delay_ms": 27.747064,
+    "outgoing_csv": "0,17,18,1.000000,0,500000000000,1.000020,0.981353,16667,25000500,24533824,",
+    "incoming_csv": "0,17,18,1.000000,0,500000000000,0.999900,0.981235,16665,24997500,24530880,",
+    "receive_events_sha256": "1fbb49ca6f23ead11ca18fe3fa22fbfece99040f2c36c9692e8823bb15fed543"
+  },
+  "tasks": [
+    {
+      "id": "C01",
+      "verified": true,
+      "runs": [
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "fafa03eb09642d1cd64883cab969244e5d67304ccc40f22701ff72d7fea66297",
+          "metrics": {
+            "sent_packets": 400,
+            "received_packets": 400,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 0.5888,
+            "p95_delay_ms": 31.128332,
+            "receive_events_sha256": "f75b219072a3e0ddd417c48dcda3815fec69cbe03733cbdcd257dbc425a386f7"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "fafa03eb09642d1cd64883cab969244e5d67304ccc40f22701ff72d7fea66297",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 661,
+            "delivery_ratio": 0.661,
+            "payload_mbps": 0.972992,
+            "p95_delay_ms": 1312.120398,
+            "receive_events_sha256": "28415f60df3df487063c20d66e40b2b084703ca64053b2cc897de27b1e70c5a0"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "9401a4a54e0d064de546829aeac610c59c9b4c9fd88d03cab349799cf4a68078",
+          "metrics": {
+            "sent_packets": 400,
+            "received_packets": 400,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 0.5888,
+            "p95_delay_ms": 24.721402,
+            "receive_events_sha256": "008aedac7687f7d5db179e903ae9a26577b8beb0784e63f4a02b25e20d292d42"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "9401a4a54e0d064de546829aeac610c59c9b4c9fd88d03cab349799cf4a68078",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.721402,
+            "receive_events_sha256": "d206dc966e6ef8e83e75aaf7c3b31268b3d85ca0ae22f6d6072888c53eb545c1"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "1058f0dfa876707cd3c8180909e4da8afb02532db01b4f6b9ead05dd04ea4850",
+          "metrics": {
+            "sent_packets": 500,
+            "received_packets": 500,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 0.5888,
+            "p95_delay_ms": 31.098752,
+            "receive_events_sha256": "f646f9b34fb912402a011c313b54bab4e989332373e6719af397329e8991ae84"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "1058f0dfa876707cd3c8180909e4da8afb02532db01b4f6b9ead05dd04ea4850",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 817,
+            "delivery_ratio": 0.6536,
+            "payload_mbps": 0.962099,
+            "p95_delay_ms": 1312.143834,
+            "receive_events_sha256": "e46915372d3cfcd41fa8c2810dfa9906ac9ef2c8237c20d9da5c5038c8a69d95"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "a41352a9130c1d09fecfe0f4158108c619176dda9a54360f55ef3a02b2ad00ce",
+          "metrics": {
+            "sent_packets": 500,
+            "received_packets": 500,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 0.5888,
+            "p95_delay_ms": 24.695521,
+            "receive_events_sha256": "22fc1163fb3c0d0843d7903cfe1f2029fb60b20e6366375355ba7b287f82d253"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "a41352a9130c1d09fecfe0f4158108c619176dda9a54360f55ef3a02b2ad00ce",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.695577,
+            "receive_events_sha256": "2e029967c58e63447a84381b6d154bf85083ebf3dc72cc29848cee28c873d903"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "verified": true,
+      "runs": [
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "9401a4a54e0d064de546829aeac610c59c9b4c9fd88d03cab349799cf4a68078",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.721402,
+            "receive_events_sha256": "d206dc966e6ef8e83e75aaf7c3b31268b3d85ca0ae22f6d6072888c53eb545c1"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "ce51f33f1f2b07fcab4452cab7462d6a34ecd51fa4ec09cc92406dbdfc5e783a",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 588,
+            "delivery_ratio": 0.588,
+            "payload_mbps": 0.865536,
+            "p95_delay_ms": 1474.013438,
+            "receive_events_sha256": "a63a1be9ecbf4f0df1c2ad24ec5bd4521e30dba16889dbd50b7e84acb239b032"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "99abae703e42ee164c815455ee1cb88b9b8c571e9d3e134a0d30f19ae30c61a3",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.719799,
+            "receive_events_sha256": "716bb32588d9c1d1397c9da806cbceca5cbec2b8cddf72bffe382db0fe1d3def"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "85e7fbd3a911bfae852ac1d13a24288f210afe136c117f566bdd80345fdad969",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.72133,
+            "receive_events_sha256": "ea2caa6842f8ee5d37b733166c0425939768b3cbb1dc984d5ec1f5796438e844"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "a41352a9130c1d09fecfe0f4158108c619176dda9a54360f55ef3a02b2ad00ce",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.695577,
+            "receive_events_sha256": "2e029967c58e63447a84381b6d154bf85083ebf3dc72cc29848cee28c873d903"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "0d5b7a7610519fb08d76f7d4f1f9b1adc38b20be557a0022c0f559ee025d08ad",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 726,
+            "delivery_ratio": 0.5808,
+            "payload_mbps": 0.854938,
+            "p95_delay_ms": 1473.972167,
+            "receive_events_sha256": "9bc996cff7f3b98ac8a47432211a8198ce8b3c288f91388653f08401d275d294"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "86ae02599d4ffdd9e10f2299683e6d6c41897d93fee18376da73e9a0e105534e",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.690275,
+            "receive_events_sha256": "e47b36bb369a7967b2500bdb0630ba2db0b26f14b726f05aa763ae07f21218aa"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "2af3fb551894826f5acb0f39fec7451875a28d830ba768b16920320e376e5e67",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.695361,
+            "receive_events_sha256": "3f4a2a8b0577f3174c70c1d99d086798b738f58e5230cdcd7760ab3f5dc00a30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "verified": true,
+      "runs": [
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "e915ef1da6edad7efe3b117cbdd45e26d9feb8740f3a991905c6ffd39b815180",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.719997,
+            "receive_events_sha256": "461e67f97cbba21b383f5a4a935cfb61f759498275fe75f89b4827d9ffc46b09"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": false,
+          "passed": false,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": false,
+            "aperture": true
+          },
+          "radio_sha256": "e915ef1da6edad7efe3b117cbdd45e26d9feb8740f3a991905c6ffd39b815180",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.719997,
+            "receive_events_sha256": "461e67f97cbba21b383f5a4a935cfb61f759498275fe75f89b4827d9ffc46b09"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "13fc0a01539fb45e7c3a9935ec4af761b6df3c583850ec4c4309653912ea11f1",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.720018,
+            "receive_events_sha256": "d5abe9289679de28ba00d207a63ec8086203927e8e549a5a193f2fffd5a07fe2"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": false,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "13fc0a01539fb45e7c3a9935ec4af761b6df3c583850ec4c4309653912ea11f1",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.720018,
+            "receive_events_sha256": "d5abe9289679de28ba00d207a63ec8086203927e8e549a5a193f2fffd5a07fe2"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "a549f443a287945a5235b857aca64b9b2fdbdc120710ce2ece704392fc013e0f",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.691047,
+            "receive_events_sha256": "eebf386141829ec9f9d1f223c2e81e9569ccc1cfe79cf31cb15e99c2aa2ef851"
+          }
+        },
+        {
+          "solution": "initial",
+          "requirement": "new",
+          "holdout": true,
+          "passed": false,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": false,
+            "aperture": true
+          },
+          "radio_sha256": "a549f443a287945a5235b857aca64b9b2fdbdc120710ce2ece704392fc013e0f",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.691047,
+            "receive_events_sha256": "eebf386141829ec9f9d1f223c2e81e9569ccc1cfe79cf31cb15e99c2aa2ef851"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "old",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "f29b27177c3d13bbaa6dbe98294d2d87c1e890a20dd9e0dd76168084eff00cd9",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.691126,
+            "receive_events_sha256": "c34627bc50136a4d6b55ed0b78fdea143a2bb2302f1c4892a91bc75315618040"
+          }
+        },
+        {
+          "solution": "reference",
+          "requirement": "new",
+          "holdout": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "radio_sha256": "f29b27177c3d13bbaa6dbe98294d2d87c1e890a20dd9e0dd76168084eff00cd9",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "delivery_ratio": 1.0,
+            "payload_mbps": 1.472,
+            "p95_delay_ms": 24.691126,
+            "receive_events_sha256": "c34627bc50136a4d6b55ed0b78fdea143a2bb2302f1c4892a91bc75315618040"
+          }
+        }
+      ]
+    }
+  ],
+  "C03_power_only_control": [
+    {
+      "requirement": "old",
+      "passed": false,
+      "checks": {
+        "payload": false,
+        "delivery": false,
+        "delay": false,
+        "power": true,
+        "aperture": true
+      },
+      "metrics": {
+        "sent_packets": 1000,
+        "received_packets": 588,
+        "delivery_ratio": 0.588,
+        "payload_mbps": 0.865536,
+        "p95_delay_ms": 1474.013438,
+        "outgoing_csv": "0,17,18,1.500000,0,8000000000,1.500000,1.472000,1000,1500000,1472000,",
+        "incoming_csv": "0,17,18,1.500000,0,8000000000,0.882000,0.865536,588,882000,865536,",
+        "receive_events_sha256": "a63a1be9ecbf4f0df1c2ad24ec5bd4521e30dba16889dbd50b7e84acb239b032"
+      }
+    },
+    {
+      "requirement": "new",
+      "passed": false,
+      "checks": {
+        "payload": false,
+        "delivery": false,
+        "delay": false,
+        "power": true,
+        "aperture": true
+      },
+      "metrics": {
+        "sent_packets": 1000,
+        "received_packets": 588,
+        "delivery_ratio": 0.588,
+        "payload_mbps": 0.865536,
+        "p95_delay_ms": 1474.013438,
+        "outgoing_csv": "0,17,18,1.500000,0,8000000000,1.500000,1.472000,1000,1500000,1472000,",
+        "incoming_csv": "0,17,18,1.500000,0,8000000000,0.882000,0.865536,588,882000,865536,",
+        "receive_events_sha256": "a63a1be9ecbf4f0df1c2ad24ec5bd4521e30dba16889dbd50b7e84acb239b032"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "R03",
+  "type": "cross-layer repair",
+  "origin": "synthetic adapter defect",
+  "requirement": "升级 PHY 遥测后，调制解调器报告链路正常，UDP 收端吞吐剧降。修复到分组仿真的速率导出。",
+  "input_contract": "遥测标注十进制 kbit/s 或 Mbit/s；分组设备期望 bit/s。",
+  "editable": "R03/adapter.py",
+  "acceptance": "导出的服务速率与原生调度器分配一致，取整误差不超过 0.5 bit/s；检查业务接收和延迟。"
+}

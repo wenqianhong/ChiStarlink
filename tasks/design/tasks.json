@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "tle": {
+    "name": "Starlink 0",
+    "line1": "1 00001U 19029BR  18161.59692852  .00001103  00000-0  33518-4 0  9994",
+    "line2": "2 00001 53.00000   0.7036 0003481 299.7327   0.3331 15.05527065  1773"
+  },
+  "stations": {
+    "Manila": [14.5995, 120.9842], "Dalian": [38.91, 121.61],
+    "Bengaluru": [12.9, 77.7], "Paris": [48.86, 2.35]
+  },
+  "cases": {
+    "D01": {
+      "name":"受限接入时段的地面站选择",
+      "problem":"共享同一业务出口的三个候选站均已建设。按给定绝对时段选择一个接收站及仰角掩膜，保障持续交付并遵守最小仰角。",
+      "station":"Manila", "start_s":36065, "duration_s":30,
+      "radio":{"tx_w":2.0}, "initial":{"station":"Manila","min_elev_deg":25},
+      "choices":{"station":["Manila","Dalian","Bengaluru"],"min_elev_deg":[10,15,20,25,30]},
+      "offered_mbps":1.2, "min_payload_mbps":1.12, "max_p95_ms":24, "min_delivery":0.98
+    },
+    "D02": {
+      "name":"功率受限终端的双档下行",
+      "problem":"在过境期间为 1.15 Mbps 视频流选择功放工作点与调制编码集合。发射功率不得超过 3 W，要求端到端交付率、有效吞吐和时延达标。",
+      "station":"Manila", "start_s":29812, "duration_s":30,
+      "radio":{}, "initial":{"tx_w":0.1,"modes":["QPSK_1/2"]},
+      "choices":{"tx_w":[0.1,0.5,1,2,3],"modes":[["QPSK_1/2"],["8PSK_3/4"],["QPSK_1/2","8PSK_3/4"]]},
+      "offered_mbps":1.15,"min_payload_mbps":1.08,"max_p95_ms":25,"min_delivery":0.98
+    },
+    "D03": {
+      "name":"口径与跟踪误差联合选型",
+      "problem":"在接收口径上限 0.35 m 和 0.5 W 固定卫星功率下，为同一业务站选择天线口径与已标定的跟踪配置。较大的天线增益和更窄的主瓣须同时计入预算。",
+      "station":"Bengaluru","start_s":41214,"duration_s":30,
+      "radio":{"tx_w":0.5},"initial":{"rx_diameter_m":0.14,"pointing_deg":5},
+      "choices":{"rx_diameter_m":[0.14,0.20,0.28,0.35],"pointing_deg":[0.2,2,5]},
+      "offered_mbps":1.2,"min_payload_mbps":1.12,"max_p95_ms":24,"min_delivery":0.98
+    },
+    "D04": {
+      "name":"固定总功率下的频谱与编码选择",
+      "problem":"在最大 2 MHz 频谱、总功率 1 W 的终端上选择带宽和允许的调制编码。用逐时刻 Eb/N0 与 BLER 判定设计是否支撑 2.05 Mbps 下行业务。",
+      "station":"Paris","start_s":70828,"duration_s":30,
+      "radio":{"tx_w":1.0},"initial":{"bandwidth_hz":500000,"modes":["QPSK_1/2"]},
+      "choices":{"bandwidth_hz":[500000,1000000,1500000,2000000],"modes":[["QPSK_1/2"],["8PSK_3/4"],["QPSK_1/2","8PSK_3/4"]]},
+      "offered_mbps":2.05,"min_payload_mbps":1.92,"max_p95_ms":20,"min_delivery":0.98
+    }
+  }
+}

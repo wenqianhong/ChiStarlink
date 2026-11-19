@@ -1,0 +1,16 @@
+{
+  "tle_source": "https://github.com/snkas/hypatia/blob/0ac531c313eba2335f6344b46347140c3a0d4230/paper/satellite_networks_state/input_data/legacy/starlink_tles_25x25.txt",
+  "tle": [
+    "1 00001U 19029BR  18161.59692852  .00001103  00000-0  33518-4 0  9994",
+    "2 00001 53.00000   0.7036 0003481 299.7327   0.3331 15.05527065  1773"
+  ],
+  "cases": {
+    "target": {"lat_deg": 31.23, "lon_deg": 121.47, "start_from_epoch_s": 35950},
+    "regression": {"lat_deg": 39.9, "lon_deg": 116.4, "start_from_epoch_s": 41980}
+  },
+  "duration_s": 12, "cadence_s": 1,
+  "carrier_hz": 12000000000, "bandwidth_hz": 3000000,
+  "tx_power_w": 1.5, "tx_losses_db": 2, "tx_gain_dbi": 19, "rx_gain_dbi": 26,
+  "noise_temp_k": 290, "access_min_elev_deg": 10, "required_ebn0_db": 1,
+  "modcod": "QPSK_1/2", "target_bler": 0.00001, "offered_mbps": 1
+}

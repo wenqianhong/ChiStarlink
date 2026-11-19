@@ -1,0 +1,9 @@
+{
+  "id": "R02",
+  "type": "cross-layer repair",
+  "origin": "synthetic adapter defect",
+  "requirement": "同极化终端切换到短标签设备描述后，RF 余量消失并导致业务中断。修复接收端极化解析。",
+  "input_contract": "设备描述使用 R/L 表示 RHCP/LHCP；已有 RHCP/LHCP 全称设备继续工作。",
+  "editable": "R02/adapter.py",
+  "acceptance": "原生链路模型应收到正确极化；核查 Eb/N0、服务容量及实际接收。"
+}

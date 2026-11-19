@@ -1,0 +1,31 @@
+{
+  "id": "R01",
+  "case": "target",
+  "passed": false,
+  "checks": {
+    "trace_complete": true,
+    "angle_decoded": false,
+    "rf_power_oracle": true,
+    "polarization": true,
+    "rate_mapping": true,
+    "propagation": true,
+    "sent": true,
+    "delivery": false,
+    "goodput": false,
+    "latency": false
+  },
+  "range_at_start_m": 691513.3295559206,
+  "ebn0_at_start_db": 13.93011326297318,
+  "service_rate_at_start_bps": 0,
+  "network": {
+    "engine": "ns-3.31 point-to-point/IPv4/UDP",
+    "duration_s": 12,
+    "sample_count": 12,
+    "offered_mbps": 1,
+    "sent_packets": 1500,
+    "received_packets": 0,
+    "delivery_ratio": 0,
+    "payload_mbps": 0,
+    "p95_delay_ms": null
+  }
+}

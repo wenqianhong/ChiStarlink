@@ -1,0 +1,9 @@
+{
+  "id": "R01",
+  "type": "cross-layer repair",
+  "origin": "synthetic adapter defect",
+  "requirement": "更换星历导出格式后，星下站在可见窗口收不到业务。恢复按真实仰角接入的服务，并保留旧角度格式。",
+  "input_contract": "星历角度携带 deg 或 rad；接入门限使用角度制，标称门限 10 度。",
+  "editable": "R01/adapter.py",
+  "acceptance": "仰角转换误差不超过 1e-8 度；可见且闭合的链路应通过端到端业务门限。"
+}

@@ -1,0 +1,7 @@
+{
+  "expected_boresight_db": 6.020599913279624,
+  "measured_boresight_db": 6.020599913279597,
+  "measured_with_tracking_db": 6.014902563689731,
+  "boresight_tolerance_db": 1e-09,
+  "passed": true
+}

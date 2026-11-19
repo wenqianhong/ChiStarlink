@@ -1,0 +1,17 @@
+{
+  "image": "sha256:6137a9f773a149d8a5ac6f4f248e4a95c4f0fec57f151f569318d6282ec9a25a",
+  "architecture": "arm64",
+  "os": "linux",
+  "oai_commit": "cb98db5b5d2d95c86673821bfc9fa1be9e225b97",
+  "oai_binary_sha256": "62faf3a598f4cf4621de33b61efd8d1a2f9fe139c7319126f477cdd0706e65d8",
+  "calibration_points": 1089,
+  "calibration_trials": 217800,
+  "unique_noise_seeds": 2178,
+  "artifacts": {
+    "curves.csv": "3a8cc5db5719600f81c8b1c861461888e639615f851a7e5195b4ac2813d22452",
+    "measurements.jsonl.gz": "1c82d2610f5160c169a405b831a1f08924bb45c4bf823db2f508d2e5c3855620",
+    "validation/summary.json": "6c40f437aceee6510614b588b4ce1a7b80ca60ad4964d6d906e4e02ed65a40af",
+    "validation/direct.csv": "27cfba1f464efe5f2561d781eb025dc0e35dfb46cbdeb11a75eabbd4ab55788e",
+    "validation/measurements.jsonl.gz": "49b21ef2c3ef5543f03ff884a0bf56ba22256af395c82ff679e76d46ceffc761"
+  }
+}

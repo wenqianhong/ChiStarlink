@@ -1,0 +1,277 @@
+{
+  "orekit_data_commit": "2d6edc9118983d95c51303df05db16ada90b7ee2",
+  "threshold_degrees": 10,
+  "duration_s": 86400,
+  "tolerance_s": 2,
+  "matched_events": 38,
+  "max_time_difference_s": 0.164732213204843,
+  "passed": true,
+  "events": [
+    {
+      "station": "Manila",
+      "event": "rise",
+      "skyfield_s": 29626.139696255683,
+      "orekit_s": 29626.08438182777,
+      "abs_delta_s": 0.05531442791107111
+    },
+    {
+      "station": "Manila",
+      "event": "set",
+      "skyfield_s": 30034.177314058303,
+      "orekit_s": 30034.165641711843,
+      "abs_delta_s": 0.011672346459818073
+    },
+    {
+      "station": "Manila",
+      "event": "rise",
+      "skyfield_s": 35617.64998616314,
+      "orekit_s": 35617.62992285346,
+      "abs_delta_s": 0.020063309675606433
+    },
+    {
+      "station": "Manila",
+      "event": "set",
+      "skyfield_s": 35975.1842770133,
+      "orekit_s": 35975.09518870239,
+      "abs_delta_s": 0.08908831090957392
+    },
+    {
+      "station": "Manila",
+      "event": "rise",
+      "skyfield_s": 66306.95035339928,
+      "orekit_s": 66306.8915138345,
+      "abs_delta_s": 0.05883956477919128
+    },
+    {
+      "station": "Manila",
+      "event": "set",
+      "skyfield_s": 66684.40350623465,
+      "orekit_s": 66684.40142881495,
+      "abs_delta_s": 0.002077419703709893
+    },
+    {
+      "station": "Manila",
+      "event": "rise",
+      "skyfield_s": 72263.32456351853,
+      "orekit_s": 72263.30100192923,
+      "abs_delta_s": 0.023561589303426445
+    },
+    {
+      "station": "Manila",
+      "event": "set",
+      "skyfield_s": 72657.9396832142,
+      "orekit_s": 72657.90673927532,
+      "abs_delta_s": 0.032943938873359
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 35872.28823484516,
+      "orekit_s": 35872.18293795868,
+      "abs_delta_s": 0.10529688648239244
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 36338.90159608459,
+      "orekit_s": 36338.8804781805,
+      "abs_delta_s": 0.021117904092534445
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 41858.75135840511,
+      "orekit_s": 41858.750561484674,
+      "abs_delta_s": 0.0007969204380060546
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 42308.373864308356,
+      "orekit_s": 42308.3530364283,
+      "abs_delta_s": 0.020827880056458525
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 48006.201941088206,
+      "orekit_s": 48006.188790972534,
+      "abs_delta_s": 0.01315011567203328
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 48238.69462491608,
+      "orekit_s": 48238.68799384112,
+      "abs_delta_s": 0.006631074960750993
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 54062.2552323494,
+      "orekit_s": 54062.24275409783,
+      "abs_delta_s": 0.012478251570428256
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 54314.46090520955,
+      "orekit_s": 54314.45024254604,
+      "abs_delta_s": 0.010662663509720005
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 59991.424882725245,
+      "orekit_s": 59991.419977664475,
+      "abs_delta_s": 0.00490506077039754
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 60454.27660675383,
+      "orekit_s": 60454.26565283372,
+      "abs_delta_s": 0.01095392011484364
+    },
+    {
+      "station": "Dalian",
+      "event": "rise",
+      "skyfield_s": 65969.81579096652,
+      "orekit_s": 65969.80402089891,
+      "abs_delta_s": 0.011770067605539225
+    },
+    {
+      "station": "Dalian",
+      "event": "set",
+      "skyfield_s": 66421.30169452763,
+      "orekit_s": 66421.29405432957,
+      "abs_delta_s": 0.0076401980622904375
+    },
+    {
+      "station": "Bengaluru",
+      "event": "rise",
+      "skyfield_s": 41083.58686448669,
+      "orekit_s": 41083.42213227349,
+      "abs_delta_s": 0.164732213204843
+    },
+    {
+      "station": "Bengaluru",
+      "event": "set",
+      "skyfield_s": 41566.28969790077,
+      "orekit_s": 41566.16760713019,
+      "abs_delta_s": 0.12209077057923423
+    },
+    {
+      "station": "Bengaluru",
+      "event": "rise",
+      "skyfield_s": 77821.58353211022,
+      "orekit_s": 77821.57190508986,
+      "abs_delta_s": 0.011627020357991569
+    },
+    {
+      "station": "Bengaluru",
+      "event": "set",
+      "skyfield_s": 78264.15920437909,
+      "orekit_s": 78264.15725629815,
+      "abs_delta_s": 0.0019480809423839673
+    },
+    {
+      "station": "Bengaluru",
+      "event": "rise",
+      "skyfield_s": 83864.79529173709,
+      "orekit_s": 83864.79074721447,
+      "abs_delta_s": 0.004544522613286972
+    },
+    {
+      "station": "Bengaluru",
+      "event": "set",
+      "skyfield_s": 84139.162783638,
+      "orekit_s": 84139.16106311516,
+      "abs_delta_s": 0.0017205228505190462
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 2512.7780097875598,
+      "orekit_s": 2512.768542620184,
+      "abs_delta_s": 0.009467167375987628
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 3009.677265897751,
+      "orekit_s": 3009.657909327181,
+      "abs_delta_s": 0.01935657056992568
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 8547.995807543755,
+      "orekit_s": 8547.981690277866,
+      "abs_delta_s": 0.014117265889581176
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 8853.317547157765,
+      "orekit_s": 8853.198211253943,
+      "abs_delta_s": 0.11933590382250259
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 64748.5988783989,
+      "orekit_s": 64748.47681223041,
+      "abs_delta_s": 0.12206616849289276
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 65093.53368015624,
+      "orekit_s": 65093.52563064303,
+      "abs_delta_s": 0.00804951320606051
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 70615.61207653618,
+      "orekit_s": 70615.59712930028,
+      "abs_delta_s": 0.014947235904401168
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 71114.47326125241,
+      "orekit_s": 71114.4541494762,
+      "abs_delta_s": 0.019111776215140708
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 76608.76822353936,
+      "orekit_s": 76608.75514898414,
+      "abs_delta_s": 0.013074555216007866
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 77095.99531324244,
+      "orekit_s": 77095.98707819666,
+      "abs_delta_s": 0.008235045781475492
+    },
+    {
+      "station": "Paris",
+      "event": "rise",
+      "skyfield_s": 82607.84101517535,
+      "orekit_s": 82607.83452247638,
+      "abs_delta_s": 0.006492698972579092
+    },
+    {
+      "station": "Paris",
+      "event": "set",
+      "skyfield_s": 83100.61146648265,
+      "orekit_s": 83100.60871045785,
+      "abs_delta_s": 0.0027560247981455177
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 面向低轨卫星通信的可执行工程任务集。第一阶段在开源仿真链上验证 10 个派生任务，覆盖链路设计 4 题、跨层故障修复 3 题、需求变更回归 3 题。
 
+第二阶段在同一批任务上改用 ITU 晴空气体衰减与 OAI 原生 NR PDSCH 标定。最终 58 次验收均符合预期。C02 在每秒 700 个下行时隙的额外实验中未满足吞吐与时延目标。[第二阶段 HTML 报告](reports/phase-2.html) · [OAI 标定与复验](phase2/oai/README.md) · [设计及变更结果](phase2/cases/evidence/nr-runs.json) · [修复结果](phase2/repair/evidence/summary.json)
+
 [中文规划](index.html) · [第一阶段 HTML 报告](reports/phase-1.html)。下载仓库后可在浏览器中打开 HTML。逐题的输入、环境和实测记录如下。
 
 | 任务 | 类别 | 公开证据 |

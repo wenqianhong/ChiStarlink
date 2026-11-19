@@ -1,0 +1,47 @@
+[
+  {
+    "case": "initial-new",
+    "prbs": 5,
+    "mcs": 8,
+    "snr_db": 6.589,
+    "interpolated_bler": 0.0,
+    "direct_bler": 0.0,
+    "absolute_gap": 0.0,
+    "trials": 400,
+    "errors": 0,
+    "wilson95": [
+      0.0,
+      0.009512294334295988
+    ]
+  },
+  {
+    "case": "reference-new",
+    "prbs": 5,
+    "mcs": 16,
+    "snr_db": 12.61,
+    "interpolated_bler": 0.003971428571428573,
+    "direct_bler": 0.0,
+    "absolute_gap": 0.003971428571428573,
+    "trials": 400,
+    "errors": 0,
+    "wilson95": [
+      0.0,
+      0.009512294334295988
+    ]
+  },
+  {
+    "case": "transition",
+    "prbs": 5,
+    "mcs": 16,
+    "snr_db": 11.125,
+    "interpolated_bler": 0.5025,
+    "direct_bler": 0.4975,
+    "absolute_gap": 0.004999999999999949,
+    "trials": 400,
+    "errors": 199,
+    "wilson95": [
+      0.4487588886795848,
+      0.5462886727920866
+    ]
+  }
+]

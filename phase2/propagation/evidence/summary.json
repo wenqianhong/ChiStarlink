@@ -1,0 +1,18 @@
+{
+  "itur": "0.4.0",
+  "implemented_recommendation": 12,
+  "slant_p676_12_itu_v5_1_via_tagged_upstream": {
+    "n_values": 64,
+    "passed": 64,
+    "max_absolute_error": 6.194245116830643e-10,
+    "absolute_tolerance": 1e-07
+  },
+  "specific_p676_13_itu_v8_3_workbook": {
+    "n_values": 1050,
+    "passed": 1050,
+    "max_absolute_error": 5.3290705182007514e-14,
+    "absolute_tolerance": 1e-07
+  },
+  "csv_sha256": "6a2d649339fedf59f24a96a06b08e1d20348833df0bdb4f4d07ad25b35b79fcd",
+  "xlsx_sha256": "e2d8d864c80f59752318548cdd75d818792b44574da6e41dbdc5cb722aab7546"
+}

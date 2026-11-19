@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "calibration_points": 1089,
+  "seeded_runs": 2178,
+  "trials": 217800,
+  "curves_sha256": "3a8cc5db5719600f81c8b1c861461888e639615f851a7e5195b4ac2813d22452",
+  "archive_sha256": "1c82d2610f5160c169a405b831a1f08924bb45c4bf823db2f508d2e5c3855620"
+}

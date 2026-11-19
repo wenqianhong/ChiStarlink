@@ -1,0 +1,936 @@
+{
+  "validation_points": 32,
+  "trials": 12800,
+  "median_absolute_bler_error": 0.03125,
+  "max_absolute_bler_error": 0.10499999999999998,
+  "points": [
+    {
+      "left": [
+        1.0,
+        0.555
+      ],
+      "right": [
+        1.25,
+        0.475
+      ],
+      "predicted_bler": 0.515,
+      "prbs": 2,
+      "mcs": 4,
+      "snr_db": 1.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 152,
+      "errors": 197,
+      "reported_errors": 197,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 203,
+      "active_crc_bler": 0.4925,
+      "trials": 400,
+      "bler": 0.4925,
+      "bler_ci_low": 0.4438112806127115,
+      "bler_ci_high": 0.5413314038023028,
+      "absolute_error": 0.02250000000000002
+    },
+    {
+      "left": [
+        4.25,
+        0.59
+      ],
+      "right": [
+        4.5,
+        0.42
+      ],
+      "predicted_bler": 0.505,
+      "prbs": 2,
+      "mcs": 8,
+      "snr_db": 4.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 304,
+      "errors": 180,
+      "reported_errors": 180,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 220,
+      "active_crc_bler": 0.45,
+      "trials": 400,
+      "bler": 0.45,
+      "bler_ci_low": 0.4019522280140431,
+      "bler_ci_high": 0.4989990014193864,
+      "absolute_error": 0.05499999999999999
+    },
+    {
+      "left": [
+        8.5,
+        0.505
+      ],
+      "right": [
+        8.75,
+        0.385
+      ],
+      "predicted_bler": 0.445,
+      "prbs": 2,
+      "mcs": 12,
+      "snr_db": 8.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 456,
+      "errors": 153,
+      "reported_errors": 153,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 247,
+      "active_crc_bler": 0.3825,
+      "trials": 400,
+      "bler": 0.3825,
+      "bler_ci_low": 0.336204682540065,
+      "bler_ci_high": 0.43103070662849446,
+      "absolute_error": 0.0625
+    },
+    {
+      "left": [
+        9.75,
+        0.535
+      ],
+      "right": [
+        10.0,
+        0.405
+      ],
+      "predicted_bler": 0.47000000000000003,
+      "prbs": 2,
+      "mcs": 14,
+      "snr_db": 9.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 576,
+      "errors": 191,
+      "reported_errors": 191,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 209,
+      "active_crc_bler": 0.4775,
+      "trials": 400,
+      "bler": 0.4775,
+      "bler_ci_low": 0.4289974607340848,
+      "bler_ci_high": 0.5264305925109585,
+      "absolute_error": 0.007499999999999951
+    },
+    {
+      "left": [
+        10.75,
+        0.59
+      ],
+      "right": [
+        11.0,
+        0.405
+      ],
+      "predicted_bler": 0.4975,
+      "prbs": 2,
+      "mcs": 16,
+      "snr_db": 10.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 672,
+      "errors": 181,
+      "reported_errors": 181,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 219,
+      "active_crc_bler": 0.4525,
+      "trials": 400,
+      "bler": 0.4525,
+      "bler_ci_low": 0.4044047885153873,
+      "bler_ci_high": 0.5014988794463707,
+      "absolute_error": 0.044999999999999984
+    },
+    {
+      "left": [
+        12.75,
+        0.5
+      ],
+      "right": [
+        13.0,
+        0.445
+      ],
+      "predicted_bler": 0.47250000000000003,
+      "prbs": 2,
+      "mcs": 18,
+      "snr_db": 12.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 736,
+      "errors": 197,
+      "reported_errors": 197,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 203,
+      "active_crc_bler": 0.4925,
+      "trials": 400,
+      "bler": 0.4925,
+      "bler_ci_low": 0.4438112806127115,
+      "bler_ci_high": 0.5413314038023028,
+      "absolute_error": 0.019999999999999962
+    },
+    {
+      "left": [
+        14.5,
+        0.63
+      ],
+      "right": [
+        14.75,
+        0.49
+      ],
+      "predicted_bler": 0.56,
+      "prbs": 2,
+      "mcs": 20,
+      "snr_db": 14.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 888,
+      "errors": 201,
+      "reported_errors": 201,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 199,
+      "active_crc_bler": 0.5025,
+      "trials": 400,
+      "bler": 0.5025,
+      "bler_ci_low": 0.4537113272079133,
+      "bler_ci_high": 0.5512411113204151,
+      "absolute_error": 0.05750000000000011
+    },
+    {
+      "left": [
+        19.5,
+        0.63
+      ],
+      "right": [
+        19.75,
+        0.465
+      ],
+      "predicted_bler": 0.5475,
+      "prbs": 2,
+      "mcs": 26,
+      "snr_db": 19.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1352,
+      "errors": 192,
+      "reported_errors": 192,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 208,
+      "active_crc_bler": 0.48,
+      "trials": 400,
+      "bler": 0.48,
+      "bler_ci_low": 0.43146340667729655,
+      "bler_ci_high": 0.5289170850960752,
+      "absolute_error": 0.0675
+    },
+    {
+      "left": [
+        1.25,
+        0.505
+      ],
+      "right": [
+        1.5,
+        0.34
+      ],
+      "predicted_bler": 0.4225,
+      "prbs": 5,
+      "mcs": 4,
+      "snr_db": 1.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 408,
+      "errors": 160,
+      "reported_errors": 160,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 240,
+      "active_crc_bler": 0.4,
+      "trials": 400,
+      "bler": 0.4,
+      "bler_ci_low": 0.3531615288938148,
+      "bler_ci_high": 0.4487409299730444,
+      "absolute_error": 0.022499999999999964
+    },
+    {
+      "left": [
+        4.5,
+        0.585
+      ],
+      "right": [
+        4.75,
+        0.325
+      ],
+      "predicted_bler": 0.45499999999999996,
+      "prbs": 5,
+      "mcs": 8,
+      "snr_db": 4.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 808,
+      "errors": 190,
+      "reported_errors": 190,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 210,
+      "active_crc_bler": 0.475,
+      "trials": 400,
+      "bler": 0.475,
+      "bler_ci_low": 0.42653272598120784,
+      "bler_ci_high": 0.5239428887355068,
+      "absolute_error": 0.020000000000000018
+    },
+    {
+      "left": [
+        8.25,
+        0.53
+      ],
+      "right": [
+        8.5,
+        0.37
+      ],
+      "predicted_bler": 0.45,
+      "prbs": 5,
+      "mcs": 12,
+      "snr_db": 8.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1128,
+      "errors": 168,
+      "reported_errors": 168,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 232,
+      "active_crc_bler": 0.42,
+      "trials": 400,
+      "bler": 0.42,
+      "bler_ci_low": 0.37261771822548695,
+      "bler_ci_high": 0.4689042488680003,
+      "absolute_error": 0.030000000000000027
+    },
+    {
+      "left": [
+        9.75,
+        0.665
+      ],
+      "right": [
+        10.0,
+        0.475
+      ],
+      "predicted_bler": 0.5700000000000001,
+      "prbs": 5,
+      "mcs": 14,
+      "snr_db": 9.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1480,
+      "errors": 247,
+      "reported_errors": 247,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 153,
+      "active_crc_bler": 0.6175,
+      "trials": 400,
+      "bler": 0.6175,
+      "bler_ci_low": 0.5689692933715055,
+      "bler_ci_high": 0.663795317459935,
+      "absolute_error": 0.04749999999999999
+    },
+    {
+      "left": [
+        11.0,
+        0.615
+      ],
+      "right": [
+        11.25,
+        0.39
+      ],
+      "predicted_bler": 0.5025,
+      "prbs": 5,
+      "mcs": 16,
+      "snr_db": 11.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1736,
+      "errors": 206,
+      "reported_errors": 206,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 194,
+      "active_crc_bler": 0.515,
+      "trials": 400,
+      "bler": 0.515,
+      "bler_ci_low": 0.4661135603317117,
+      "bler_ci_high": 0.5636010708382595,
+      "absolute_error": 0.012500000000000067
+    },
+    {
+      "left": [
+        12.75,
+        0.52
+      ],
+      "right": [
+        13.0,
+        0.335
+      ],
+      "predicted_bler": 0.4275,
+      "prbs": 5,
+      "mcs": 18,
+      "snr_db": 12.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1800,
+      "errors": 164,
+      "reported_errors": 164,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 236,
+      "active_crc_bler": 0.41,
+      "trials": 400,
+      "bler": 0.41,
+      "bler_ci_low": 0.36287947761947326,
+      "bler_ci_high": 0.4588327353606999,
+      "absolute_error": 0.017500000000000016
+    },
+    {
+      "left": [
+        14.25,
+        0.6
+      ],
+      "right": [
+        14.5,
+        0.455
+      ],
+      "predicted_bler": 0.5275,
+      "prbs": 5,
+      "mcs": 20,
+      "snr_db": 14.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 2216,
+      "errors": 228,
+      "reported_errors": 228,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 172,
+      "active_crc_bler": 0.57,
+      "trials": 400,
+      "bler": 0.57,
+      "bler_ci_low": 0.5210443194375323,
+      "bler_ci_high": 0.6176239593556663,
+      "absolute_error": 0.04249999999999998
+    },
+    {
+      "left": [
+        19.25,
+        0.635
+      ],
+      "right": [
+        19.5,
+        0.48
+      ],
+      "predicted_bler": 0.5575,
+      "prbs": 5,
+      "mcs": 26,
+      "snr_db": 19.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 3368,
+      "errors": 227,
+      "reported_errors": 227,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 173,
+      "active_crc_bler": 0.5675,
+      "trials": 400,
+      "bler": 0.5675,
+      "bler_ci_low": 0.5185345773355041,
+      "bler_ci_high": 0.6151812629293658,
+      "absolute_error": 0.010000000000000009
+    },
+    {
+      "left": [
+        1.0,
+        0.575
+      ],
+      "right": [
+        1.25,
+        0.37
+      ],
+      "predicted_bler": 0.4725,
+      "prbs": 8,
+      "mcs": 4,
+      "snr_db": 1.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 640,
+      "errors": 184,
+      "reported_errors": 184,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 216,
+      "active_crc_bler": 0.46,
+      "trials": 400,
+      "bler": 0.46,
+      "bler_ci_low": 0.4117698068715035,
+      "bler_ci_high": 0.5089911766752401,
+      "absolute_error": 0.012499999999999956
+    },
+    {
+      "left": [
+        4.25,
+        0.73
+      ],
+      "right": [
+        4.5,
+        0.42
+      ],
+      "predicted_bler": 0.575,
+      "prbs": 8,
+      "mcs": 8,
+      "snr_db": 4.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1256,
+      "errors": 233,
+      "reported_errors": 233,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 167,
+      "active_crc_bler": 0.5825,
+      "trials": 400,
+      "bler": 0.5825,
+      "bler_ci_low": 0.5336117391164414,
+      "bler_ci_high": 0.6298187323183997,
+      "absolute_error": 0.007500000000000062
+    },
+    {
+      "left": [
+        8.25,
+        0.585
+      ],
+      "right": [
+        8.5,
+        0.395
+      ],
+      "predicted_bler": 0.49,
+      "prbs": 8,
+      "mcs": 12,
+      "snr_db": 8.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1800,
+      "errors": 174,
+      "reported_errors": 174,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 226,
+      "active_crc_bler": 0.435,
+      "trials": 400,
+      "bler": 0.435,
+      "bler_ci_low": 0.3872626744968649,
+      "bler_ci_high": 0.48397392376659343,
+      "absolute_error": 0.05499999999999999
+    },
+    {
+      "left": [
+        9.75,
+        0.545
+      ],
+      "right": [
+        10.0,
+        0.295
+      ],
+      "predicted_bler": 0.42000000000000004,
+      "prbs": 8,
+      "mcs": 14,
+      "snr_db": 9.875,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 2280,
+      "errors": 156,
+      "reported_errors": 156,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 244,
+      "active_crc_bler": 0.39,
+      "trials": 400,
+      "bler": 0.39,
+      "bler_ci_low": 0.343464111199781,
+      "bler_ci_high": 0.4386285935537641,
+      "absolute_error": 0.030000000000000027
+    },
+    {
+      "left": [
+        11.0,
+        0.5
+      ],
+      "right": [
+        11.25,
+        0.29
+      ],
+      "predicted_bler": 0.395,
+      "prbs": 8,
+      "mcs": 16,
+      "snr_db": 11.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 2728,
+      "errors": 168,
+      "reported_errors": 168,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 232,
+      "active_crc_bler": 0.42,
+      "trials": 400,
+      "bler": 0.42,
+      "bler_ci_low": 0.37261771822548695,
+      "bler_ci_high": 0.4689042488680003,
+      "absolute_error": 0.024999999999999967
+    },
+    {
+      "left": [
+        13.0,
+        0.585
+      ],
+      "right": [
+        13.25,
+        0.36
+      ],
+      "predicted_bler": 0.4725,
+      "prbs": 8,
+      "mcs": 18,
+      "snr_db": 13.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 2976,
+      "errors": 183,
+      "reported_errors": 183,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 217,
+      "active_crc_bler": 0.4575,
+      "trials": 400,
+      "bler": 0.4575,
+      "bler_ci_low": 0.4093135795917941,
+      "bler_ci_high": 0.5064949654266211,
+      "absolute_error": 0.014999999999999958
+    },
+    {
+      "left": [
+        14.25,
+        0.595
+      ],
+      "right": [
+        14.5,
+        0.365
+      ],
+      "predicted_bler": 0.48,
+      "prbs": 8,
+      "mcs": 20,
+      "snr_db": 14.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 3496,
+      "errors": 180,
+      "reported_errors": 180,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 220,
+      "active_crc_bler": 0.45,
+      "trials": 400,
+      "bler": 0.45,
+      "bler_ci_low": 0.4019522280140431,
+      "bler_ci_high": 0.4989990014193864,
+      "absolute_error": 0.02999999999999997
+    },
+    {
+      "left": [
+        19.5,
+        0.49
+      ],
+      "right": [
+        19.75,
+        0.345
+      ],
+      "predicted_bler": 0.4175,
+      "prbs": 8,
+      "mcs": 26,
+      "snr_db": 19.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 5376,
+      "errors": 125,
+      "reported_errors": 125,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 275,
+      "active_crc_bler": 0.3125,
+      "trials": 400,
+      "bler": 0.3125,
+      "bler_ci_low": 0.2690415608130797,
+      "bler_ci_high": 0.3595255495622812,
+      "absolute_error": 0.10499999999999998
+    },
+    {
+      "left": [
+        1.0,
+        0.61
+      ],
+      "right": [
+        1.25,
+        0.325
+      ],
+      "predicted_bler": 0.4675,
+      "prbs": 11,
+      "mcs": 4,
+      "snr_db": 1.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 888,
+      "errors": 208,
+      "reported_errors": 208,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 192,
+      "active_crc_bler": 0.52,
+      "trials": 400,
+      "bler": 0.52,
+      "bler_ci_low": 0.4710829149039248,
+      "bler_ci_high": 0.5685365933227035,
+      "absolute_error": 0.05249999999999999
+    },
+    {
+      "left": [
+        4.5,
+        0.62
+      ],
+      "right": [
+        4.75,
+        0.25
+      ],
+      "predicted_bler": 0.435,
+      "prbs": 11,
+      "mcs": 8,
+      "snr_db": 4.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 1736,
+      "errors": 150,
+      "reported_errors": 150,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 250,
+      "active_crc_bler": 0.375,
+      "trials": 400,
+      "bler": 0.375,
+      "bler_ci_low": 0.32895707946316416,
+      "bler_ci_high": 0.42342099412040973,
+      "absolute_error": 0.06
+    },
+    {
+      "left": [
+        8.25,
+        0.535
+      ],
+      "right": [
+        8.5,
+        0.325
+      ],
+      "predicted_bler": 0.43000000000000005,
+      "prbs": 11,
+      "mcs": 12,
+      "snr_db": 8.375,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 2472,
+      "errors": 206,
+      "reported_errors": 206,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 194,
+      "active_crc_bler": 0.515,
+      "trials": 400,
+      "bler": 0.515,
+      "bler_ci_low": 0.4661135603317117,
+      "bler_ci_high": 0.5636010708382595,
+      "absolute_error": 0.08499999999999996
+    },
+    {
+      "left": [
+        10.0,
+        0.64
+      ],
+      "right": [
+        10.25,
+        0.37
+      ],
+      "predicted_bler": 0.505,
+      "prbs": 11,
+      "mcs": 14,
+      "snr_db": 10.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 3240,
+      "errors": 181,
+      "reported_errors": 181,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 219,
+      "active_crc_bler": 0.4525,
+      "trials": 400,
+      "bler": 0.4525,
+      "bler_ci_low": 0.4044047885153873,
+      "bler_ci_high": 0.5014988794463707,
+      "absolute_error": 0.05249999999999999
+    },
+    {
+      "left": [
+        11.0,
+        0.55
+      ],
+      "right": [
+        11.25,
+        0.32
+      ],
+      "predicted_bler": 0.43500000000000005,
+      "prbs": 11,
+      "mcs": 16,
+      "snr_db": 11.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 3752,
+      "errors": 193,
+      "reported_errors": 193,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 207,
+      "active_crc_bler": 0.4825,
+      "trials": 400,
+      "bler": 0.4825,
+      "bler_ci_low": 0.4339305630449019,
+      "bler_ci_high": 0.5314023672567983,
+      "absolute_error": 0.04749999999999993
+    },
+    {
+      "left": [
+        12.5,
+        0.595
+      ],
+      "right": [
+        12.75,
+        0.315
+      ],
+      "predicted_bler": 0.45499999999999996,
+      "prbs": 11,
+      "mcs": 18,
+      "snr_db": 12.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 3968,
+      "errors": 169,
+      "reported_errors": 169,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 231,
+      "active_crc_bler": 0.4225,
+      "trials": 400,
+      "bler": 0.4225,
+      "bler_ci_low": 0.3750554237475208,
+      "bler_ci_high": 0.47141898187429493,
+      "absolute_error": 0.03249999999999997
+    },
+    {
+      "left": [
+        14.0,
+        0.73
+      ],
+      "right": [
+        14.25,
+        0.475
+      ],
+      "predicted_bler": 0.6025,
+      "prbs": 11,
+      "mcs": 20,
+      "snr_db": 14.125,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 4736,
+      "errors": 222,
+      "reported_errors": 222,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 178,
+      "active_crc_bler": 0.555,
+      "trials": 400,
+      "bler": 0.555,
+      "bler_ci_low": 0.5060044336648833,
+      "bler_ci_high": 0.6029492139583442,
+      "absolute_error": 0.04749999999999999
+    },
+    {
+      "left": [
+        19.5,
+        0.635
+      ],
+      "right": [
+        19.75,
+        0.38
+      ],
+      "predicted_bler": 0.5075000000000001,
+      "prbs": 11,
+      "mcs": 26,
+      "snr_db": 19.625,
+      "carrier_prbs": 25,
+      "scs_hz": 15000,
+      "slot_s": 0.001,
+      "tbs_bits": 7424,
+      "errors": 194,
+      "reported_errors": 194,
+      "planned_trials": 400,
+      "active_trials": 400,
+      "decoded_tbs": 206,
+      "active_crc_bler": 0.485,
+      "trials": 400,
+      "bler": 0.485,
+      "bler_ci_low": 0.43639892916174045,
+      "bler_ci_high": 0.5338864396682883,
+      "absolute_error": 0.022500000000000075
+    }
+  ]
+}

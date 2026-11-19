@@ -1,0 +1,1197 @@
+{
+  "inputs_sha256": {
+    "tasks/design/tasks.json": "c0043893a360f1955410c5000198d73f4b7f1f74471ca8d90ac45394948c5e77",
+    "tasks/regression/tasks.json": "c89e262a3b18d65d72c079e892f938cbb32ded3025ae1876114ac5ed8bb7a4ac",
+    "phase2/oai/curves.csv": "9f6cd3dffc5620974dd96cf043c6b7f0f51a85d0ab6f568d9d0454a3790b100d",
+    "phase2/propagation/gas.py": "299ef6bbe4c1b8855bebfc6a8aecbea659705e5f58a685a8eaee53193979d7c7",
+    "phase2/cases/nr.py": "454dfd8726b987402f3a609d56bc952b5b42b6311827607eaf3fcd7de107a254",
+    "phase2/cases/radio.py": "0139566a7b797bbbd17667cc2ad3b0fbcf064bd21567eeaa63fe625f75089c81",
+    "phase2/cases/worker.py": "7e749de77dd085cdb4d9ce045c95ffe7e55985c90f2133f9e8dd2cfd988bab37",
+    "phase2/cases/replay.py": "4ea594d1489786429416c073d40bb6a3a5091bfc65d20a3e82e741be9d335e61",
+    "tasks/regression/network.py": "2fb360d934502bb45fa4a4ff6d660f5efdefa7483e001f547e04c335d1926559",
+    "tasks/regression/replay.py": "d299d201330c44dbbb7697f86ce54dbfdcb0cca7de2e2bfff662fc09d4ad654f"
+  },
+  "catalogue": "first-four",
+  "images": {
+    "chistarlink-itur:phase2": "sha256:5a01f133dab4798a8a2f2da71bad3a6fbc7567007b13fe45ff08062c1842f9e3",
+    "chistarlink-hypatia:0ac531c": "sha256:0d64f2c83a0a7c1227142b1755f65ecd220020341adc6af4d92a4b7bf90acb52"
+  },
+  "tasks": [
+    {
+      "id": "D01",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "initial",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": false,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "078f6b7c24c26309529a1a7246e8adfa77782e10bbd9e7cabfb3011705159923",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 0,
+            "payload_mbps": 0,
+            "delivery_ratio": 0,
+            "p95_delay_ms": null
+          },
+          "used_profiles": []
+        },
+        {
+          "stage": "reference",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "66daf65b4c835dfed831b0dbac8ba6fc480f99efbd85d61184f60cdc9523b6e6",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 4500,
+            "payload_mbps": 1.2,
+            "delivery_ratio": 0.99977782715,
+            "p95_delay_ms": 6.991337
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "regression",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "8ae724c9d1c1f60ef901b6093d275aca401d4ec7292c6ce0222be4627dd9d669",
+          "metrics": {
+            "sent_packets": 563,
+            "received_packets": 563,
+            "payload_mbps": 0.150133333333,
+            "delivery_ratio": 1,
+            "p95_delay_ms": 9.775362
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "holdout",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "65221c9959374d7594ddefc76b49da81319de3b1f158a0ac3dd99ecc10174918",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 4314,
+            "payload_mbps": 1.1504,
+            "delivery_ratio": 0.958453676961,
+            "p95_delay_ms": 38.947935
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            },
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "initial",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": false,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "248ca3b66c0ad9e29acc79dd1d62dee022910b64c783e2db0d5f073fe1dbf451",
+          "metrics": {
+            "sent_packets": 4313,
+            "received_packets": 215,
+            "payload_mbps": 0.0573333333333,
+            "delivery_ratio": 0.0498492928356,
+            "p95_delay_ms": 770.32769
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 4,
+              "tbs_bits": 408
+            }
+          ]
+        },
+        {
+          "stage": "reference",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "9b9e010fa7d7ef065e7423525277810e900623f30ac5b514ff062f157a55cfc3",
+          "metrics": {
+            "sent_packets": 4313,
+            "received_packets": 4312,
+            "payload_mbps": 1.14986666667,
+            "delivery_ratio": 0.999768142824,
+            "p95_delay_ms": 9.748591
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "regression",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "1dce038710e2da8a8c97b3afb02cb29c049d7a4eab89a0b1178f6831fc94b715",
+          "metrics": {
+            "sent_packets": 563,
+            "received_packets": 563,
+            "payload_mbps": 0.150133333333,
+            "delivery_ratio": 1,
+            "p95_delay_ms": 11.220606
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            },
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "holdout",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "66977c11652c61e4fe1caf675bc803508054b0e29140fe2f59e769c8628387d1",
+          "metrics": {
+            "sent_packets": 4313,
+            "received_packets": 4183,
+            "payload_mbps": 1.11546666667,
+            "delivery_ratio": 0.969858567123,
+            "p95_delay_ms": 39.860445
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            },
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "initial",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": false,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "654e8185385e3da409376f972469ffd412917dba47b390330694aba44ae2aa28",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 1429,
+            "payload_mbps": 0.381066666667,
+            "delivery_ratio": 0.317485003333,
+            "p95_delay_ms": 109.094386
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 4,
+              "tbs_bits": 408
+            }
+          ]
+        },
+        {
+          "stage": "reference",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": false,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "d5f26749c6f0d9373536543a8d2a1baaf8ca56240c7dec4411cb87d6e9685a87",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 4106,
+            "payload_mbps": 1.09493333333,
+            "delivery_ratio": 0.912241724061,
+            "p95_delay_ms": 39.321709
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "regression",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "d0681fc4c845620fbcb0c0887bd8fe8247c4c94c562d9db7e5a6095800e89167",
+          "metrics": {
+            "sent_packets": 563,
+            "received_packets": 563,
+            "payload_mbps": 0.150133333333,
+            "delivery_ratio": 1,
+            "p95_delay_ms": 11.25536
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "dfed56c63d391869de25effb3320206c8bc06f574f2a2679f006bf93db448cb1",
+          "metrics": {
+            "sent_packets": 4501,
+            "received_packets": 4238,
+            "payload_mbps": 1.13013333333,
+            "delivery_ratio": 0.941568540324,
+            "p95_delay_ms": 38.594149
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            },
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "verified": true,
+      "runs": [
+        {
+          "stage": "initial",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": false,
+            "delivery": false,
+            "delay": false
+          },
+          "samples": 30,
+          "radio_sha256": "c2db4bf7486ee9d3b79397e3f1d413f373cbf367d43a76dfa5e09b338b28d181",
+          "metrics": {
+            "sent_packets": 7688,
+            "received_packets": 553,
+            "payload_mbps": 0.147466666667,
+            "delivery_ratio": 0.0719302809573,
+            "p95_delay_ms": 272.823054
+          },
+          "used_profiles": [
+            {
+              "prbs": 2,
+              "mcs": 4,
+              "tbs_bits": 152
+            }
+          ]
+        },
+        {
+          "stage": "reference",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "1bbc09d2dd425a5c4b9599d6f02535b8647c605c9f4039c591afd83507f5de6e",
+          "metrics": {
+            "sent_packets": 7688,
+            "received_packets": 7687,
+            "payload_mbps": 2.04986666667,
+            "delivery_ratio": 0.999869927159,
+            "p95_delay_ms": 5.408601
+          },
+          "used_profiles": [
+            {
+              "prbs": 11,
+              "mcs": 12,
+              "tbs_bits": 2472
+            }
+          ]
+        },
+        {
+          "stage": "regression",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "4bd899b9f0d7194a7cc727d280443e96a8f9a7be1faeef9ce0b32640b920eeef",
+          "metrics": {
+            "sent_packets": 563,
+            "received_packets": 563,
+            "payload_mbps": 0.150133333333,
+            "delivery_ratio": 1,
+            "p95_delay_ms": 5.771683
+          },
+          "used_profiles": [
+            {
+              "prbs": 11,
+              "mcs": 12,
+              "tbs_bits": 2472
+            }
+          ]
+        },
+        {
+          "stage": "holdout",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "sample_count": true,
+            "propagation_delay": true,
+            "payload": true,
+            "delivery": true,
+            "delay": true
+          },
+          "samples": 30,
+          "radio_sha256": "9e605d0cbee2387f8e282dbe899d1739b4433312f7014668cc2365f9aeb3d3b6",
+          "metrics": {
+            "sent_packets": 7688,
+            "received_packets": 7687,
+            "payload_mbps": 2.04986666667,
+            "delivery_ratio": 0.999869927159,
+            "p95_delay_ms": 5.378319
+          },
+          "used_profiles": [
+            {
+              "prbs": 11,
+              "mcs": 12,
+              "tbs_bits": 2472
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "main-initial-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "0b7f5b8c045097a5dbe417243e6a74f36daa3ec8cba061e766ba8388c180fb94",
+          "metrics": {
+            "sent_packets": 400,
+            "received_packets": 400,
+            "payload_mbps": 0.5888,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 32.288852
+          },
+          "used_profiles": [
+            {
+              "prbs": 2,
+              "mcs": 20,
+              "tbs_bits": 888
+            }
+          ]
+        },
+        {
+          "stage": "main-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "0b7f5b8c045097a5dbe417243e6a74f36daa3ec8cba061e766ba8388c180fb94",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 606,
+            "payload_mbps": 0.892032,
+            "delivery_ratio": 0.606,
+            "p95_delay_ms": 1430.191665
+          },
+          "used_profiles": [
+            {
+              "prbs": 2,
+              "mcs": 20,
+              "tbs_bits": 888
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "a6ae66e3911be61229a1719c1fe498fcbd874da77adabf7adb4793f69f1b63ee",
+          "metrics": {
+            "sent_packets": 400,
+            "received_packets": 400,
+            "payload_mbps": 0.5888,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 28.963748
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "a6ae66e3911be61229a1719c1fe498fcbd874da77adabf7adb4793f69f1b63ee",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "70545ae427c1f0d5f98701f315af025958b1df844890b8337200ef99e639142c",
+          "metrics": {
+            "sent_packets": 500,
+            "received_packets": 500,
+            "payload_mbps": 0.5888,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 32.310743
+          },
+          "used_profiles": [
+            {
+              "prbs": 2,
+              "mcs": 20,
+              "tbs_bits": 888
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "70545ae427c1f0d5f98701f315af025958b1df844890b8337200ef99e639142c",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 746,
+            "payload_mbps": 0.87849,
+            "delivery_ratio": 0.5968,
+            "p95_delay_ms": 1435.723357
+          },
+          "used_profiles": [
+            {
+              "prbs": 2,
+              "mcs": 20,
+              "tbs_bits": 888
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "3877c38ac3de1461cc67dd8e1a7615ce07dc273ea5b5ae90057d8da37e3992b2",
+          "metrics": {
+            "sent_packets": 500,
+            "received_packets": 500,
+            "payload_mbps": 0.5888,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 28.934168
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "3877c38ac3de1461cc67dd8e1a7615ce07dc273ea5b5ae90057d8da37e3992b2",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "main-initial-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "a6ae66e3911be61229a1719c1fe498fcbd874da77adabf7adb4793f69f1b63ee",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "main-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "c4fa7145dd8bf7f53fc67e8220e5dc6260cf5f77a03f03ac5c7f37e698ce2885",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 287,
+            "payload_mbps": 0.422464,
+            "delivery_ratio": 0.287,
+            "p95_delay_ms": 2992.059753
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 4,
+              "tbs_bits": 408
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "c53867597fbd1c64afb166b8f3a1f04098f9bf53348c1f35e506db9691a44273",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 1000,
+            "payload_mbps": 1.472,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 23.733648
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "e002c11651fb3a4b6cf87e0dcc44deda09e049ac50865dba89ccbd4374fb4b1e",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "3877c38ac3de1461cc67dd8e1a7615ce07dc273ea5b5ae90057d8da37e3992b2",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "d1e605c7152c52a9c5c012b4b2b09417e12993ef2dbff46a5e9e4c17e59f3b4f",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 355,
+            "payload_mbps": 0.418048,
+            "delivery_ratio": 0.284,
+            "p95_delay_ms": 2992.15764
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 4,
+              "tbs_bits": 408
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-old",
+          "expected_pass": true,
+          "passed": true,
+          "checks": {
+            "payload": true,
+            "delivery": true,
+            "delay": true,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "516170d14e2f353d2de8d501397ffd6ea8eb1444fdfdf9d9537a35fc71b4eac1",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 1250,
+            "payload_mbps": 1.472,
+            "delivery_ratio": 1.0,
+            "p95_delay_ms": 23.704124
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 20,
+              "tbs_bits": 2216
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "d2ee1cbd1fa034b5fb2f62a7b0a300bf8159b3cc1f5d44e3bfa26e75fc08c2bd",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "verified": false,
+      "runs": [
+        {
+          "stage": "main-initial-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "9d26c286c326712306d0033546345b67aa0cd84967aa250b9ba02eb69490636f",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "main-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": false,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "9d26c286c326712306d0033546345b67aa0cd84967aa250b9ba02eb69490636f",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "124316c54598786308f18c8b18edb98531971f04103e938b55eab9999b601adf",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "main-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 85,
+          "radio_sha256": "124316c54598786308f18c8b18edb98531971f04103e938b55eab9999b601adf",
+          "metrics": {
+            "sent_packets": 1000,
+            "received_packets": 796,
+            "payload_mbps": 1.171712,
+            "delivery_ratio": 0.796,
+            "p95_delay_ms": 1093.301863
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "b81f45541390b0ec5b7ce449c0c05202ece95b9b6bebce7dd3eb0eb001aa63d7",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-initial-new",
+          "expected_pass": false,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": false,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "b81f45541390b0ec5b7ce449c0c05202ece95b9b6bebce7dd3eb0eb001aa63d7",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-old",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "8069f13e8f196f99dccc8a162ac7b1473fb23136f598ed5a951597bdc0de4319",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        },
+        {
+          "stage": "holdout-reference-new",
+          "expected_pass": true,
+          "passed": false,
+          "checks": {
+            "payload": false,
+            "delivery": false,
+            "delay": false,
+            "power": true,
+            "aperture": true
+          },
+          "samples": 125,
+          "radio_sha256": "8069f13e8f196f99dccc8a162ac7b1473fb23136f598ed5a951597bdc0de4319",
+          "metrics": {
+            "sent_packets": 1250,
+            "received_packets": 983,
+            "payload_mbps": 1.157581,
+            "delivery_ratio": 0.7864,
+            "p95_delay_ms": 1093.40285
+          },
+          "used_profiles": [
+            {
+              "prbs": 5,
+              "mcs": 12,
+              "tbs_bits": 1128
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

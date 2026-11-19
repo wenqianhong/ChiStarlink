@@ -1,0 +1,40 @@
+{
+  "id": "R01",
+  "case": "target",
+  "passed": false,
+  "checks": {
+    "sample_count": true,
+    "independent_vacuum_budget": true,
+    "gas_applied_once": true,
+    "angle_decoded": false,
+    "matched_polarization": true,
+    "nr_empirical_counts": true,
+    "admission_and_rate_mapping": true,
+    "propagation_delay": true,
+    "sent": true,
+    "delivery": false,
+    "goodput": false,
+    "latency": false
+  },
+  "network": {
+    "engine": "ns-3.31 point-to-point/IPv4/UDP",
+    "duration_s": 12,
+    "sample_count": 12,
+    "offered_mbps": 1,
+    "sent_packets": 1500,
+    "received_packets": 0,
+    "delivery_ratio": 0,
+    "payload_mbps": 0,
+    "p95_delay_ms": null
+  },
+  "oai_sha256": "3a8cc5db5719600f81c8b1c861461888e639615f851a7e5195b4ac2813d22452",
+  "first_sample": {
+    "gas_loss_db": "0.07752580006696759",
+    "postgas_cn0_dbhz": "77.83198754962659",
+    "prbs": "11",
+    "mcs": "20",
+    "snr_db": "14.865335647011278",
+    "bler": "0.051546296478195475",
+    "network_bps": "0"
+  }
+}

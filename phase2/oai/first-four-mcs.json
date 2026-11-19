@@ -1,0 +1,94 @@
+{
+  "points": 320,
+  "trials": 64000,
+  "raw_sha256": "106d64143052da3af8ff1472a2dd3fa9de0b9df0425af3714b72c4228e22d07e",
+  "curves_sha256": "9f6cd3dffc5620974dd96cf043c6b7f0f51a85d0ab6f568d9d0454a3790b100d",
+  "mcs": [
+    4,
+    12,
+    20,
+    26
+  ],
+  "waterfalls": [
+    {
+      "prbs": "2",
+      "mcs": "12",
+      "snr_db": "8",
+      "errors": "157",
+      "trials": "200",
+      "bler": "0.785"
+    },
+    {
+      "prbs": "2",
+      "mcs": "20",
+      "snr_db": "14",
+      "errors": "160",
+      "trials": "200",
+      "bler": "0.8"
+    },
+    {
+      "prbs": "2",
+      "mcs": "26",
+      "snr_db": "20",
+      "errors": "79",
+      "trials": "200",
+      "bler": "0.395"
+    },
+    {
+      "prbs": "5",
+      "mcs": "12",
+      "snr_db": "8",
+      "errors": "144",
+      "trials": "200",
+      "bler": "0.72"
+    },
+    {
+      "prbs": "5",
+      "mcs": "20",
+      "snr_db": "14",
+      "errors": "159",
+      "trials": "200",
+      "bler": "0.795"
+    },
+    {
+      "prbs": "5",
+      "mcs": "26",
+      "snr_db": "20",
+      "errors": "23",
+      "trials": "200",
+      "bler": "0.115"
+    },
+    {
+      "prbs": "8",
+      "mcs": "12",
+      "snr_db": "8",
+      "errors": "158",
+      "trials": "200",
+      "bler": "0.79"
+    },
+    {
+      "prbs": "8",
+      "mcs": "20",
+      "snr_db": "14",
+      "errors": "159",
+      "trials": "200",
+      "bler": "0.795"
+    },
+    {
+      "prbs": "8",
+      "mcs": "26",
+      "snr_db": "20",
+      "errors": "35",
+      "trials": "200",
+      "bler": "0.175"
+    },
+    {
+      "prbs": "11",
+      "mcs": "12",
+      "snr_db": "8",
+      "errors": "154",
+      "trials": "200",
+      "bler": "0.77"
+    }
+  ]
+}

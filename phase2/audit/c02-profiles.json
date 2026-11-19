@@ -1,0 +1,5 @@
+[
+  {"case":"initial-new", "prbs":5, "mcs":8, "snr_db":6.589242494},
+  {"case":"reference-new", "prbs":5, "mcs":16, "snr_db":12.609842407},
+  {"case":"transition", "prbs":5, "mcs":16, "transition":true}
+]

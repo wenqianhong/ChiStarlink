@@ -1,0 +1,2 @@
+prbs,mcs,snr_db,carrier_prbs,scs_hz,slot_s,tbs_bits,errors,reported_errors,planned_trials,active_trials,decoded_tbs,active_crc_bler,trials,bler,bler_ci_low,bler_ci_high
+5,16,11.125,25,15000,0.001,1736,199,199,400,400,201,0.4975,400,0.4975,0.4487588886795848,0.5462886727920866

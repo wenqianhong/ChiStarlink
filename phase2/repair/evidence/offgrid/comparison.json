@@ -1,0 +1,23 @@
+{
+  "task": "R03",
+  "case": "target/reference",
+  "sample_time_s": 0,
+  "actual_snr_db": 14.865335647011278,
+  "probe_snr_db": 14.87,
+  "mcs": 20,
+  "prbs": 11,
+  "seed": 8439917,
+  "trials": 300,
+  "errors": 16,
+  "interpolated_bler": 0.05080000000000013,
+  "direct_bler": 0.05333333333333334,
+  "direct_wilson_95": [
+    0.033091912519096905,
+    0.08486914177483029
+  ],
+  "interpolated_endpoint_wilson_bounds": [
+    0.02855288023399223,
+    0.0899777609833434
+  ],
+  "intervals_overlap": true
+}

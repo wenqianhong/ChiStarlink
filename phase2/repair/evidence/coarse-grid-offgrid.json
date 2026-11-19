@@ -1,0 +1,28 @@
+{
+  "task": "R03",
+  "case": "target/reference",
+  "sample_time_s": 0,
+  "actual_snr_db": 14.865335647011278,
+  "probe_snr_db": 14.9,
+  "mcs": 20,
+  "prbs": 11,
+  "seed": 7319225,
+  "trials": 300,
+  "errors": 7,
+  "interpolated_bler": 0.40149999999999986,
+  "direct_bler": 0.023333333333333334,
+  "direct_wilson_95": [
+    0.011347660299125449,
+    0.047371972268274457
+  ],
+  "interpolated_endpoint_wilson_bounds": [
+    0.3655111064073246,
+    0.44120142288899644
+  ],
+  "intervals_overlap": false,
+  "curve_sha256": "9f6cd3dffc5620974dd96cf043c6b7f0f51a85d0ab6f568d9d0454a3790b100d",
+  "coarse_bracket_db": [
+    14.0,
+    16.0
+  ]
+}

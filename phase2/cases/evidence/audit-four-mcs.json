@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "nr_table_sha256": "9f6cd3dffc5620974dd96cf043c6b7f0f51a85d0ab6f568d9d0454a3790b100d",
+  "stages_checked": 40,
+  "radio_samples": 3000,
+  "in_view_sample_checks": 2970
+}

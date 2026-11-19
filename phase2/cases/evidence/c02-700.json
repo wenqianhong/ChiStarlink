@@ -1,0 +1,38 @@
+{
+  "id": "C02",
+  "stage": "main-reference-new",
+  "scheduled_dl_slots_per_second": 700,
+  "base_trace_sha256": "2948d73dd001e57cd6497b83129dfe9b266c88473e2dd4794105d4cc3e2d0642",
+  "base_metrics": {
+    "sent_packets": 1000,
+    "received_packets": 1000,
+    "delivery_ratio": 1.0,
+    "payload_mbps": 1.472,
+    "p95_delay_ms": 25.260566,
+    "outgoing_csv": "0,17,18,1.500000,0,8000000000,1.500000,1.472000,1000,1500000,1472000,",
+    "incoming_csv": "0,17,18,1.500000,0,8000000000,1.500000,1.472000,1000,1500000,1472000,",
+    "receive_events_sha256": "fba50c4be197dac88d9d6b20eaa89de57e0b13890a9e43524dca43ed38d8c266"
+  },
+  "sensitivity": {
+    "passed": false,
+    "checks": {
+      "payload": false,
+      "delivery": false,
+      "delay": false,
+      "power": true,
+      "aperture": true
+    },
+    "metrics": {
+      "sent_packets": 1000,
+      "received_packets": 854,
+      "delivery_ratio": 0.854,
+      "payload_mbps": 1.257088,
+      "p95_delay_ms": 1019.96963,
+      "outgoing_csv": "0,17,18,1.500000,0,8000000000,1.500000,1.472000,1000,1500000,1472000,",
+      "incoming_csv": "0,17,18,1.500000,0,8000000000,1.281000,1.257088,854,1281000,1257088,",
+      "receive_events_sha256": "2ef318498104d58d508387baa3c5b5406f7c839b68921a54f8cfbc9ce9956760"
+    },
+    "samples": 85,
+    "radio_sha256": "74815faa77111fd704c6002267c8faa2cdf6b3c8194a9223f73ed41a082a027a"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "N401",
+  "title": "100 城并发业务下的星间拥塞路由",
+  "origin": "snkas/hypatia paper release v1, traffic matrix load, Kuiper-630",
+  "source_revision": "0ac531c313eba2335f6344b46347140c3a0d4230",
+  "source_sha256": "18d761a28706723b57772e0636fbc40b7d57161f4c54069eede0c8ae740cbe2d",
+  "allowed": ["fstate epoch updates to ISL next hops and their interface indices"],
+  "fixed": ["TLEs","GSL endpoint and interface per flow and epoch","ISLs","10 Mbps link rates","100 packet queues","100-flow traffic schedule","10-second observation","100-ms updates"],
+  "constraints": {"max_extra_isl_hops_per_path":4,"min_total_delivery_gain_pp":5,"min_p10_flow_delivery_gain_pp":2},
+  "observed_at": "native ns-3 UDP receivers",
+  "public_entrypoint": "grade.py",
+  "source_run": "run_loaded_tm_pairing_10_Mbps_for_10s_with_udp"
+}

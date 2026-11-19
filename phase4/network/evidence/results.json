@@ -1,0 +1,543 @@
+{
+  "paper": {
+    "baseline": {
+      "flows": 100,
+      "sent": 833400,
+      "received": 455901,
+      "delivery": 0.5470374370050396,
+      "aggregate_payload_mbps": 536.8690130000002,
+      "bottom_decile_delivery": 0.008399328053755699,
+      "min_delivery": 0.0020398368130549556,
+      "jain_fairness": 0.5975737939239897,
+      "published_identical_flows": 100,
+      "observed_vs_published_max_delta_packets": 0,
+      "packet_csv_sha256": "d050a55ee49df06cdc01868584dce5a4d2b34db3f015c07739ed6fd7e8c405aa",
+      "isl_utilization_sha256": "7e9249b2141543f9a07f04bad3ab0fc0775bfa218990a8d85db889981b3d3bec",
+      "wall_seconds": 23.78,
+      "directed_links": 4624,
+      "carried_traffic": 598,
+      "at_least_95_percent_mean_utilization": 418
+    },
+    "variants": {
+      "static": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": false
+        },
+        "accepted": false,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 621099,
+          "delivery": 0.7452591792656588,
+          "aggregate_payload_mbps": 731.4061800000001,
+          "bottom_decile_delivery": 0.016078713702903768,
+          "min_delivery": 0.00335973122150228,
+          "jain_fairness": 0.7943626008425275,
+          "packet_csv_sha256": "73cab1cde81efd69b0787f8772d806c422b686d5999d31e7363d9a31b26353d8",
+          "isl_utilization_sha256": "a0400ffbbf873ea0af01cd994b977773572afef93a3142b039003f488b18c9c8",
+          "wall_seconds": 62.54,
+          "directed_links": 4624,
+          "carried_traffic": 1049,
+          "at_least_95_percent_mean_utilization": 494
+        },
+        "ranges": {
+          "rerouted_flows": [
+            39,
+            45
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            3,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 26,
+          "example": {
+            "original": [
+              1214,
+              48,
+              47,
+              46,
+              45,
+              44,
+              43,
+              9,
+              1131,
+              1097,
+              1063,
+              1029,
+              995,
+              961,
+              1250
+            ],
+            "submitted": [
+              1214,
+              48,
+              14,
+              1136,
+              1102,
+              1068,
+              1034,
+              1000,
+              966,
+              965,
+              964,
+              963,
+              962,
+              961,
+              1250
+            ]
+          }
+        }
+      },
+      "rotation_1s": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": true
+        },
+        "accepted": true,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 613845,
+          "delivery": 0.7365550755939525,
+          "aggregate_payload_mbps": 722.8638699999998,
+          "bottom_decile_delivery": 0.18682505399568033,
+          "min_delivery": 0.007919366450683946,
+          "jain_fairness": 0.855609399111478,
+          "packet_csv_sha256": "cb56c1e211ba3345ba5e3fd57ab837bfe97a7d273ccd765dd19ab39c1a4afb71",
+          "isl_utilization_sha256": "bee08bf4a0c4b1b9138012919f24d96af90ce95d612b890d24894711e3502056",
+          "wall_seconds": 49.2,
+          "directed_links": 4624,
+          "carried_traffic": 1293,
+          "at_least_95_percent_mean_utilization": 316
+        },
+        "ranges": {
+          "rerouted_flows": [
+            33,
+            43
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            3,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 26,
+          "example": {
+            "original": [
+              1214,
+              48,
+              47,
+              46,
+              45,
+              44,
+              43,
+              9,
+              1131,
+              1097,
+              1063,
+              1029,
+              995,
+              961,
+              1250
+            ],
+            "submitted": [
+              1214,
+              48,
+              14,
+              1136,
+              1102,
+              1068,
+              1034,
+              1000,
+              966,
+              965,
+              964,
+              963,
+              962,
+              961,
+              1250
+            ]
+          }
+        }
+      },
+      "rotation_200ms": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": true
+        },
+        "accepted": true,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 593622,
+          "delivery": 0.7122894168466523,
+          "aggregate_payload_mbps": 699.0492710000003,
+          "bottom_decile_delivery": 0.23062155027597792,
+          "min_delivery": 0.008039356851451884,
+          "jain_fairness": 0.8497093332571082,
+          "packet_csv_sha256": "7052ab44dabc5ec3f7974eccf0421263550b782665afe0119305f609d5d68809",
+          "isl_utilization_sha256": "e42073679223cfee660ac3484e2bb1abc7b120f8b14d637c94745ad20222f796",
+          "wall_seconds": 68.09,
+          "directed_links": 4624,
+          "carried_traffic": 2127,
+          "at_least_95_percent_mean_utilization": 107
+        },
+        "ranges": {
+          "rerouted_flows": [
+            40,
+            55
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            3,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 26,
+          "example": {
+            "original": [
+              1214,
+              48,
+              47,
+              46,
+              45,
+              44,
+              43,
+              9,
+              1131,
+              1097,
+              1063,
+              1029,
+              995,
+              961,
+              1250
+            ],
+            "submitted": [
+              1214,
+              48,
+              14,
+              13,
+              1135,
+              1101,
+              1067,
+              1033,
+              999,
+              998,
+              964,
+              963,
+              962,
+              961,
+              1250
+            ]
+          }
+        }
+      }
+    },
+    "schedule_sha256": "8effd1ffe7b71efff8c9f86f1292bab18a5ff40c46afc7d022dbda585c6b93c6"
+  },
+  "stress": {
+    "baseline": {
+      "flows": 100,
+      "sent": 833400,
+      "received": 401624,
+      "delivery": 0.48191024718022557,
+      "aggregate_payload_mbps": 472.95242500000023,
+      "bottom_decile_delivery": 0.003959683225341973,
+      "min_delivery": 0.0,
+      "jain_fairness": 0.5178668078777533,
+      "packet_csv_sha256": "8dfc6e1cb36c1fd43fba15f6739a4029d733d9c4636fd600c6901931283019c6",
+      "isl_utilization_sha256": "984180ce0394dbdee6586139d60329721ae15ec7cd5514c480980d555516db07",
+      "wall_seconds": 33.64,
+      "directed_links": 4624,
+      "carried_traffic": 573,
+      "at_least_95_percent_mean_utilization": 412
+    },
+    "variants": {
+      "static": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": false
+        },
+        "accepted": false,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 634661,
+          "delivery": 0.7615322774178066,
+          "aggregate_payload_mbps": 747.3767949999999,
+          "bottom_decile_delivery": 0.009239260859131269,
+          "min_delivery": 0.0009599232061435085,
+          "jain_fairness": 0.7932978111754837,
+          "packet_csv_sha256": "7f6ff59a70477cc803584e8482858d5d3a8c63d599c8a39ecd06258ff8094ab6",
+          "isl_utilization_sha256": "11800cb7298d47af93613f225029aa73f94527c54db5d8f32cb404d379b1de15",
+          "wall_seconds": 67.09,
+          "directed_links": 4624,
+          "carried_traffic": 921,
+          "at_least_95_percent_mean_utilization": 679
+        },
+        "ranges": {
+          "rerouted_flows": [
+            41,
+            48
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 16
+        }
+      },
+      "rotation_1s": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": false
+        },
+        "accepted": false,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 620122,
+          "delivery": 0.744086873050156,
+          "aggregate_payload_mbps": 730.2556700000001,
+          "bottom_decile_delivery": 0.011999040076793857,
+          "min_delivery": 0.0009599232061435085,
+          "jain_fairness": 0.8271869785007426,
+          "packet_csv_sha256": "3f68ec0007ae8302b88f7a1874b016331d0f03a2eb3abaaa46eb14de7d72fd31",
+          "isl_utilization_sha256": "d2cbeefcdf50e47bfa68d2855178ac1fb857295e79664766870ce355a68256cc",
+          "wall_seconds": 53.67,
+          "directed_links": 4624,
+          "carried_traffic": 1399,
+          "at_least_95_percent_mean_utilization": 362
+        },
+        "ranges": {
+          "rerouted_flows": [
+            40,
+            48
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 16
+        }
+      },
+      "rotation_200ms": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": true
+        },
+        "accepted": true,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 597461,
+          "delivery": 0.7168958483321334,
+          "aggregate_payload_mbps": 703.5700729999996,
+          "bottom_decile_delivery": 0.026277897768178547,
+          "min_delivery": 0.003959683225341973,
+          "jain_fairness": 0.8341454965607986,
+          "packet_csv_sha256": "826bc1b18664cbfc9d16f52bccfe798004046ce7770ed141d9190c3f87fb8c18",
+          "isl_utilization_sha256": "56a05fabca8772eac903d8defd9074214a91190e7f3ca435c1bd01d3398dcfb2",
+          "wall_seconds": 68.33,
+          "directed_links": 4624,
+          "carried_traffic": 2473,
+          "at_least_95_percent_mean_utilization": 124
+        },
+        "ranges": {
+          "rerouted_flows": [
+            52,
+            70
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 16
+        }
+      }
+    },
+    "schedule_sha256": "99125a7490ec9a98282103467af8c2a7c2b38c83d186caa27aecf9a34521537b"
+  },
+  "extra": {
+    "baseline": {
+      "flows": 100,
+      "sent": 833400,
+      "received": 405172,
+      "delivery": 0.48616750659947205,
+      "aggregate_payload_mbps": 477.130543,
+      "bottom_decile_delivery": 0.004319654427645789,
+      "min_delivery": 0.001919846412287017,
+      "jain_fairness": 0.5277866575457965,
+      "packet_csv_sha256": "ebfe65a95eacfdf181dffe92730053630ba178ff91592f81a1ca92910f917c8a",
+      "isl_utilization_sha256": "a60bd903f8bed1256e985b128dea2dc84698abd6360159106757b55517fde63c",
+      "wall_seconds": 32.08,
+      "directed_links": 4624,
+      "carried_traffic": 574,
+      "at_least_95_percent_mean_utilization": 301
+    },
+    "variants": {
+      "rotation_1s": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": true
+        },
+        "accepted": true,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 585932,
+          "delivery": 0.7030621550275978,
+          "aggregate_payload_mbps": 689.9935209999999,
+          "bottom_decile_delivery": 0.0765538756899448,
+          "min_delivery": 0.002999760019198464,
+          "jain_fairness": 0.8131577947216546,
+          "packet_csv_sha256": "ef9ebcbaf9531a7ae06d51f37d7591e977aa59f577f7dd4c84099c4602cac980",
+          "isl_utilization_sha256": "6b3f76b4186853a865565cc90e5b4f4e4c2b8d8ecb8b982d1350f67e8739edd3",
+          "wall_seconds": 59.25,
+          "directed_links": 4624,
+          "carried_traffic": 1342,
+          "at_least_95_percent_mean_utilization": 245
+        },
+        "ranges": {
+          "rerouted_flows": [
+            40,
+            50
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            5,
+            5
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 24
+        }
+      },
+      "rotation_200ms": {
+        "requirements": {
+          "delivery_gain_ge_5pp": true,
+          "lower_decile_gain_ge_2pp": true
+        },
+        "accepted": true,
+        "reference": {
+          "flows": 100,
+          "sent": 833400,
+          "received": 555332,
+          "delivery": 0.6663450923926086,
+          "aggregate_payload_mbps": 653.9589630000004,
+          "bottom_decile_delivery": 0.02771778257739381,
+          "min_delivery": 0.002999760019198464,
+          "jain_fairness": 0.8193088681477191,
+          "packet_csv_sha256": "3a15d5cb3c86eb9a5325b39a2c3dd7eeb9953b6b91d06a5b2cf5de7a4ff7dd08",
+          "isl_utilization_sha256": "73898533a51bc0301bded2a036a8948e1941d706d1a770c19a733817bba4584d",
+          "wall_seconds": 66.74,
+          "directed_links": 4624,
+          "carried_traffic": 2085,
+          "at_least_95_percent_mean_utilization": 85
+        },
+        "ranges": {
+          "rerouted_flows": [
+            50,
+            65
+          ],
+          "max_extra_isl_hops": [
+            4,
+            4
+          ],
+          "max_concurrent_routes_before": [
+            5,
+            5
+          ],
+          "max_concurrent_routes_after": [
+            2,
+            2
+          ]
+        },
+        "route_audit": {
+          "epochs": 100,
+          "validated_paths": 10000,
+          "observed_attachment_changes": 24
+        }
+      }
+    },
+    "schedule_sha256": "1cce247fcef0e47908da5c21e1cfcd64bee73ee9d52c096d588b0ed5b47462db"
+  }
+}

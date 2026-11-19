@@ -1,0 +1,59 @@
+{
+  "start_utc": "2026-11-19T22:46:55Z",
+  "freeze_utc": "2026-11-19T22:50:35.303713+00:00",
+  "public_native_attempts": 2,
+  "solver_sha256": "fd82baca632ea80adcc445d9dbd9c1e9653fb0b1d931d7fb7e1a3c83df5bc856",
+  "attempts": [
+    {
+      "attempt": 1,
+      "accepted": false,
+      "delivery_gain_pp": 18.98032157427406,
+      "lower_decile_gain_pp": 0.3599712023038158,
+      "validated_paths": 10000
+    },
+    {
+      "attempt": 2,
+      "accepted": true,
+      "delivery_gain_pp": 19.08615310775138,
+      "lower_decile_gain_pp": 2.699784017278618,
+      "validated_paths": 10000
+    }
+  ],
+  "scope": "同会话内由未参与题目设计的子代理独立试做，只读题包材料，未访问留出流量或参考解。首次导入评分器因发包缺 download.py 中止，不计原生评分。",
+  "protocol": "同会话跨组试做；题包与参考评估材料分离，目录隔离依赖试做者遵守范围。求解阶段两次公开评分，随后冻结代码，由评估方在两张未向试做者展示的流量表上运行。",
+  "model": "本次 Codex 会话的子代理。未独立核验模型版本。",
+  "holdout_scores": [
+    {
+      "scenario": "hold",
+      "schedule_sha256": "99125a7490ec9a98282103467af8c2a7c2b38c83d186caa27aecf9a34521537b",
+      "accepted": false,
+      "gates": {
+        "delivery_gain_ge_5pp": true,
+        "lower_decile_gain_ge_2pp": false
+      },
+      "validated_paths": 10000,
+      "delivery_before": 0.48191024718022557,
+      "delivery_after": 0.7633189344852411,
+      "delivery_gain_pp": 28.140868730501555,
+      "bottom_decile_delivery_before": 0.003959683225341973,
+      "bottom_decile_delivery_after": 0.011999040076793857,
+      "bottom_decile_delivery_gain_pp": 0.8039356851451884
+    },
+    {
+      "scenario": "extra",
+      "schedule_sha256": "1cce247fcef0e47908da5c21e1cfcd64bee73ee9d52c096d588b0ed5b47462db",
+      "accepted": true,
+      "gates": {
+        "delivery_gain_ge_5pp": true,
+        "lower_decile_gain_ge_2pp": true
+      },
+      "validated_paths": 10000,
+      "delivery_before": 0.48616750659947205,
+      "delivery_after": 0.6945356371490281,
+      "delivery_gain_pp": 20.836813054955606,
+      "bottom_decile_delivery_before": 0.004319654427645789,
+      "bottom_decile_delivery_after": 0.06455483561315095,
+      "bottom_decile_delivery_gain_pp": 6.023518118550516
+    }
+  ]
+}

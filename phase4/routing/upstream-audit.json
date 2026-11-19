@@ -1,0 +1,34 @@
+{
+  "paired_seeds": 10,
+  "source": "upstream archived events, rescored locally",
+  "means": {
+    "centralized": {
+      "normal": {
+        "delivery_ratio": 0.994644566067068,
+        "average_hop_count": 7.960546920542179
+      },
+      "failure_to_refresh": {
+        "delivery_ratio": 0.4335542572359891,
+        "average_hop_count": 8.00853104694036
+      },
+      "post_refresh": {
+        "delivery_ratio": 0.9990458952075036,
+        "average_hop_count": 7.910429782501605
+      }
+    },
+    "distributed": {
+      "normal": {
+        "delivery_ratio": 0.9999098737946353,
+        "average_hop_count": 8.061311044768306
+      },
+      "failure_to_refresh": {
+        "delivery_ratio": 0.9808654607388186,
+        "average_hop_count": 8.657883368892648
+      },
+      "post_refresh": {
+        "delivery_ratio": 0.9997971105701311,
+        "average_hop_count": 7.902273078735417
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ns3-1517",
+    "status": "reference_system_pass",
+    "source": "https://gitlab.com/nsnam/ns-3-dev/-/merge_requests/1517",
+    "evidence": "evidence/release/summary.json",
+    "scope": "射频子系统集成，ns-3.42，覆盖至 SNR；无用户包"
+  },
+  {
+    "id": "OAI-2893",
+    "status": "candidate",
+    "source": "https://gitlab.eurecom.fr/oai/openairinterface5g/-/merge_requests/2893",
+    "merge": "46a1d2a621ca798df0c1a3aea553fac7013a37d8",
+    "evidence": "evidence/oai-merge-metadata.json"
+  },
+  {
+    "id": "OAI-3194",
+    "status": "candidate",
+    "source": "https://gitlab.eurecom.fr/oai/openairinterface5g/-/merge_requests/3194",
+    "merge": "6d9c2c35b825c51879d83d4d4357978b8d790cf5",
+    "evidence": "evidence/oai-merge-metadata.json"
+  },
+  {
+    "id": "OAI-3398",
+    "status": "candidate",
+    "source": "https://gitlab.eurecom.fr/oai/openairinterface5g/-/merge_requests/3398",
+    "merge": "8bf6d5d7da8c0a8384e4022fd4872e6d3d550921",
+    "evidence": "evidence/oai-merge-metadata.json"
+  },
+  {
+    "id": "OAI-3663",
+    "status": "candidate",
+    "source": "https://gitlab.eurecom.fr/oai/openairinterface5g/-/merge_requests/3663",
+    "merge": "9b0bb594f0c8603e6ab3bfa577e8bef25df18da4",
+    "evidence": "evidence/oai-merge-metadata.json"
+  },
+  {
+    "id": "srsran-geo",
+    "status": "external_ue_required",
+    "source": "https://github.com/srsran/srsRAN_Project/blob/9f3a3da13092b8623332d8362b864400b0176b2e/.gitlab/ci/e2e/zmq_ntn.yml"
+  },
+  {
+    "id": "sns3-lora-handover",
+    "status": "source_review_only",
+    "source": "https://github.com/sns3/sns3-satellite/commit/36063d165df6f6bb99ed7bb1d9260396a441db23"
+  }
+]

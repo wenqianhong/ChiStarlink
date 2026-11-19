@@ -1,0 +1,5 @@
+% beam_id frame_number allocated_symbol_ratio
+0-18_2 0.524639
+0-18_1 0.510205
+0-18_0 0.0202187
+

@@ -1,0 +1,2 @@
+PASS three-gpp-ntn-propagation-loss-model 0.000 s
+  PASS Creating ThreeGppNTNPropagationLossModelTestCase 0.000 s

@@ -1,0 +1,21 @@
+{
+  "samples": 100,
+  "start_s": 0.0,
+  "end_s": 0.99,
+  "snr_range_db": [
+    6.56241,
+    14.5415
+  ],
+  "propagation_gain_range_db": [
+    -210.397,
+    -210.396
+  ],
+  "upstream": "ab4cce021d8f6b2458784704a10af810d3969f0f",
+  "image_id": "sha256:a169d4e4a11f760969bbb726648c16f1afb9999d6b29529a0aa193a48da32447",
+  "archive_sha256": "7d954b0e5ffb5d1d694f6f95177db99c30728bcbb73e11422916a1f8795b182e",
+  "native_suites": [
+    "PASS three-gpp-ntn-propagation-loss-model 0.000 s",
+    "PASS circular-aperture-antenna-test 0.000 s",
+    "PASS geographic-topocentric-test 0.052 s"
+  ]
+}

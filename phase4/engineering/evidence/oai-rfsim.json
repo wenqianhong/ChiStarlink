@@ -1,0 +1,48 @@
+{
+  "gnb": [
+    "./nr-softmodem",
+    "-O",
+    "/logs/kepler/gnb-loopback.conf",
+    "--rfsim",
+    "--channelmod.use_orbital",
+    "1"
+  ],
+  "ue": [
+    "./nr-uesoftmodem",
+    "-O",
+    "/opt/oai/ci-scripts/conf_files/nrue.uicc.ntn-leo.conf",
+    "--rfsim",
+    "--rfsimulator.[0].serveraddr",
+    "127.0.0.1",
+    "--time-sync-I",
+    "0.1",
+    "--ntn-initial-time-drift",
+    "-46",
+    "--initial-fo",
+    "57340",
+    "--cont-fo-comp",
+    "3"
+  ],
+  "return_codes": [
+    -9,
+    -15
+  ],
+  "timeout_s": 45,
+  "orbital": true,
+  "core_attached": false,
+  "revision": "cb98db5b5d2d95c86673821bfc9fa1be9e225b97",
+  "stage": "LEO channel allocation only; 5GC absent; no UE IP / RRC reestablishment / user plane observed",
+  "signals": {
+    "ue": [
+      "[OCM]    Model rfsimu_channel_enB0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1",
+      "[OCM]    Model rfsimu_channel_ue0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1",
+      "[HW]     propagation delay 20.000000 ms, 153600 samples"
+    ],
+    "gnb": [
+      "[SCTP]   Connect failed: Connection refused",
+      "[OCM]    Model rfsimu_channel_enB0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1",
+      "[OCM]    Model rfsimu_channel_ue0 type SAT_LEO_TRANS allocated from config file, list modellist_rfsimu_1",
+      "[HW]     propagation delay 20.000000 ms, 153600 samples"
+    ]
+  }
+}

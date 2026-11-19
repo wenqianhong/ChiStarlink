@@ -1,0 +1,8 @@
+PASS sat-lora-regenerative-test 17.225 s
+  PASS Test regenerative satellite lorawan with acks sent in first window. 2.028 s
+  PASS Test regenerative satellite lorawan with acks sent in second window. 2.099 s
+  PASS Test regenerative satellite lorawan with acks sent out of reception windows. 2.049 s
+  PASS Test regenerative satellite lorawan with acks sent out of reception windows and no retransmission needed. 2.100 s
+  PASS Test regenerativesatellite lorawan with CBR traffic. 2.142 s
+  PASS Test constellation satellite lorawan with acks sent in first window. 2.359 s
+  PASS Test constellation satellite lorawan with handovers. 4.442 s

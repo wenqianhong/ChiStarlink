@@ -1,0 +1,3 @@
+% beam_id error_rate
+1-18 0.0409836
+

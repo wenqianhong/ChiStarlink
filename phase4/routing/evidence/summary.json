@@ -1,0 +1,216 @@
+{
+  "centralized": {
+    "native_default": {
+      "sha256": "68c38fb74cdadac17be33babfdc5ce67f85c4fc87963d1c26d3cdc5170d744e3",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.05,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 192.55,
+      "phases": {
+        "normal": {
+          "generated": 9987,
+          "delivered": 9940,
+          "delivery_ratio": 0.9952938820466607,
+          "average_hop_count": 7.961871227364185
+        },
+        "failure_to_refresh": {
+          "generated": 4502,
+          "delivered": 1936,
+          "delivery_ratio": 0.4300310972900933,
+          "average_hop_count": 8.125516528925619
+        },
+        "post_refresh": {
+          "generated": 4256,
+          "delivered": 4251,
+          "delivery_ratio": 0.9988251879699248,
+          "average_hop_count": 7.980475182310045
+        }
+      }
+    },
+    "full_window": {
+      "sha256": "673875dbf3551c88f9861c85dea6d946aa24970197f1ddb13a93486e37be12a4",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.1,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 199.95,
+      "phases": {
+        "normal": {
+          "generated": 9984,
+          "delivered": 9938,
+          "delivery_ratio": 0.9953926282051282,
+          "average_hop_count": 7.966894747434091
+        },
+        "failure_to_refresh": {
+          "generated": 4506,
+          "delivered": 1944,
+          "delivery_ratio": 0.43142476697736354,
+          "average_hop_count": 8.118827160493828
+        },
+        "post_refresh": {
+          "generated": 5000,
+          "delivered": 4998,
+          "delivery_ratio": 0.9996,
+          "average_hop_count": 7.963185274109644
+        }
+      }
+    },
+    "upstream_same_seed": {
+      "sha256": "e85daf03bb8bb9d03c188e1f9a581a7bee97071241a33741ede229bf40fb57b4",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.15,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 199.2,
+      "phases": {
+        "normal": {
+          "generated": 9991,
+          "delivered": 9947,
+          "delivery_ratio": 0.9955960364327895,
+          "average_hop_count": 7.962400723836333
+        },
+        "failure_to_refresh": {
+          "generated": 4500,
+          "delivered": 1941,
+          "delivery_ratio": 0.43133333333333335,
+          "average_hop_count": 8.110767645543534
+        },
+        "post_refresh": {
+          "generated": 4929,
+          "delivered": 4910,
+          "delivery_ratio": 0.9961452627307771,
+          "average_hop_count": 7.959266802443992
+        }
+      }
+    }
+  },
+  "distributed": {
+    "native_default": {
+      "sha256": "071b536632c1bcda6fd7692cc04104c40f0d4bfb5548164f5bdd51dae9f6cf5b",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.05,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 192.6,
+      "phases": {
+        "normal": {
+          "generated": 9988,
+          "delivered": 9988,
+          "delivery_ratio": 1.0,
+          "average_hop_count": 8.066479775730878
+        },
+        "failure_to_refresh": {
+          "generated": 4499,
+          "delivered": 4411,
+          "delivery_ratio": 0.980440097799511,
+          "average_hop_count": 8.698707776014508
+        },
+        "post_refresh": {
+          "generated": 4267,
+          "delivered": 4263,
+          "delivery_ratio": 0.9990625732364659,
+          "average_hop_count": 7.98569082805536
+        }
+      }
+    },
+    "full_window": {
+      "sha256": "0bb97c5b2e0a6fe317c08812f0d4194a05648eadf82cb87df3052e628e08e127",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.05,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 199.9,
+      "phases": {
+        "normal": {
+          "generated": 9991,
+          "delivered": 9991,
+          "delivery_ratio": 1.0,
+          "average_hop_count": 8.060754679211291
+        },
+        "failure_to_refresh": {
+          "generated": 4501,
+          "delivered": 4417,
+          "delivery_ratio": 0.9813374805598756,
+          "average_hop_count": 8.694136291600634
+        },
+        "post_refresh": {
+          "generated": 4996,
+          "delivered": 4996,
+          "delivery_ratio": 1.0,
+          "average_hop_count": 7.94435548438751
+        }
+      }
+    },
+    "upstream_same_seed": {
+      "sha256": "26849a71184e9dc051a8fcfd82fd69b7968d08092303666ead1f15efecd38d82",
+      "pairs": 100,
+      "directions": [
+        "A_to_B",
+        "B_to_A"
+      ],
+      "failures": [
+        {
+          "time_s": 105.1,
+          "event": "satellite 377 set_dead at configured failure time 105.0"
+        }
+      ],
+      "last_generation_s": 199.25,
+      "phases": {
+        "normal": {
+          "generated": 9991,
+          "delivered": 9991,
+          "delivery_ratio": 1.0,
+          "average_hop_count": 8.059553598238415
+        },
+        "failure_to_refresh": {
+          "generated": 4498,
+          "delivered": 4412,
+          "delivery_ratio": 0.9808803912850156,
+          "average_hop_count": 8.692429737080689
+        },
+        "post_refresh": {
+          "generated": 4924,
+          "delivered": 4918,
+          "delivery_ratio": 0.9987814784727863,
+          "average_hop_count": 7.942252948352989
+        }
+      }
+    }
+  }
+}

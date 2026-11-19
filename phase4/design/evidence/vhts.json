@@ -1,0 +1,72 @@
+{
+  "global_forward_application_kbps": {
+    "0": 763.594
+  },
+  "per-gw_forward_application_kbps": {
+    "3": 254.673,
+    "2": 254.699,
+    "1": 254.621
+  },
+  "per-ut_forward_application_kbps": {
+    "6": 127.323,
+    "5": 127.366,
+    "4": 127.34,
+    "3": 127.393,
+    "2": 127.339,
+    "1": 127.339
+  },
+  "http_page_load_s": 3.6111,
+  "per_segment_sinr_db": {
+    "fwd-feeder": {
+      "samples": 36743,
+      "min": 14.0896,
+      "median": 14.5186,
+      "max": 14.822
+    },
+    "fwd-user": {
+      "samples": 45474,
+      "min": 10.8295,
+      "median": 12.384,
+      "max": 12.7937
+    },
+    "rtn-user": {
+      "samples": 1661,
+      "min": 15.3088,
+      "median": 15.657,
+      "max": 15.7742
+    },
+    "rtn-feeder": {
+      "samples": 1596,
+      "min": 9.86423,
+      "median": 11.2575,
+      "max": 11.5393
+    }
+  },
+  "request_type_counts": {
+    "RBDC": 129
+  },
+  "requesting_node_ids": [
+    6,
+    7,
+    12,
+    13,
+    18,
+    19
+  ],
+  "grant_bytes_per_event": {
+    "samples": 1422,
+    "min": 646.0,
+    "median": 646.0,
+    "max": 1976.0
+  },
+  "native_global_grant_scalar_bytes": 800.539,
+  "sha256": {
+    "stat-global-capacity-request-scatter-0.txt": "c0bdb272fd2784a708841508b36fd0a922b4943cb560403cf407fc60fd1e4a69",
+    "stat-global-fwd-app-throughput-scalar.txt": "986f74fff04c46be3f834ae3896fa0689f26f49a885ff8887ba7967ee77013cf",
+    "stat-global-fwd-feeder-link-sinr-scatter-0.txt": "7c28ade1b46d9f973e2be6ff9931070cf54607014897777986f314268b37d5e7",
+    "stat-global-fwd-user-link-sinr-scatter-0.txt": "63acc7eec0db955d96a7c03049609db8e05bae40e36e316a957613930026831d",
+    "stat-global-resources-granted-scatter-0.txt": "16710988884f2d6396381bf5628d55596631351160487e035910de805eec9888",
+    "stat-global-rtn-feeder-link-sinr-scatter-0.txt": "42e91e4b0d43fa463c5dbc6b2f726d592f3f161a8acaf87ce1645ceac7edd48f",
+    "stat-global-rtn-user-link-sinr-scatter-0.txt": "ce823c09708c477cb3f992195bcad0aa16eb9cfcab43a3d67bc8f10854c48825"
+  }
+}

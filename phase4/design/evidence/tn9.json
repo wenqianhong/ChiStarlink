@@ -1,0 +1,86 @@
+{
+  "64": {
+    "stat-global-rtn-app-throughput-scalar.txt": {
+      "sha256": "5d069b83d63c7a2e446cd23dde2d4b84628ba6a8111b61e579e7ac8aeb971610",
+      "rows": 1,
+      "values": {
+        "0": 1013.32
+      }
+    },
+    "stat-per-beam-feeder-slotted-aloha-collision-scalar.txt": {
+      "sha256": "1f230577a9f674b4e4c0603d8ea7395ebe54e5957805903b6f413d4957435267",
+      "rows": 1,
+      "values": {
+        "1-18": 0.0227137
+      }
+    },
+    "stat-per-beam-feeder-slotted-aloha-error-scalar.txt": {
+      "sha256": "85546968c0a06bda53d5e7523b4dc959d74aa3d6f6d553e4d5d35ae7f661e83d",
+      "rows": 1,
+      "values": {
+        "1-18": 0.00717274
+      }
+    },
+    "stat-per-beam-frame-symbol-load-scalar.txt": {
+      "sha256": "0d6be74e24b8682816e1c7d7387208e243986eab962dde2fcfddbbb22169d9ce",
+      "rows": 3,
+      "values": {
+        "0-18_2": 0.524639,
+        "0-18_1": 0.510205,
+        "0-18_0": 0.0202187
+      }
+    },
+    "stat-per-beam-capacity-request-scatter-1018.txt": {
+      "sha256": "ae6f81ddc810b95d0fe39517f0953f7df68e30fbb753968fa6c0abc5fc440b2a",
+      "rows": 31693,
+      "rbdc_rows": 31693
+    },
+    "stat-per-beam-resources-granted-scatter.dat": {
+      "sha256": "bca331e983ba289476d16281af6498f53b5e8a5d3e937e25da250cc29515a477",
+      "rows": 191808,
+      "positive_grant_rows": 140319
+    }
+  },
+  "220": {
+    "stat-global-rtn-app-throughput-scalar.txt": {
+      "sha256": "2271faca56ae3c05907222aef7f13329231ac46b8f3e3ae64a4dae773d5e6a66",
+      "rows": 1,
+      "values": {
+        "0": 3414.43
+      }
+    },
+    "stat-per-beam-feeder-slotted-aloha-collision-scalar.txt": {
+      "sha256": "1acf66c5d5a584addac6eb29f92e6e9276bf84405f5da82e437f5da1efbd9d49",
+      "rows": 1,
+      "values": {
+        "1-18": 0.0985968
+      }
+    },
+    "stat-per-beam-feeder-slotted-aloha-error-scalar.txt": {
+      "sha256": "f45a240aa278f6eb4d9f7ecd96536d865ddd80cb91728ebcc76d77de0622a65e",
+      "rows": 1,
+      "values": {
+        "1-18": 0.0409836
+      }
+    },
+    "stat-per-beam-frame-symbol-load-scalar.txt": {
+      "sha256": "246572dc0476404d9b6da6854b85dfe2a40d97a243bffc4723a88a943810c0fe",
+      "rows": 3,
+      "values": {
+        "0-18_2": 0.944755,
+        "0-18_1": 0.974923,
+        "0-18_0": 0.959314
+      }
+    },
+    "stat-per-beam-capacity-request-scatter-1018.txt": {
+      "sha256": "f7eb44d05a571e9643481204a5ec6d43e0441c964db15aa7b57010c688517d0b",
+      "rows": 110465,
+      "rbdc_rows": 110465
+    },
+    "stat-per-beam-resources-granted-scatter.dat": {
+      "sha256": "36e80a5c78a995f8f50679761f0f0ecea83a969453a8b9af23aedb935ded935c",
+      "rows": 1037080,
+      "positive_grant_rows": 465088
+    }
+  }
+}

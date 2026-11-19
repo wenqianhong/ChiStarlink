@@ -1,0 +1,3 @@
+PASS sat-handover-test 16.684 s
+  PASS This case tests that a application throughputs PerEntity are correct. 6.817 s
+  PASS This case tests that communication remains after GW handover. 9.865 s

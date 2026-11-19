@@ -1,0 +1,51 @@
+{
+  "scope": "git tracked working files + non-ignored phase3/design public files; no .git, private or .private directory",
+  "case": "D105",
+  "public_input_sha256": "a9601887a140b89a56d21a05ee0bd9dfdfaec2fbe8d1eb5a3e9dd98ad408c415",
+  "published_initial_exact_match": true,
+  "fixture_includes_reference": false,
+  "fixture_includes_holdout_inputs": false,
+  "candidate_source": "chosen from the public catalogue, independently of the private reference",
+  "checks": [
+    {
+      "case": "D105",
+      "test": "initial",
+      "exit_code": 1,
+      "passed": false,
+      "payload_mbps": 0.854153846154,
+      "delivery_ratio": 0.854153846154,
+      "p95_delay_ms": 51.594757,
+      "radio_sha256": "7d8c98d131edc0fe0213d777f311d94b32275425d405fe297e4f278772e109ed"
+    },
+    {
+      "case": "D105",
+      "test": "candidate",
+      "exit_code": 0,
+      "passed": true,
+      "payload_mbps": 1,
+      "delivery_ratio": 1,
+      "p95_delay_ms": 5.648779,
+      "radio_sha256": "7c11b179413f290894bb252b53f97d8e40676df03494cc46214abf5d4270fa4a"
+    },
+    {
+      "case": "D105",
+      "test": "regression",
+      "exit_code": 0,
+      "passed": true,
+      "payload_mbps": 0.150153846154,
+      "delivery_ratio": 1,
+      "p95_delay_ms": 5.720947,
+      "radio_sha256": "0f063cb2e9e057c5dee36c42349ec39e23cfb3b434fde088f013b9b0ba0294c6"
+    },
+    {
+      "case": "D105",
+      "test": "out_of_catalog",
+      "exit_code": 1
+    },
+    {
+      "case": "D103",
+      "test": "boolean_power",
+      "exit_code": 1
+    }
+  ]
+}

@@ -1,0 +1,1484 @@
+[
+  {
+    "id": "C101",
+    "parent": "C01",
+    "title": "忙时扩流至 1.4 Mbps",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 500000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 0.62,
+      "min_payload_mbps": 0.583,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C102",
+    "parent": "C01",
+    "title": "忙时扩流至 2.23 Mbps",
+    "initial": {
+      "tx_w": 2.8,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.25,
+      "min_payload_mbps": 1.175,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 2.23,
+      "min_payload_mbps": 2.096,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C103",
+    "parent": "C01",
+    "title": "忙时扩流至 3 Mbps",
+    "initial": {
+      "tx_w": 4,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.8,
+      "min_payload_mbps": 1.692,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 3.0,
+      "min_payload_mbps": 2.82,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C104",
+    "parent": "C01",
+    "title": "频谱归还后在 1 MHz 内维持业务",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 2000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.36,
+      "min_payload_mbps": 1.278,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.36,
+      "min_payload_mbps": 1.278,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 1000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C105",
+    "parent": "C01",
+    "title": "频谱归还后在 0.5 MHz 内维持业务",
+    "initial": {
+      "tx_w": 3,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 0.7,
+      "min_payload_mbps": 0.658,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 1000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 0.7,
+      "min_payload_mbps": 0.658,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 500000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C106",
+    "parent": "C01",
+    "title": "频谱归还后在 1.5 MHz 内维持业务",
+    "initial": {
+      "tx_w": 4,
+      "bandwidth_hz": 2000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 2.05,
+      "min_payload_mbps": 1.927,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 2.05,
+      "min_payload_mbps": 1.927,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 1500000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C107",
+    "parent": "C02",
+    "title": "替换为 11 cm 便携终端",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "rx_diameter_m": 0.22
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "rx_diameter_m": 0.11
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C108",
+    "parent": "C02",
+    "title": "替换为 12 cm 便携终端",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "rx_diameter_m": 0.24
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "rx_diameter_m": 0.12
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C109",
+    "parent": "C02",
+    "title": "替换为 13 cm 便携终端",
+    "initial": {
+      "tx_w": 2.1,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "rx_diameter_m": 0.26
+      },
+      "offered_mbps": 1.6,
+      "min_payload_mbps": 1.504,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "rx_diameter_m": 0.13
+      },
+      "offered_mbps": 1.6,
+      "min_payload_mbps": 1.504,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C110",
+    "parent": "C02",
+    "title": "馈线总损耗升至 5.5 dB",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.17
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "feeder_loss_db": 1.5
+      },
+      "offered_mbps": 1.05,
+      "min_payload_mbps": 0.987,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "feeder_loss_db": 5.5
+      },
+      "offered_mbps": 1.05,
+      "min_payload_mbps": 0.987,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C111",
+    "parent": "C02",
+    "title": "馈线总损耗升至 6.5 dB",
+    "initial": {
+      "tx_w": 2.5,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.18
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "feeder_loss_db": 1.5
+      },
+      "offered_mbps": 1.22,
+      "min_payload_mbps": 1.147,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "feeder_loss_db": 6.5
+      },
+      "offered_mbps": 1.22,
+      "min_payload_mbps": 1.147,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C112",
+    "parent": "C02",
+    "title": "馈线总损耗升至 6.75 dB",
+    "initial": {
+      "tx_w": 3,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.19
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "feeder_loss_db": 1.5
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "feeder_loss_db": 6.75
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C113",
+    "parent": "C02",
+    "title": "保障 4° 指向偏差下的持续下行",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "pointing_deg": 0.2
+      },
+      "offered_mbps": 1.49,
+      "min_payload_mbps": 1.401,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "pointing_deg": 4
+      },
+      "offered_mbps": 1.49,
+      "min_payload_mbps": 1.401,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C114",
+    "parent": "C02",
+    "title": "保障 5° 指向偏差下的持续下行",
+    "initial": {
+      "tx_w": 2.4,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "pointing_deg": 0.2
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "pointing_deg": 5
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C115",
+    "parent": "C02",
+    "title": "保障 6° 指向偏差下的持续下行",
+    "initial": {
+      "tx_w": 3,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "pointing_deg": 0.2
+      },
+      "offered_mbps": 1.64,
+      "min_payload_mbps": 1.542,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "pointing_deg": 6
+      },
+      "offered_mbps": 1.64,
+      "min_payload_mbps": 1.542,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C116",
+    "parent": "C02",
+    "title": "接收系统噪温升至 580 K",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "noise_k": 290
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "noise_k": 580
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C117",
+    "parent": "C02",
+    "title": "接收系统噪温升至 725 K",
+    "initial": {
+      "tx_w": 2.2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "noise_k": 290
+      },
+      "offered_mbps": 1.53,
+      "min_payload_mbps": 1.438,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "noise_k": 725
+      },
+      "offered_mbps": 1.53,
+      "min_payload_mbps": 1.438,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C118",
+    "parent": "C02",
+    "title": "接收系统噪温升至 870 K",
+    "initial": {
+      "tx_w": 2.5,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w"
+    ],
+    "old": {
+      "radio": {
+        "noise_k": 290
+      },
+      "offered_mbps": 1.55,
+      "min_payload_mbps": 1.457,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "noise_k": 870
+      },
+      "offered_mbps": 1.55,
+      "min_payload_mbps": 1.457,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C119",
+    "parent": "C03",
+    "title": "星上射频功率收紧至 1 W",
+    "initial": {
+      "tx_w": 4,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.16
+    },
+    "editable": [
+      "tx_w",
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.36,
+      "min_payload_mbps": 1.278,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 4,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.36,
+      "min_payload_mbps": 1.278,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 1,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C120",
+    "parent": "C03",
+    "title": "星上射频功率收紧至 1.5 W",
+    "initial": {
+      "tx_w": 5,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.18
+    },
+    "editable": [
+      "tx_w",
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.53,
+      "min_payload_mbps": 1.438,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 5,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.53,
+      "min_payload_mbps": 1.438,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 1.5,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C121",
+    "parent": "C03",
+    "title": "星上射频功率收紧至 2 W",
+    "initial": {
+      "tx_w": 6,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.19
+    },
+    "editable": [
+      "tx_w",
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.66,
+      "min_payload_mbps": 1.56,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 6,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.66,
+      "min_payload_mbps": 1.56,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 2,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C122",
+    "parent": "C01",
+    "title": "共享资源每秒仅分配 700 个完整时隙",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w",
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {
+        "dl_fraction": 1
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "dl_fraction": 0.7
+      },
+      "offered_mbps": 1.4,
+      "min_payload_mbps": 1.316,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C123",
+    "parent": "C01",
+    "title": "共享资源每秒仅分配 550 个完整时隙",
+    "initial": {
+      "tx_w": 2.5,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w",
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {
+        "dl_fraction": 1
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "dl_fraction": 0.55
+      },
+      "offered_mbps": 1.5,
+      "min_payload_mbps": 1.41,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C124",
+    "parent": "C01",
+    "title": "共享资源每秒仅分配 450 个完整时隙",
+    "initial": {
+      "tx_w": 3,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "tx_w",
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {
+        "dl_fraction": 1
+      },
+      "offered_mbps": 1.65,
+      "min_payload_mbps": 1.551,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "dl_fraction": 0.45
+      },
+      "offered_mbps": 1.65,
+      "min_payload_mbps": 1.551,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C125",
+    "parent": "C01",
+    "title": "兼容最高 MCS 12 的接收机",
+    "initial": {
+      "tx_w": 3,
+      "bandwidth_hz": 500000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 0.7,
+      "min_payload_mbps": 0.658,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "mcs": [
+          4,
+          8,
+          12
+        ]
+      },
+      "offered_mbps": 0.7,
+      "min_payload_mbps": 0.658,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C126",
+    "parent": "C01",
+    "title": "兼容最高 MCS 8 的接收机",
+    "initial": {
+      "tx_w": 2.8,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.2,
+      "min_payload_mbps": 1.128,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "mcs": [
+          4,
+          8
+        ]
+      },
+      "offered_mbps": 1.2,
+      "min_payload_mbps": 1.128,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C127",
+    "parent": "C01",
+    "title": "兼容最高 MCS 4 的接收机",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 0.72,
+      "min_payload_mbps": 0.677,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "mcs": [
+          4
+        ]
+      },
+      "offered_mbps": 0.72,
+      "min_payload_mbps": 0.677,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C128",
+    "parent": "C01",
+    "title": "将 0.6 Mbps 业务的 P95 时延压至 24 ms",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 500000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz",
+      "tx_w"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 0.6,
+      "min_payload_mbps": 0.564,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 0.6,
+      "min_payload_mbps": 0.564,
+      "min_delivery": 0.98,
+      "max_p95_ms": 24,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C129",
+    "parent": "C01",
+    "title": "将 1.25 Mbps 业务的 P95 时延压至 24 ms",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz",
+      "tx_w"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.25,
+      "min_payload_mbps": 1.175,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.25,
+      "min_payload_mbps": 1.175,
+      "min_delivery": 0.98,
+      "max_p95_ms": 24,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C130",
+    "parent": "C01",
+    "title": "将 1.1 Mbps 业务的 P95 时延压至 23.2 ms",
+    "initial": {
+      "tx_w": 1.4,
+      "bandwidth_hz": 2000000.0,
+      "rx_diameter_m": 0.22
+    },
+    "editable": [
+      "bandwidth_hz",
+      "tx_w"
+    ],
+    "old": {
+      "radio": {},
+      "offered_mbps": 1.1,
+      "min_payload_mbps": 1.034,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {},
+      "offered_mbps": 1.1,
+      "min_payload_mbps": 1.034,
+      "min_delivery": 0.98,
+      "max_p95_ms": 23.2,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C131",
+    "parent": "C02",
+    "title": "天线效率降为 32% 后保持业务",
+    "initial": {
+      "tx_w": 2,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.2
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "efficiency": 0.6
+      },
+      "offered_mbps": 1.28,
+      "min_payload_mbps": 1.203,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "efficiency": 0.32
+      },
+      "offered_mbps": 1.28,
+      "min_payload_mbps": 1.203,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C132",
+    "parent": "C02",
+    "title": "天线效率降为 25% 后保持业务",
+    "initial": {
+      "tx_w": 2.5,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.19
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "efficiency": 0.6
+      },
+      "offered_mbps": 1.42,
+      "min_payload_mbps": 1.335,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "efficiency": 0.25
+      },
+      "offered_mbps": 1.42,
+      "min_payload_mbps": 1.335,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  },
+  {
+    "id": "C133",
+    "parent": "C02",
+    "title": "天线效率降为 20% 后保持业务",
+    "initial": {
+      "tx_w": 2.7,
+      "bandwidth_hz": 1000000,
+      "rx_diameter_m": 0.19
+    },
+    "editable": [
+      "rx_diameter_m"
+    ],
+    "old": {
+      "radio": {
+        "efficiency": 0.6
+      },
+      "offered_mbps": 1.45,
+      "min_payload_mbps": 1.363,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "new": {
+      "radio": {
+        "efficiency": 0.2
+      },
+      "offered_mbps": 1.45,
+      "min_payload_mbps": 1.363,
+      "min_delivery": 0.98,
+      "max_p95_ms": 100,
+      "limits": {
+        "max_tx_w": 12.0,
+        "max_bandwidth_hz": 2000000.0,
+        "max_rx_diameter_m": 0.35
+      }
+    },
+    "main": {
+      "start_s": 0,
+      "duration_s": 8,
+      "noise_offset_k": 0
+    }
+  }
+]

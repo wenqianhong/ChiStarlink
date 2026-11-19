@@ -119,6 +119,8 @@ def load_fixture(working):
 
 
 def configure_link(network, config, end_ns, reused_radio=None, dl_share=1.):
+    if not math.isfinite(dl_share) or not 0 <= dl_share <= 1:
+        raise ValueError("Scheduled downlink fraction must lie in [0, 1]")
     dynamic=network/hypatia.ROUTES
     station=[float(x) for x in hypatia.rows(network/"ground_stations.txt")[1][2:5]]
     tle=(network/"tles.txt").read_text().splitlines()[1:]
@@ -148,6 +150,8 @@ def configure_link(network, config, end_ns, reused_radio=None, dl_share=1.):
         for base, row in zip(samples,trace):
             if base["time_s"]!=row["time_s"] or base["route"]!=row["route"] or tuple(base["hop"])!=tuple(row["hop"]):
                 raise ValueError("Reuse trace does not fit native topology")
+    if reused_radio is not None or dl_share != 1.:
+        for row in trace:
             row["full_downlink_rate_bps"]=row["rate_bps"]
             row["scheduled_dl_fraction"]=dl_share
             row["rate_bps"]=round(row["rate_bps"]*dl_share)

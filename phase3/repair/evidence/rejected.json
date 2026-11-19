@@ -1,0 +1,10 @@
+[
+  {
+    "candidate": "R111 初版",
+    "title": "馈线插损被重复计入",
+    "rejected": true,
+    "reason": "留出场景初始工程仍满足全部业务门限；接口断言失败不足以证明可观察业务退化。保留该拒绝记录，另采不同的射频端口映射故障。",
+    "observed_matrix": "5/6",
+    "judgment_sha256": "3d2ae051d597f6d7b91971215bcbf7462e0723e74ddb255c05db2a474ddfd46f"
+  }
+]

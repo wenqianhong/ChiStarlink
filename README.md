@@ -1,5 +1,7 @@
 # ChiStarlink
 
+[浏览第三阶段 100 道派生题](reports/phase-3.html)。基于第二阶段 10 道母题新增链路设计 34 道、故障修复 33 道、需求变更 33 道。每题列出题干、可编辑输入、各层约束与逐次实测。公开重放入口见[设计](phase3/design/README.md)、[修复](phase3/repair/README.md)和[变更](phase3/regression/README.md)。
+
 面向低轨卫星通信的可执行工程任务集。第一阶段在开源仿真链上验证 10 个派生任务，覆盖链路设计 4 题、跨层故障修复 3 题、需求变更回归 3 题。
 
 第二阶段在同一批任务上改用 ITU 晴空气体衰减与 OAI 原生 NR PDSCH 标定。最终 58 次验收均符合预期。C02 在每秒 700 个下行时隙的额外实验中未满足吞吐与时延目标。[第二阶段 HTML 报告](reports/phase-2.html) · [OAI 标定与复验](phase2/oai/README.md) · [设计及变更结果](phase2/cases/evidence/nr-runs.json) · [修复结果](phase2/repair/evidence/summary.json)

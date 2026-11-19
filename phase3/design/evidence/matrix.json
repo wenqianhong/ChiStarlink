@@ -1,0 +1,5172 @@
+{
+  "accepted_cases": 34,
+  "filtered_cases": [],
+  "scored_runs": 170,
+  "radio_samples_audited": 3720,
+  "oai_curve_sha256": "3a8cc5db5719600f81c8b1c861461888e639615f851a7e5195b4ac2813d22452",
+  "public_inputs_sha256": {
+    "phase3/design/specs.json": "a9601887a140b89a56d21a05ee0bd9dfdfaec2fbe8d1eb5a3e9dd98ad408c415",
+    "phase3/design/replay.py": "6f56154978e40ec0e45be95336c415e4ddb16ae7688c0ae3a8534a291bfb21b0",
+    "phase3/design/verify.py": "e9d36932ae668f6d18aa24c09f919f8467cc90bb0239b307e5c4ed0c25a2d8dc",
+    "tasks/design/tasks.json": "c0043893a360f1955410c5000198d73f4b7f1f74471ca8d90ac45394948c5e77",
+    "phase2/cases/replay.py": "a16c2cda187b2d40e72a71443d9f2c7a1b349beb419318c4f4b1ce7ac1c05f25",
+    "phase2/cases/worker.py": "7e749de77dd085cdb4d9ce045c95ffe7e55985c90f2133f9e8dd2cfd988bab37",
+    "phase2/cases/radio.py": "0139566a7b797bbbd17667cc2ad3b0fbcf064bd21567eeaa63fe625f75089c81",
+    "phase2/cases/nr.py": "454dfd8726b987402f3a609d56bc952b5b42b6311827607eaf3fcd7de107a254",
+    "phase2/propagation/gas.py": "299ef6bbe4c1b8855bebfc6a8aecbea659705e5f58a685a8eaee53193979d7c7",
+    "tasks/regression/network.py": "2fb360d934502bb45fa4a4ff6d660f5efdefa7483e001f547e04c335d1926559",
+    "tasks/regression/service-link.cc": "3c26db415550fcb6cd3d5934f2bb63235f53231d3057c4cf124832cd3955f535",
+    "phase2/oai/curves.csv": "3a8cc5db5719600f81c8b1c861461888e639615f851a7e5195b4ac2813d22452"
+  },
+  "images": {
+    "chistarlink-itur:phase2": "sha256:5a01f133dab4798a8a2f2da71bad3a6fbc7567007b13fe45ff08062c1842f9e3",
+    "chistarlink-hypatia:0ac531c": "sha256:0d64f2c83a0a7c1227142b1755f65ecd220020341adc6af4d92a4b7bf90acb52"
+  },
+  "families": {
+    "区域汇聚站接入": 4,
+    "过境时隙预约": 4,
+    "峰值功率与调制组合": 4,
+    "低噪声接收前端选型": 4,
+    "指向精度与主瓣增益": 4,
+    "受配额限制的 PRB 分配": 4,
+    "馈线改造与定向发射": 4,
+    "下行调度份额与频谱": 3,
+    "终端能力限制下的编码选择": 3
+  },
+  "tasks": [
+    {
+      "id": "D101",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.1,
+            "sent_packets": 2476,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 18,
+          "radio_sha256": "9489e5aaa5191171051cb01ea92a053b45face3c940fc40ec81298e60f434dee",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.1,
+            "sent_packets": 2476,
+            "received_packets": 2475,
+            "delivery_ratio": 0.999596122779,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.672606
+          },
+          "samples": 18,
+          "radio_sha256": "84ea6156922ffb07c712a24555005665892253665c776be7d34d79248ce4c95f",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.1,
+            "sent_packets": 2476,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 18,
+          "radio_sha256": "03a2c74a4b0da81d3786b78fa35e4495598838ecf19748ce4216e3d71f910c7e",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.1,
+            "sent_packets": 2476,
+            "received_packets": 2475,
+            "delivery_ratio": 0.999596122779,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.630343
+          },
+          "samples": 18,
+          "radio_sha256": "3039b256cf3453f014a85f56e10dadaf452c57584d291b49d0b4c6aff95ee098",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.590891
+          },
+          "samples": 18,
+          "radio_sha256": "d78e3f7229958313fb02462aeb2730434773cdc70f0f75e6e6620dddaf908e54",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D102",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1,
+            "sent_packets": 2500,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 20,
+          "radio_sha256": "18605d9e5e4a6b40213446b239545323ec7219de4fc6fb06d628493e5ba4de2a",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1,
+            "sent_packets": 2500,
+            "received_packets": 2500,
+            "delivery_ratio": 1,
+            "payload_mbps": 1,
+            "p95_delay_ms": 5.651811
+          },
+          "samples": 20,
+          "radio_sha256": "49272f232218654021b946aad855b44b1c6ae06f7c929532465a6cdddd1097d6",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1,
+            "sent_packets": 2500,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 20,
+          "radio_sha256": "5687659293c4305c1f3c30e71e415287a623a0951c1c194a5e441679313a7cf9",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1,
+            "sent_packets": 2500,
+            "received_packets": 2500,
+            "delivery_ratio": 1,
+            "payload_mbps": 1,
+            "p95_delay_ms": 5.693836
+          },
+          "samples": 20,
+          "radio_sha256": "1596ae143bbefd27f0835259e14ac6d647ac180ad85f94f16a97581d0089117f",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.631386
+          },
+          "samples": 20,
+          "radio_sha256": "5ad3e4529f2397ff0069c617fe29f60969c568911439b06ae1ec229df89f0e97",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D103",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.95,
+            "sent_packets": 2613,
+            "received_packets": 1089,
+            "delivery_ratio": 0.416762342135,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.49333
+          },
+          "samples": 22,
+          "radio_sha256": "b25d551ae21356239c863d6b9e60bdb1c0c6731fe53e7b0395958567de438060",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.95,
+            "sent_packets": 2613,
+            "received_packets": 2612,
+            "delivery_ratio": 0.999617298125,
+            "payload_mbps": 0.949818181818,
+            "p95_delay_ms": 5.699166
+          },
+          "samples": 22,
+          "radio_sha256": "f233ea1d2f08d9501af8c9779722df8b929aea280b659cc5b62d7d0a7b0d50a8",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.95,
+            "sent_packets": 2613,
+            "received_packets": 1089,
+            "delivery_ratio": 0.416762342135,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.449592
+          },
+          "samples": 22,
+          "radio_sha256": "66152e72e86b4a4155dac0d2d90e78fd25ff51501690c22a9370bda2330e8c42",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.95,
+            "sent_packets": 2613,
+            "received_packets": 2612,
+            "delivery_ratio": 0.999617298125,
+            "payload_mbps": 0.949818181818,
+            "p95_delay_ms": 5.597269
+          },
+          "samples": 22,
+          "radio_sha256": "d405955462e96ef5c5d038f7be8ee2f17bf15b0a8a6f1f1b51f319a9d44aca77",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.60048
+          },
+          "samples": 22,
+          "radio_sha256": "dd3a37eb2d5058bbbc5861cf3c2f4656efcec17d2fdd7e422efecfdfe09f9ea8",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D104",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.95,
+            "sent_packets": 2851,
+            "received_packets": 1178,
+            "delivery_ratio": 0.413188354963,
+            "payload_mbps": 0.392666666667,
+            "p95_delay_ms": 103.303342
+          },
+          "samples": 24,
+          "radio_sha256": "3e935e55bc0c7729b85e0471bd2b2d83707606009501ae676c9fb5d610eae50d",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.95,
+            "sent_packets": 2851,
+            "received_packets": 2850,
+            "delivery_ratio": 0.999649245879,
+            "payload_mbps": 0.95,
+            "p95_delay_ms": 5.690863
+          },
+          "samples": 24,
+          "radio_sha256": "076316ca1b5730b32aa071898d8185d881e25103bf3be4805e2afb56ff556f1a",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.95,
+            "sent_packets": 2851,
+            "received_packets": 1179,
+            "delivery_ratio": 0.413539109085,
+            "payload_mbps": 0.393,
+            "p95_delay_ms": 103.232077
+          },
+          "samples": 24,
+          "radio_sha256": "05aa10daedf7d1a90deb4e0b473665a8c752052fd0b0a3f7a659e9a02e7d9cae",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.95,
+            "sent_packets": 2851,
+            "received_packets": 2850,
+            "delivery_ratio": 0.999649245879,
+            "payload_mbps": 0.95,
+            "p95_delay_ms": 5.678569
+          },
+          "samples": 24,
+          "radio_sha256": "b18f7795eeff665235d8171d7c516df1f56fe457c741a7e2a5f30a622e2cad3b",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.668819
+          },
+          "samples": 24,
+          "radio_sha256": "23867004e5b38e9a3d2e87b65e8026557ec5516752971812dceb962719978aca",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D105",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1,
+            "sent_packets": 3250,
+            "received_packets": 2776,
+            "delivery_ratio": 0.854153846154,
+            "payload_mbps": 0.854153846154,
+            "p95_delay_ms": 51.594757
+          },
+          "samples": 26,
+          "radio_sha256": "7d8c98d131edc0fe0213d777f311d94b32275425d405fe297e4f278772e109ed",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1,
+            "sent_packets": 3250,
+            "received_packets": 3250,
+            "delivery_ratio": 1,
+            "payload_mbps": 1,
+            "p95_delay_ms": 5.63204
+          },
+          "samples": 26,
+          "radio_sha256": "9d1928d77c8613d97b557eab46d9ad49a17805a9647b0970e99f626a835d908b",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1,
+            "sent_packets": 3250,
+            "received_packets": 2718,
+            "delivery_ratio": 0.836307692308,
+            "payload_mbps": 0.836307692308,
+            "p95_delay_ms": 51.396383
+          },
+          "samples": 26,
+          "radio_sha256": "a1a77b37e089bb062390e1e0b8df23caf6ee3472445f1e4a63777b764fcc5383",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1,
+            "sent_packets": 3250,
+            "received_packets": 3250,
+            "delivery_ratio": 1,
+            "payload_mbps": 1,
+            "p95_delay_ms": 5.624057
+          },
+          "samples": 26,
+          "radio_sha256": "db041704131f9fe89429f2cec9d17b0494b420318f52ac59dcff11fab6f48e38",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 5.717183
+          },
+          "samples": 26,
+          "radio_sha256": "d8784b044650789068e0d9f13f24cfbe8c9066b0ea25bf987920d82adefd28f2",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D106",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.35,
+            "sent_packets": 3038,
+            "received_packets": 332,
+            "delivery_ratio": 0.109282422646,
+            "payload_mbps": 0.147555555556,
+            "p95_delay_ms": 272.714594
+          },
+          "samples": 18,
+          "radio_sha256": "eeee6c94faee5b2723e586ee205f4e78f797fb4ba8681d2f16beff42fe2010df",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.35,
+            "sent_packets": 3038,
+            "received_packets": 3037,
+            "delivery_ratio": 0.999670836076,
+            "payload_mbps": 1.34977777778,
+            "p95_delay_ms": 4.381432
+          },
+          "samples": 18,
+          "radio_sha256": "668882ed5b2e9202eacd1508800080a558a4dcdde179d6a419e6aa676f7889a4",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.35,
+            "sent_packets": 3038,
+            "received_packets": 332,
+            "delivery_ratio": 0.109282422646,
+            "payload_mbps": 0.147555555556,
+            "p95_delay_ms": 272.643891
+          },
+          "samples": 18,
+          "radio_sha256": "e7c9c34464f3e0917b8f693b690606fa4494d9fd7f5bf9249783123dbf6f6d75",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.35,
+            "sent_packets": 3038,
+            "received_packets": 3037,
+            "delivery_ratio": 0.999670836076,
+            "payload_mbps": 1.34977777778,
+            "p95_delay_ms": 4.284131
+          },
+          "samples": 18,
+          "radio_sha256": "153e7c99500bea806428fab2eb1801695656a1ed7b5ad9c2bb925c08d2b5762e",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 4.261756
+          },
+          "samples": 18,
+          "radio_sha256": "d8535b9b91d5f319309847c936d5888054dac03febdf6eb3e476a9561ff0daa7",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D107",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.1,
+            "sent_packets": 2751,
+            "received_packets": 1436,
+            "delivery_ratio": 0.521992002908,
+            "payload_mbps": 0.5744,
+            "p95_delay_ms": 100.462759
+          },
+          "samples": 20,
+          "radio_sha256": "afe62ce924a15d84fe91ec21003316388961a18ca5390f622247ff7c46406cb7",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.1,
+            "sent_packets": 2751,
+            "received_packets": 2750,
+            "delivery_ratio": 0.99963649582,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.82109
+          },
+          "samples": 20,
+          "radio_sha256": "166dea7db9c8354f985314bb8432d2f9fcfde69d23e1f90156cb093f84664f96",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.1,
+            "sent_packets": 2751,
+            "received_packets": 1525,
+            "delivery_ratio": 0.554343874955,
+            "payload_mbps": 0.61,
+            "p95_delay_ms": 97.096199
+          },
+          "samples": 20,
+          "radio_sha256": "4e7ddf55015ba95b0715c69894e8cbb266816f2c245a15dc268dc00d487869c9",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.1,
+            "sent_packets": 2751,
+            "received_packets": 2750,
+            "delivery_ratio": 0.99963649582,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.794467
+          },
+          "samples": 20,
+          "radio_sha256": "ec5fcbbce5c2d4c1da8ea99b5d9ad31a13653b82c484937cad6d76f88928fc5f",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.622843
+          },
+          "samples": 20,
+          "radio_sha256": "a1aa7dabaa16cce8d43a09b9b6613bf750beb419d22882d6f775147d6e1ac13c",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D108",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.05,
+            "sent_packets": 2888,
+            "received_packets": 1263,
+            "delivery_ratio": 0.437326869806,
+            "payload_mbps": 0.459272727273,
+            "p95_delay_ms": 88.594971
+          },
+          "samples": 22,
+          "radio_sha256": "07594a09e4e7b9c9d7f022516fd1b075705e8dd65cdc4dc7d32a026bbce0f6c5",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.05,
+            "sent_packets": 2888,
+            "received_packets": 2887,
+            "delivery_ratio": 0.999653739612,
+            "payload_mbps": 1.04981818182,
+            "p95_delay_ms": 5.298943
+          },
+          "samples": 22,
+          "radio_sha256": "9e9ef02c0b00962a01fa1ed16f6207dc6d4c01e7fdd5f4b25cec736f9b9bc805",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.05,
+            "sent_packets": 2888,
+            "received_packets": 1262,
+            "delivery_ratio": 0.436980609418,
+            "payload_mbps": 0.458909090909,
+            "p95_delay_ms": 88.708122
+          },
+          "samples": 22,
+          "radio_sha256": "5a69941269a6a1ddea47bdc0206dca8575c9590faf9e8b2cb758654cbd3e06df",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.05,
+            "sent_packets": 2888,
+            "received_packets": 2887,
+            "delivery_ratio": 0.999653739612,
+            "payload_mbps": 1.04981818182,
+            "p95_delay_ms": 5.376875
+          },
+          "samples": 22,
+          "radio_sha256": "085932ba182040aa032e889571c8b10d113b7ec9950af32d76d3da79b58be224",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.287083
+          },
+          "samples": 22,
+          "radio_sha256": "33da04beb3af6ec3d5922ec45223445ce5a3ffb37535792d881b8b61fd26d381",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D109",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.1,
+            "sent_packets": 3301,
+            "received_packets": 1188,
+            "delivery_ratio": 0.359890942139,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.648373
+          },
+          "samples": 24,
+          "radio_sha256": "ec2de1c34be4d840071627770e5c849ce309c859bc48b04dfe7d633e6f1f1346",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.1,
+            "sent_packets": 3301,
+            "received_packets": 3300,
+            "delivery_ratio": 0.999697061497,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.837925
+          },
+          "samples": 24,
+          "radio_sha256": "e585d49943191c1fda2a73c87a4da4ea7471129bc858a98e644595ef4c126fe5",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.1,
+            "sent_packets": 3301,
+            "received_packets": 1188,
+            "delivery_ratio": 0.359890942139,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.602669
+          },
+          "samples": 24,
+          "radio_sha256": "0e90b0c56030645a6864c8dd400bfdda330a6b156b54713ee757b2194c39c392",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.1,
+            "sent_packets": 3301,
+            "received_packets": 3300,
+            "delivery_ratio": 0.999697061497,
+            "payload_mbps": 1.1,
+            "p95_delay_ms": 5.77824
+          },
+          "samples": 24,
+          "radio_sha256": "436c79321df71e1c66acd4855f391605b6748883c07081635d97adceef633834",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.651619
+          },
+          "samples": 24,
+          "radio_sha256": "74dc9b50f05b3c96a45b70490957d53280242e1ac9629794497fbcb11044dcff",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D110",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.165,
+            "sent_packets": 3787,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 26,
+          "radio_sha256": "f0f18234c47975d5f8914c6f678898bd584917f1c9587a16c08ced5f359e930f",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.165,
+            "sent_packets": 3787,
+            "received_packets": 3786,
+            "delivery_ratio": 0.999735938738,
+            "payload_mbps": 1.16492307692,
+            "p95_delay_ms": 5.73094
+          },
+          "samples": 26,
+          "radio_sha256": "eaeada58caf1cf7d23ae21ad5f21ca41caba7e6769b0f294ec1c7322a9f965f7",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.165,
+            "sent_packets": 3787,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 26,
+          "radio_sha256": "3d107207b56ff809d181c1d646f63990aba1853e9eb260c51f35679a252158ad",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.165,
+            "sent_packets": 3787,
+            "received_packets": 3786,
+            "delivery_ratio": 0.999735938738,
+            "payload_mbps": 1.16492307692,
+            "p95_delay_ms": 5.811335
+          },
+          "samples": 26,
+          "radio_sha256": "7a7845af40740619319500d8d7bdd56bd13446716a3de76da0c6480355783eef",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 5.596038
+          },
+          "samples": 26,
+          "radio_sha256": "4093b417a5dab2fd3a281688ef14ab526102ef749c0b5afa6b09cf9074c764a1",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D111",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.065,
+            "sent_packets": 2397,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 18,
+          "radio_sha256": "ab6103174e3fd8c37e5a7315574e3a43c8172117821f27f01ee9cf2c2b4aa570",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.065,
+            "sent_packets": 2397,
+            "received_packets": 2396,
+            "delivery_ratio": 0.999582811848,
+            "payload_mbps": 1.06488888889,
+            "p95_delay_ms": 5.665557
+          },
+          "samples": 18,
+          "radio_sha256": "0213c0952dd46e8bc1ad0d438f428de8227a070c5cd77b7cba9e220d75a00e00",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.065,
+            "sent_packets": 2397,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 18,
+          "radio_sha256": "ad64579e0ea43327f1d9f8fe5542f63d40f04c3e484354b7dc72be451cc68ccd",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.065,
+            "sent_packets": 2397,
+            "received_packets": 2396,
+            "delivery_ratio": 0.999582811848,
+            "payload_mbps": 1.06488888889,
+            "p95_delay_ms": 5.610526
+          },
+          "samples": 18,
+          "radio_sha256": "5eb83dbc08a1c544a960eb3123a387782cbbc8cecdca9993b8bba2003728ec49",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.60559
+          },
+          "samples": 18,
+          "radio_sha256": "b32c5c28d82cd7b9fabe5fb249c10b2c893b094581db0f0d672df4451c0c05cd",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D112",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.015,
+            "sent_packets": 2538,
+            "received_packets": 990,
+            "delivery_ratio": 0.390070921986,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.517537
+          },
+          "samples": 20,
+          "radio_sha256": "e7708bd37363488074e029c2503e9ae789833b088751d92f17f8e44828a594db",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.015,
+            "sent_packets": 2538,
+            "received_packets": 2537,
+            "delivery_ratio": 0.999605988968,
+            "payload_mbps": 1.0148,
+            "p95_delay_ms": 5.699678
+          },
+          "samples": 20,
+          "radio_sha256": "72f88a6af65cf078994a65beaf3cda00309277ea9e13e83d6b3465a47912dfeb",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.015,
+            "sent_packets": 2538,
+            "received_packets": 990,
+            "delivery_ratio": 0.390070921986,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.524947
+          },
+          "samples": 20,
+          "radio_sha256": "3f70292f442e07fa706d42314018f9c84c91c0bc738eaffd143bf5bae31ba1bb",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.015,
+            "sent_packets": 2538,
+            "received_packets": 2537,
+            "delivery_ratio": 0.999605988968,
+            "payload_mbps": 1.0148,
+            "p95_delay_ms": 5.687928
+          },
+          "samples": 20,
+          "radio_sha256": "6196ae265a44aa002f9056eb8dcb3f46f83020094ad4a4600f3c86345f4d8977",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.635505
+          },
+          "samples": 20,
+          "radio_sha256": "b13503fd10d41f3b660eeb32905655c3064ac1b3546ff21b26722a580db541c1",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D113",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.015,
+            "sent_packets": 2792,
+            "received_packets": 1082,
+            "delivery_ratio": 0.387535816619,
+            "payload_mbps": 0.393454545455,
+            "p95_delay_ms": 103.123496
+          },
+          "samples": 22,
+          "radio_sha256": "6fe97842e7b5d3f5e784378ac8dd6612b7960c8ac0038be108ed0aacebca613d",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.015,
+            "sent_packets": 2792,
+            "received_packets": 2791,
+            "delivery_ratio": 0.999641833811,
+            "payload_mbps": 1.01490909091,
+            "p95_delay_ms": 5.663081
+          },
+          "samples": 22,
+          "radio_sha256": "b2c0d596300077baa59d2664deefe7c89d002ac9919763e4385479af33746937",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.015,
+            "sent_packets": 2792,
+            "received_packets": 1081,
+            "delivery_ratio": 0.38717765043,
+            "payload_mbps": 0.393090909091,
+            "p95_delay_ms": 103.251674
+          },
+          "samples": 22,
+          "radio_sha256": "8340e4817f816ec9a05110a284dd21f4a4a07bed7662374db0382ad3bc5226a3",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.015,
+            "sent_packets": 2792,
+            "received_packets": 2791,
+            "delivery_ratio": 0.999641833811,
+            "payload_mbps": 1.01490909091,
+            "p95_delay_ms": 5.665068
+          },
+          "samples": 22,
+          "radio_sha256": "1617083045ecca5b19ee83ff52de6c16dcfa6a35d6a64870794e1b6dacd55954",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.643084
+          },
+          "samples": 22,
+          "radio_sha256": "e749ca4ada5da1739b704868b1e19de4abbcf6cc5cebb53c620ecac5bcfe73b3",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D114",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.065,
+            "sent_packets": 3196,
+            "received_packets": 2353,
+            "delivery_ratio": 0.736232790989,
+            "payload_mbps": 0.784333333333,
+            "p95_delay_ms": 52.5248
+          },
+          "samples": 24,
+          "radio_sha256": "9ba4487dd1cc8a1487b9a16cf0570bc05a74fe1a21ae89368d34f5679f7b719d",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.065,
+            "sent_packets": 3196,
+            "received_packets": 3195,
+            "delivery_ratio": 0.999687108886,
+            "payload_mbps": 1.065,
+            "p95_delay_ms": 5.703111
+          },
+          "samples": 24,
+          "radio_sha256": "a24256b994d08ce5dbcd164e878f6a9ed3c22f9f4cadff0c448966909c682821",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.065,
+            "sent_packets": 3196,
+            "received_packets": 2352,
+            "delivery_ratio": 0.735919899875,
+            "payload_mbps": 0.784,
+            "p95_delay_ms": 52.648112
+          },
+          "samples": 24,
+          "radio_sha256": "f98331caae58c8ec62f503067bc0541830b463e0751d42a7fbad4a85fbae1b3a",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.065,
+            "sent_packets": 3196,
+            "received_packets": 3195,
+            "delivery_ratio": 0.999687108886,
+            "payload_mbps": 1.065,
+            "p95_delay_ms": 5.841909
+          },
+          "samples": 24,
+          "radio_sha256": "f18a9640b7a456bdd5f9a727bd5d42bf3e3e6123fd0492205299ed37b41d069f",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.605502
+          },
+          "samples": 24,
+          "radio_sha256": "beac9efc184b94ea53c30b8a2bfe7b05fd01e08af1d0b4f98a27314947252f67",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D115",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.415,
+            "sent_packets": 4599,
+            "received_packets": 479,
+            "delivery_ratio": 0.104153076756,
+            "payload_mbps": 0.147384615385,
+            "p95_delay_ms": 272.712916
+          },
+          "samples": 26,
+          "radio_sha256": "d2a500941a65e4908572d15d5eefbab6cbc6a62efe87d97f2d9594f6daf26a25",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.415,
+            "sent_packets": 4599,
+            "received_packets": 4599,
+            "delivery_ratio": 1,
+            "payload_mbps": 1.41507692308,
+            "p95_delay_ms": 4.358037
+          },
+          "samples": 26,
+          "radio_sha256": "5f2e5229e92eadc46f7bbcc5da34651445e175c011a2d9e3b06e2f04bcc4a02e",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.415,
+            "sent_packets": 4599,
+            "received_packets": 479,
+            "delivery_ratio": 0.104153076756,
+            "payload_mbps": 0.147384615385,
+            "p95_delay_ms": 272.699062
+          },
+          "samples": 26,
+          "radio_sha256": "8fe1298437d35f162c4ef99a799017bbf7a2c0bd30f59963bddfb0d942c4386b",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.415,
+            "sent_packets": 4599,
+            "received_packets": 4598,
+            "delivery_ratio": 0.999782561426,
+            "payload_mbps": 1.41476923077,
+            "p95_delay_ms": 4.309105
+          },
+          "samples": 26,
+          "radio_sha256": "49bd0c6654a0a219afc3714c85cfe36ab2b6cb70313a6d1ffead3f69e07f4d76",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 4.280687
+          },
+          "samples": 26,
+          "radio_sha256": "c4a8c7f2141089ff9b37084b84344175d140f0254253588640ee654d7881860b",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D116",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.165,
+            "sent_packets": 2622,
+            "received_packets": 1364,
+            "delivery_ratio": 0.520213577422,
+            "payload_mbps": 0.606222222222,
+            "p95_delay_ms": 89.024793
+          },
+          "samples": 18,
+          "radio_sha256": "13450de38cdf50ebcfca085c673cc75351aea461cfc51db0670b03fbc49803ea",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.165,
+            "sent_packets": 2622,
+            "received_packets": 2621,
+            "delivery_ratio": 0.999618611747,
+            "payload_mbps": 1.16488888889,
+            "p95_delay_ms": 5.720842
+          },
+          "samples": 18,
+          "radio_sha256": "853fdd27ceadf9f393b18c1658703fed135810452a9034418bf3093a7dc21a2b",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.165,
+            "sent_packets": 2622,
+            "received_packets": 891,
+            "delivery_ratio": 0.339816933638,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.729862
+          },
+          "samples": 18,
+          "radio_sha256": "857951a7390caadbf33d2ff9b2ab7c1967843728930cde58acfe9b5e31be461d",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.165,
+            "sent_packets": 2622,
+            "received_packets": 2621,
+            "delivery_ratio": 0.999618611747,
+            "payload_mbps": 1.16488888889,
+            "p95_delay_ms": 5.840407
+          },
+          "samples": 18,
+          "radio_sha256": "c9c09e71d1811cd184dcb06ff3f374c9ba53668a8a4933df5f3add73af76af89",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.608039
+          },
+          "samples": 18,
+          "radio_sha256": "8397c02b4d9fb97aadfd3f26c66f76604ae810cf387daf6130dadf707b0d1a12",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D117",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.115,
+            "sent_packets": 2788,
+            "received_packets": 1147,
+            "delivery_ratio": 0.411406025825,
+            "payload_mbps": 0.4588,
+            "p95_delay_ms": 88.67111
+          },
+          "samples": 20,
+          "radio_sha256": "6a540cfed31e37e50981dc53185e01c6133c862aa90d22a9444a1d702d8ec9f8",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.115,
+            "sent_packets": 2788,
+            "received_packets": 2787,
+            "delivery_ratio": 0.999641319943,
+            "payload_mbps": 1.1148,
+            "p95_delay_ms": 5.374779
+          },
+          "samples": 20,
+          "radio_sha256": "1eb8c716add9698c2de510c772fed32d7b62077bc67b5d67fc73e745f30e899d",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.115,
+            "sent_packets": 2788,
+            "received_packets": 1148,
+            "delivery_ratio": 0.411764705882,
+            "payload_mbps": 0.4592,
+            "p95_delay_ms": 88.593587
+          },
+          "samples": 20,
+          "radio_sha256": "ce34f574547a7c42754fee1e90df553e52b9411a6d5fe32a9cc46b0170fce303",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.115,
+            "sent_packets": 2788,
+            "received_packets": 2787,
+            "delivery_ratio": 0.999641319943,
+            "payload_mbps": 1.1148,
+            "p95_delay_ms": 5.260826
+          },
+          "samples": 20,
+          "radio_sha256": "c92985b779e1b4a0f35c5a581fb82559544e43470511f82180e0e7d774b487f5",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.245719
+          },
+          "samples": 20,
+          "radio_sha256": "7ff28f8ba4e8c3b201398cb42d255f88e5aeb009625d679c09414dc30530266e",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D118",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.165,
+            "sent_packets": 3204,
+            "received_packets": 1089,
+            "delivery_ratio": 0.339887640449,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.518186
+          },
+          "samples": 22,
+          "radio_sha256": "9fce8a12ea1af81f9d1a90377a875564bf8194996610b63496fc904e6d5c2e9a",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.165,
+            "sent_packets": 3204,
+            "received_packets": 3203,
+            "delivery_ratio": 0.999687890137,
+            "payload_mbps": 1.16472727273,
+            "p95_delay_ms": 5.64837
+          },
+          "samples": 22,
+          "radio_sha256": "cf6e0ac5f9ee7caba74b04db8b1c9af039317a35ced2158dc51f7378f0429da2",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.165,
+            "sent_packets": 3204,
+            "received_packets": 1089,
+            "delivery_ratio": 0.339887640449,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.722693
+          },
+          "samples": 22,
+          "radio_sha256": "591cc6724e8bddd6f5a2c543336a00e3dfcd3a45e3ab48cec502ea935f97ef42",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.165,
+            "sent_packets": 3204,
+            "received_packets": 3203,
+            "delivery_ratio": 0.999687890137,
+            "payload_mbps": 1.16472727273,
+            "p95_delay_ms": 5.848485
+          },
+          "samples": 22,
+          "radio_sha256": "3d14ff161aaa4b04a9e015afb50416d649f8486c6de0f009940f80e07dcf0d31",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.663828
+          },
+          "samples": 22,
+          "radio_sha256": "e9b0ba76116b22b87ea893bf50e9ea308a09ac9708ec9dece5f9c9b030ca2b5f",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D119",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.23,
+            "sent_packets": 3691,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 24,
+          "radio_sha256": "49f9545a9c4d1a323df6df3c827a0cf6a489b9eb1403515b95ee86e1987d6cda",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.23,
+            "sent_packets": 3691,
+            "received_packets": 3690,
+            "delivery_ratio": 0.999729070713,
+            "payload_mbps": 1.23,
+            "p95_delay_ms": 5.627724
+          },
+          "samples": 24,
+          "radio_sha256": "2cacf0c3bd90e280d805e4dcb71bc2a49ce9a7399b3d1b309f757f1074599ed0",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.23,
+            "sent_packets": 3691,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 24,
+          "radio_sha256": "78c30efd1650ebfd3cafb396881c412f88a4299c72e7b54fff61ab31254f5564",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.23,
+            "sent_packets": 3691,
+            "received_packets": 3690,
+            "delivery_ratio": 0.999729070713,
+            "payload_mbps": 1.23,
+            "p95_delay_ms": 5.663713
+          },
+          "samples": 24,
+          "radio_sha256": "c398a950811f191080477fd73c8f973159838d7c07ff4cbec4bffcfcef553006",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.732469
+          },
+          "samples": 24,
+          "radio_sha256": "70c28dd6aebc488acb147cc4a93d6a2d6356f9c85776e09396d4676497d6c73f",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D120",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.13,
+            "sent_packets": 3673,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 26,
+          "radio_sha256": "dc1a4f7a7e35a5b6e4c8fa1de65bd715f6cbb4b87b475101bc3af3b27697fe71",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.13,
+            "sent_packets": 3673,
+            "received_packets": 3672,
+            "delivery_ratio": 0.999727742989,
+            "payload_mbps": 1.12984615385,
+            "p95_delay_ms": 5.733653
+          },
+          "samples": 26,
+          "radio_sha256": "3b45810f94394105235fe310849e7a55f6053be6554c00e9a71747ad353cd72c",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.13,
+            "sent_packets": 3673,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 26,
+          "radio_sha256": "9cbc5cd56fe2b7f3ffb95e744d0e961f89a53f7c3918590428668b94ab21e072",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.13,
+            "sent_packets": 3673,
+            "received_packets": 3672,
+            "delivery_ratio": 0.999727742989,
+            "payload_mbps": 1.12984615385,
+            "p95_delay_ms": 5.764395
+          },
+          "samples": 26,
+          "radio_sha256": "491a87bdbcc2f7c30f9ce106bedf95f497483bb930f2244442d21450a9467f50",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 5.693016
+          },
+          "samples": 26,
+          "radio_sha256": "e7b1dffcbb53495dc478e39c0638d2cb5b370f6e3490345d355a3aae79518d5d",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D121",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.08,
+            "sent_packets": 2431,
+            "received_packets": 891,
+            "delivery_ratio": 0.366515837104,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.503007
+          },
+          "samples": 18,
+          "radio_sha256": "10c239f5bfcf7d1abbf6f89619eee08cd7a549206f4b5665e12d1490d0088f96",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.08,
+            "sent_packets": 2431,
+            "received_packets": 2430,
+            "delivery_ratio": 0.999588646647,
+            "payload_mbps": 1.08,
+            "p95_delay_ms": 5.651989
+          },
+          "samples": 18,
+          "radio_sha256": "554b5a3b2a9650eb6f9ef2542d915f97d0b1eda84bd9579ff1ee05fddfbee864",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.08,
+            "sent_packets": 2431,
+            "received_packets": 882,
+            "delivery_ratio": 0.362813656931,
+            "payload_mbps": 0.392,
+            "p95_delay_ms": 103.741046
+          },
+          "samples": 18,
+          "radio_sha256": "ac0008d5772d062d038e947024a560a5f7ebe5180bbca7b5cc7ba37a656c051a",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.08,
+            "sent_packets": 2431,
+            "received_packets": 2430,
+            "delivery_ratio": 0.999588646647,
+            "payload_mbps": 1.08,
+            "p95_delay_ms": 5.812699
+          },
+          "samples": 18,
+          "radio_sha256": "4ce10d2cae831df2de76e6577162b9b60eabb988f8af6e879207fd1ae3d2fc88",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.623407
+          },
+          "samples": 18,
+          "radio_sha256": "927155b3e4e372b0d9dcba6a1cb6af4ce24da1bcab7fbdc30970a58a82ac0385",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D122",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.08,
+            "sent_packets": 2701,
+            "received_packets": 972,
+            "delivery_ratio": 0.359866716031,
+            "payload_mbps": 0.3888,
+            "p95_delay_ms": 104.537006
+          },
+          "samples": 20,
+          "radio_sha256": "8d01846bc1eb2562b46e9b55f0df1efa425e31b2140a002cd34fe6084069ff9b",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.08,
+            "sent_packets": 2701,
+            "received_packets": 2700,
+            "delivery_ratio": 0.999629766753,
+            "payload_mbps": 1.08,
+            "p95_delay_ms": 5.815862
+          },
+          "samples": 20,
+          "radio_sha256": "a024e9663ebddd1e6d08e5b19c41fac32d6d6c987a7bacf21c591d296077a4fc",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.08,
+            "sent_packets": 2701,
+            "received_packets": 962,
+            "delivery_ratio": 0.356164383562,
+            "payload_mbps": 0.3848,
+            "p95_delay_ms": 105.649496
+          },
+          "samples": 20,
+          "radio_sha256": "e9ee5f4ee44fd03f97025d3ad46425a0b731e2cf0a4f852b113cb76ec0fee53d",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.08,
+            "sent_packets": 2701,
+            "received_packets": 2700,
+            "delivery_ratio": 0.999629766753,
+            "payload_mbps": 1.08,
+            "p95_delay_ms": 5.887152
+          },
+          "samples": 20,
+          "radio_sha256": "cf683b85dd3b28b705b41b371727f303b5b08e74df4b83d88043563bb19ebe87",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.623974
+          },
+          "samples": 20,
+          "radio_sha256": "9b9d3557b2742260939ae642036e0b3618dfca1263a65f40b37d944e94616cc1",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D123",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.13,
+            "sent_packets": 3108,
+            "received_packets": 1970,
+            "delivery_ratio": 0.633848133848,
+            "payload_mbps": 0.716363636364,
+            "p95_delay_ms": 66.144674
+          },
+          "samples": 22,
+          "radio_sha256": "4e8b561eb3f241a5a1203ff77d691dda7039ab186cc1aeba4c13d53155f27a25",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.13,
+            "sent_packets": 3108,
+            "received_packets": 3107,
+            "delivery_ratio": 0.999678249678,
+            "payload_mbps": 1.12981818182,
+            "p95_delay_ms": 5.801142
+          },
+          "samples": 22,
+          "radio_sha256": "a9ff4ebc9ab2dadc4994af13d674b91039bb93b0e41f0eabc0a209059e0cb9c6",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.13,
+            "sent_packets": 3108,
+            "received_packets": 2122,
+            "delivery_ratio": 0.682754182754,
+            "payload_mbps": 0.771636363636,
+            "p95_delay_ms": 53.553469
+          },
+          "samples": 22,
+          "radio_sha256": "8e33b73a5937ab52b6dfdcfe63394c08e5c0712ad681fe83867788b160e4d72a",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.13,
+            "sent_packets": 3108,
+            "received_packets": 3107,
+            "delivery_ratio": 0.999678249678,
+            "payload_mbps": 1.12981818182,
+            "p95_delay_ms": 5.669534
+          },
+          "samples": 22,
+          "radio_sha256": "1904ac01177b52397df87b1d716a43e24e94a5852ba7a0210bf485285932250c",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.603186
+          },
+          "samples": 22,
+          "radio_sha256": "5ea780dd16cfe03c4ef024c1753665dc700b02cc76de38048c02ef5eb6250b4e",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D124",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.48,
+            "sent_packets": 4441,
+            "received_packets": 442,
+            "delivery_ratio": 0.0995271335285,
+            "payload_mbps": 0.147333333333,
+            "p95_delay_ms": 272.649327
+          },
+          "samples": 24,
+          "radio_sha256": "4c338a03c513f19ae73837d071eaa6bb7c2ac6610add512e2856cf7c166234ec",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.48,
+            "sent_packets": 4441,
+            "received_packets": 4440,
+            "delivery_ratio": 0.99977482549,
+            "payload_mbps": 1.48,
+            "p95_delay_ms": 4.310706
+          },
+          "samples": 24,
+          "radio_sha256": "d2a9218ec272dce5a0271843d2ec9d59510179d501623675bc02c162adb671fe",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.48,
+            "sent_packets": 4441,
+            "received_packets": 442,
+            "delivery_ratio": 0.0995271335285,
+            "payload_mbps": 0.147333333333,
+            "p95_delay_ms": 272.612945
+          },
+          "samples": 24,
+          "radio_sha256": "3a43b43de869cf143c2fc0af49db70e8908667e35fa9f0f1b436caf784955763",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.48,
+            "sent_packets": 4441,
+            "received_packets": 4440,
+            "delivery_ratio": 0.99977482549,
+            "payload_mbps": 1.48,
+            "p95_delay_ms": 4.239808
+          },
+          "samples": 24,
+          "radio_sha256": "2a951d32ac4cfa02b80b2b5c67b9c7d1ee2ceebe64c2440c5cd50ea0229f246b",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 4.268713
+          },
+          "samples": 24,
+          "radio_sha256": "8510412bd4ba514402a3bfcd99f71c79c4929d1bc8a0fcce291011613315e44c",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D125",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.23,
+            "sent_packets": 3998,
+            "received_packets": 1477,
+            "delivery_ratio": 0.369434717359,
+            "payload_mbps": 0.454461538462,
+            "p95_delay_ms": 102.311406
+          },
+          "samples": 26,
+          "radio_sha256": "f46b32670dc364705d59299428e6eadb29a069cdd283c73619b15b1181762175",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.23,
+            "sent_packets": 3998,
+            "received_packets": 3997,
+            "delivery_ratio": 0.999749874937,
+            "payload_mbps": 1.22984615385,
+            "p95_delay_ms": 5.776628
+          },
+          "samples": 26,
+          "radio_sha256": "5c3b7b88c262a5266e7fbf9283f13f164f66eed7258fd1fa6cb36c7d4c63f130",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.23,
+            "sent_packets": 3998,
+            "received_packets": 1388,
+            "delivery_ratio": 0.347173586793,
+            "payload_mbps": 0.427076923077,
+            "p95_delay_ms": 102.454067
+          },
+          "samples": 26,
+          "radio_sha256": "83f7ea68dc243867291857f4b424eb5000490be2a7a0ddda681a621665054016",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.23,
+            "sent_packets": 3998,
+            "received_packets": 3997,
+            "delivery_ratio": 0.999749874937,
+            "payload_mbps": 1.22984615385,
+            "p95_delay_ms": 5.802929
+          },
+          "samples": 26,
+          "radio_sha256": "44d78c6e71b4eb77c64e014083239a4b62f9cb43886450209e3992bd61ae2ac1",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 5.627637
+          },
+          "samples": 26,
+          "radio_sha256": "71c0fa7f2e3441bb426ff7c47f64a7a7281e4000f3bc8c055bf7c1c7cb97b4be",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D126",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.18,
+            "sent_packets": 2656,
+            "received_packets": 1022,
+            "delivery_ratio": 0.384789156627,
+            "payload_mbps": 0.454222222222,
+            "p95_delay_ms": 90.056869
+          },
+          "samples": 18,
+          "radio_sha256": "75d913782c653177aab30159d1b8ce4371abf961a2975e0690dfe8cf9e148c07",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.18,
+            "sent_packets": 2656,
+            "received_packets": 2655,
+            "delivery_ratio": 0.999623493976,
+            "payload_mbps": 1.18,
+            "p95_delay_ms": 5.629079
+          },
+          "samples": 18,
+          "radio_sha256": "bda45063308c3eeb9508e2c50196643f07b9ac8fd5301fcbe02134fc45a3f7df",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.18,
+            "sent_packets": 2656,
+            "received_packets": 1011,
+            "delivery_ratio": 0.380647590361,
+            "payload_mbps": 0.449333333333,
+            "p95_delay_ms": 90.947363
+          },
+          "samples": 18,
+          "radio_sha256": "49404f0a077398d4ee332289734568c4c8b39190ed26c74215e4ed8549c3adae",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.18,
+            "sent_packets": 2656,
+            "received_packets": 2655,
+            "delivery_ratio": 0.999623493976,
+            "payload_mbps": 1.18,
+            "p95_delay_ms": 5.740271
+          },
+          "samples": 18,
+          "radio_sha256": "731dd63664f9695f357e83922d1fb10128888aca07864cacaa645eba2943bce7",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.33339
+          },
+          "samples": 18,
+          "radio_sha256": "840b4a36e3ddea8c902041baa471a4d5fef5d2c359a818d07759f51c9a313705",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D127",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.23,
+            "sent_packets": 3076,
+            "received_packets": 990,
+            "delivery_ratio": 0.321846553966,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.579644
+          },
+          "samples": 20,
+          "radio_sha256": "fb68d14974c40e4e6f8a99aa2887862270dacc2cdb62ef9a424a335e2b8fef82",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.23,
+            "sent_packets": 3076,
+            "received_packets": 3075,
+            "delivery_ratio": 0.999674902471,
+            "payload_mbps": 1.23,
+            "p95_delay_ms": 5.70433
+          },
+          "samples": 20,
+          "radio_sha256": "550ae13dd74bfb3b2f812ef33f957fb6b7691abb0c76a9266a629f0d9575feb6",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.23,
+            "sent_packets": 3076,
+            "received_packets": 990,
+            "delivery_ratio": 0.321846553966,
+            "payload_mbps": 0.396,
+            "p95_delay_ms": 102.603218
+          },
+          "samples": 20,
+          "radio_sha256": "6a086585454a644d10d7405c521a8b6e14364424a1eb947d837d4f6f46ef4641",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.23,
+            "sent_packets": 3076,
+            "received_packets": 3075,
+            "delivery_ratio": 0.999674902471,
+            "payload_mbps": 1.23,
+            "p95_delay_ms": 5.734586
+          },
+          "samples": 20,
+          "radio_sha256": "1592ec8c888e81f99bff805d470f013cbcc00a95914941020030697ed1dd105e",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.604701
+          },
+          "samples": 20,
+          "radio_sha256": "ea5b71a8d79ff71eb8ffafe903ae4ce9edc02cabcd4ca1b4cb77ff15374596a9",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D128",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.295,
+            "sent_packets": 3562,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 22,
+          "radio_sha256": "320ab412c0f92cf8168b05db4e1fb0a2782277eddb2a96c8920ea1ca83fdd82b",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.295,
+            "sent_packets": 3562,
+            "received_packets": 3561,
+            "delivery_ratio": 0.999719258843,
+            "payload_mbps": 1.29490909091,
+            "p95_delay_ms": 5.630671
+          },
+          "samples": 22,
+          "radio_sha256": "93562b41268799aae9f0305c6bcaed808d04efd0ad1cebe67e41cea5e4ca71cb",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.295,
+            "sent_packets": 3562,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 22,
+          "radio_sha256": "3cd504a139789c004c8dfdea7d088ebeaf86b69bc3a18958ee5081e41577dff0",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.295,
+            "sent_packets": 3562,
+            "received_packets": 3561,
+            "delivery_ratio": 0.999719258843,
+            "payload_mbps": 1.29490909091,
+            "p95_delay_ms": 5.651885
+          },
+          "samples": 22,
+          "radio_sha256": "ff1e2cb89e96c2e79ee12690eca6683f5557b7ba267a8b14e769ed6c5e914e52",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 5.623164
+          },
+          "samples": 22,
+          "radio_sha256": "8c78d80761b92554152d1d9cdbec6f36bb81b0d7467eed4d42f695ca67ac8be0",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D129",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.195,
+            "sent_packets": 3586,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 24,
+          "radio_sha256": "1cbd9b2415b8b4c2fa70c0e4129ba42135f8ceb27813d08214075bc12a946ee0",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.195,
+            "sent_packets": 3586,
+            "received_packets": 3585,
+            "delivery_ratio": 0.999721137758,
+            "payload_mbps": 1.195,
+            "p95_delay_ms": 5.702916
+          },
+          "samples": 24,
+          "radio_sha256": "51f17fbc44a039c25fc6e3385cef161e0b0a91828efc581ec4368718aec4708e",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.195,
+            "sent_packets": 3586,
+            "received_packets": 0,
+            "delivery_ratio": 0,
+            "payload_mbps": 0,
+            "p95_delay_ms": null
+          },
+          "samples": 24,
+          "radio_sha256": "50e6f60ad0c5578f6ae404d3ebd4a3e389e10ac299e832e6407863cc700ab05f",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.195,
+            "sent_packets": 3586,
+            "received_packets": 3585,
+            "delivery_ratio": 0.999721137758,
+            "payload_mbps": 1.195,
+            "p95_delay_ms": 5.659924
+          },
+          "samples": 24,
+          "radio_sha256": "1c99a91bb2c2536f07ecd9c48a284fe1bf41c00118f108e811cc3e1dcd2f48de",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.639657
+          },
+          "samples": 24,
+          "radio_sha256": "5796134c8cc675634ba34c704347e4b523e5c19f5c49bb1aea2fd5c148c22207",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D130",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.145,
+            "sent_packets": 3722,
+            "received_packets": 1279,
+            "delivery_ratio": 0.343632455669,
+            "payload_mbps": 0.393538461538,
+            "p95_delay_ms": 103.179594
+          },
+          "samples": 26,
+          "radio_sha256": "1d150f0e0355cec5c76aa2d069499a626c0ab954021e20665dc5ec26555c7bd3",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.145,
+            "sent_packets": 3722,
+            "received_packets": 3721,
+            "delivery_ratio": 0.999731327243,
+            "payload_mbps": 1.14492307692,
+            "p95_delay_ms": 5.718011
+          },
+          "samples": 26,
+          "radio_sha256": "7c06d0346954bd6e8de3edb727f66b9a621567eff18f480a3350c2112aee334e",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.145,
+            "sent_packets": 3722,
+            "received_packets": 1273,
+            "delivery_ratio": 0.34202041913,
+            "payload_mbps": 0.391692307692,
+            "p95_delay_ms": 103.694427
+          },
+          "samples": 26,
+          "radio_sha256": "4a4a05a38b6216dc3078c0356df571b71499a363bd59d9a4bc04bc7fa77b9adc",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 1.145,
+            "sent_packets": 3722,
+            "received_packets": 3721,
+            "delivery_ratio": 0.999731327243,
+            "payload_mbps": 1.14492307692,
+            "p95_delay_ms": 5.733641
+          },
+          "samples": 26,
+          "radio_sha256": "fbffd1dca0efe47e7c7be7d6f6dd7676804321bc4190c1c3041be8e76ee9b216",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 26,
+            "sample_count": 26,
+            "offered_mbps": 0.15,
+            "sent_packets": 488,
+            "received_packets": 488,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150153846154,
+            "p95_delay_ms": 5.7029
+          },
+          "samples": 26,
+          "radio_sha256": "b273afc4d96aaa5476db43a4e51b767d6de9b1e5e7531ed8ae48c65821135bf6",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D131",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.145,
+            "sent_packets": 2577,
+            "received_packets": 884,
+            "delivery_ratio": 0.343034536282,
+            "payload_mbps": 0.392888888889,
+            "p95_delay_ms": 103.239187
+          },
+          "samples": 18,
+          "radio_sha256": "5fefef30b88da894a695a075b0146117a11d17926e566a61f67b4142e26dd7e8",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.145,
+            "sent_packets": 2577,
+            "received_packets": 2576,
+            "delivery_ratio": 0.999611951882,
+            "payload_mbps": 1.14488888889,
+            "p95_delay_ms": 5.663188
+          },
+          "samples": 18,
+          "radio_sha256": "b9bdbe53c866e9bca78494c352a569b21f24d281241ca261ac88003e9d1f81a2",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.145,
+            "sent_packets": 2577,
+            "received_packets": 872,
+            "delivery_ratio": 0.338377958867,
+            "payload_mbps": 0.387555555556,
+            "p95_delay_ms": 104.875251
+          },
+          "samples": 18,
+          "radio_sha256": "7945f46b4708be7c1d6c4cbd9b03b6cea34b2e1361e88e758bbee43a5abfe14f",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 1.145,
+            "sent_packets": 2577,
+            "received_packets": 2576,
+            "delivery_ratio": 0.999611951882,
+            "payload_mbps": 1.14488888889,
+            "p95_delay_ms": 5.787927
+          },
+          "samples": 18,
+          "radio_sha256": "712e47884296f4c1e2812a34f20caa45a0ad0e8af0ef94764505fdf729c05b76",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 18,
+            "sample_count": 18,
+            "offered_mbps": 0.15,
+            "sent_packets": 338,
+            "received_packets": 338,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150222222222,
+            "p95_delay_ms": 5.628169
+          },
+          "samples": 18,
+          "radio_sha256": "56a877b1218c776aab074e280206f3d61243a2541ce826b108070d279f957121",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D132",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.195,
+            "sent_packets": 2988,
+            "received_packets": 984,
+            "delivery_ratio": 0.329317269076,
+            "payload_mbps": 0.3936,
+            "p95_delay_ms": 103.173232
+          },
+          "samples": 20,
+          "radio_sha256": "3b91dc6b6ab8f83b4ef361adff5f5325b9343a7406e5b3ec5fc6f86c2af99d6e",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.195,
+            "sent_packets": 2988,
+            "received_packets": 2987,
+            "delivery_ratio": 0.999665327979,
+            "payload_mbps": 1.1948,
+            "p95_delay_ms": 5.697751
+          },
+          "samples": 20,
+          "radio_sha256": "712d1e8bd58a3a50e40ed1140dd3a74e34b2c8e237ca816e06cc1e14f9bc40f1",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.195,
+            "sent_packets": 2988,
+            "received_packets": 985,
+            "delivery_ratio": 0.329651941098,
+            "payload_mbps": 0.394,
+            "p95_delay_ms": 103.00875
+          },
+          "samples": 20,
+          "radio_sha256": "e7f386354689068fd6f49aa12869481d03a3e78b6348af896d6943a9398d3704",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 1.195,
+            "sent_packets": 2988,
+            "received_packets": 2987,
+            "delivery_ratio": 0.999665327979,
+            "payload_mbps": 1.1948,
+            "p95_delay_ms": 5.658535
+          },
+          "samples": 20,
+          "radio_sha256": "262ce0a4ec8800cd541e8249bbbc22213e45783586e4e2a4ec67e1b5da615ede",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 20,
+            "sample_count": 20,
+            "offered_mbps": 0.15,
+            "sent_packets": 376,
+            "received_packets": 375,
+            "delivery_ratio": 0.997340425532,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.647145
+          },
+          "samples": 20,
+          "radio_sha256": "e4560f9f8a38d7350f65bbd74e843c22e3496ee2e3aeae31c50ef6ae9a9653d3",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D133",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.545,
+            "sent_packets": 4249,
+            "received_packets": 405,
+            "delivery_ratio": 0.0953165450694,
+            "payload_mbps": 0.147272727273,
+            "p95_delay_ms": 272.648014
+          },
+          "samples": 22,
+          "radio_sha256": "2befc265854908214d3721214082ce26b2d20d92fa7eb30692db22ce28e5d56b",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.545,
+            "sent_packets": 4249,
+            "received_packets": 4248,
+            "delivery_ratio": 0.999764650506,
+            "payload_mbps": 1.54472727273,
+            "p95_delay_ms": 4.314454
+          },
+          "samples": 22,
+          "radio_sha256": "84ebb1e9bc578af41859c9557570707179675511c9318eec73d800461806095e",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.545,
+            "sent_packets": 4249,
+            "received_packets": 405,
+            "delivery_ratio": 0.0953165450694,
+            "payload_mbps": 0.147272727273,
+            "p95_delay_ms": 272.748478
+          },
+          "samples": 22,
+          "radio_sha256": "09bce141687ccbaecb1a03dbf320a1d763ddac18cb0d8b68f1c5074d0b35927b",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 1.545,
+            "sent_packets": 4249,
+            "received_packets": 4248,
+            "delivery_ratio": 0.999764650506,
+            "payload_mbps": 1.54472727273,
+            "p95_delay_ms": 4.406302
+          },
+          "samples": 22,
+          "radio_sha256": "4de7cd26a7a7abb40d685242179a0ae64f9b36efe35d8321651a9185fb44c379",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 22,
+            "sample_count": 22,
+            "offered_mbps": 0.15,
+            "sent_packets": 413,
+            "received_packets": 413,
+            "delivery_ratio": 1,
+            "payload_mbps": 0.150181818182,
+            "p95_delay_ms": 4.24524
+          },
+          "samples": 22,
+          "radio_sha256": "d2a0e796be731ec087dcef0a211a2e40df01c1e23e498cc446e406e0fc134932",
+          "expected_pass": true
+        }
+      }
+    },
+    {
+      "id": "D134",
+      "verified": true,
+      "runs": {
+        "main_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.295,
+            "sent_packets": 3886,
+            "received_packets": 1246,
+            "delivery_ratio": 0.320638188369,
+            "payload_mbps": 0.415333333333,
+            "p95_delay_ms": 102.460476
+          },
+          "samples": 24,
+          "radio_sha256": "2d35d08744c6f787396f3b96eefa8699309355a7471d0559ada8c8526358a0bc",
+          "expected_pass": false
+        },
+        "main_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.295,
+            "sent_packets": 3886,
+            "received_packets": 3885,
+            "delivery_ratio": 0.99974266598,
+            "payload_mbps": 1.295,
+            "p95_delay_ms": 5.732427
+          },
+          "samples": 24,
+          "radio_sha256": "a5509cd667871d9e3ca538ab79217d518331eb0fc40c844c81e506d45d115aa8",
+          "expected_pass": true
+        },
+        "holdout_initial": {
+          "passed": false,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": false,
+            "delivery": false,
+            "latency": false,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.295,
+            "sent_packets": 3886,
+            "received_packets": 1366,
+            "delivery_ratio": 0.351518270715,
+            "payload_mbps": 0.455333333333,
+            "p95_delay_ms": 101.731405
+          },
+          "samples": 24,
+          "radio_sha256": "1d4edee94fc9e8a9db07d01cada08136bd14a781ee18773f07020519cd4af963",
+          "expected_pass": false
+        },
+        "holdout_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 1.295,
+            "sent_packets": 3886,
+            "received_packets": 3885,
+            "delivery_ratio": 0.99974266598,
+            "payload_mbps": 1.295,
+            "p95_delay_ms": 5.661296
+          },
+          "samples": 24,
+          "radio_sha256": "6849a7a0445b4bf0e7fc6c281a8765338917f2ed6e37901948e3ff6a5d63fef1",
+          "expected_pass": true
+        },
+        "regression_reference": {
+          "passed": true,
+          "checks": {
+            "max_tx_w": true,
+            "max_mean_tx_w": true,
+            "max_rx_diameter_m": true,
+            "max_bandwidth_hz": true,
+            "max_eirp_dbw": true,
+            "payload": true,
+            "delivery": true,
+            "latency": true,
+            "samples": true,
+            "radio_to_network": true
+          },
+          "metrics": {
+            "engine": "ns-3.31 point-to-point/IPv4/UDP",
+            "duration_s": 24,
+            "sample_count": 24,
+            "offered_mbps": 0.15,
+            "sent_packets": 451,
+            "received_packets": 450,
+            "delivery_ratio": 0.9977827051,
+            "payload_mbps": 0.15,
+            "p95_delay_ms": 5.613392
+          },
+          "samples": 24,
+          "radio_sha256": "f3f1ab2db0926d2e5eff5fe44c44648bcac12101e13ded946cfeb6de3a10c72f",
+          "expected_pass": true
+        }
+      }
+    }
+  ]
+}

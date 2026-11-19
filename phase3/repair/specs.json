@@ -1,0 +1,308 @@
+[
+  {
+    "id": "R101",
+    "parent": "R01",
+    "title": "天顶距切换后的接入中断",
+    "field": "elevation_deg",
+    "problem": "跟踪头改报距天顶的夹角后，仰角门限拒绝已升起的卫星。恢复准入并保留旧仰角格式。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15,
+    "mask": 49
+  },
+  {
+    "id": "R102",
+    "parent": "R01",
+    "title": "姿态弧度遥测误关下行",
+    "field": "elevation_deg",
+    "problem": "跟踪终端把角度遥测迁移到 SI 弧度。诊断高仰角通视时段的错误关链，保留旧格式接入。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R103",
+    "parent": "R01",
+    "title": "仰角策略寄存器量化误读",
+    "field": "mask_deg",
+    "problem": "更新遮挡门限寄存器后，所有过站窗口都被过滤。按寄存器的十分之一度分辨率恢复入网策略。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R104",
+    "parent": "R01",
+    "title": "回波路程进入单程链路预算",
+    "field": "range_m",
+    "problem": "测距接口改为输出往返路程，链路估损和传输时延同时恶化。恢复服务链路的单程距离。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R105",
+    "parent": "R01",
+    "title": "海事距离协议迁移后的斜距偏差",
+    "field": "range_m",
+    "problem": "海上终端将新航路消息明确标作公里，旧驱动仍按海里解释。修正单位分派并核对预算和传播时间。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R106",
+    "parent": "R02",
+    "title": "功率遥测混淆 dBm 与 dBW",
+    "field": "tx_w",
+    "problem": "功放发布 dBm 读数以后降级保护误触。核查发射功率转瓦过程，恢复正常链路余量。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R107",
+    "parent": "R02",
+    "title": "毫瓦量程倍率导致低功率",
+    "field": "tx_w",
+    "problem": "便携功放采用毫瓦遥测，切换量程后额定功率被低估十倍。修复单位并重放业务。",
+    "offered_mbps": 2,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R108",
+    "parent": "R02",
+    "title": "功放预留比例当作有效功率",
+    "field": "tx_w",
+    "problem": "功放控制器新增预留比例，预留 20% 后端口功率反而只剩两成。恢复实际可用的发射功率。",
+    "offered_mbps": 3.2,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R109",
+    "parent": "R02",
+    "title": "天线增益参考基准错用",
+    "field": "tx_gain_dbi",
+    "problem": "面板数据改为相对于半波偶极子的增益后出现吞吐退化。预算接口仍要求各向同性基准，修复两者转换。",
+    "offered_mbps": 3.5,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R110",
+    "parent": "R02",
+    "title": "接收子阵合成增益丢失",
+    "field": "rx_gain_dbi",
+    "problem": "终端上报四个相同子阵的单阵增益和等效合成系数。链路预算漏计合成贡献，导致高速业务丢包。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R111",
+    "parent": "R02",
+    "title": "射频继电器误用隔离端口损耗",
+    "field": "feed_db",
+    "problem": "射频切换器同时上报直通端插损与隔离端衰减。工作端口选择错误后接收机达不到业务负载，请修复设备描述到预算的映射。",
+    "offered_mbps": 3.8,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R112",
+    "parent": "R02",
+    "title": "步进衰减器的四分之一 dB 编码",
+    "field": "feed_db",
+    "problem": "步进衰减器把拨码改为每级 0.25 dB，驱动仍用每级 1 dB。重新标定接口并验证接收端恢复。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R113",
+    "parent": "R02",
+    "title": "接收系统噪温量程换算",
+    "field": "temp_k",
+    "problem": "低噪声组件换用毫开尔文寄存器后，系统噪温显著偏高。修复温标倍率并核查 C/N₀。",
+    "offered_mbps": 2.5,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R114",
+    "parent": "R02",
+    "title": "完整接收噪温被重复折算",
+    "field": "temp_k",
+    "problem": "监控改报已经合并前端与接收机的总等效噪温，驱动又加了一次组件噪温。恢复总噪温口径。",
+    "offered_mbps": 3.4,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R115",
+    "parent": "R02",
+    "title": "圆极化短标签的左右旋对换",
+    "field": "rx_pol",
+    "problem": "换装端口后 R/L 短标签终端无法接收同旋波束。定位极化标签到射频模型之间的映射。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R116",
+    "parent": "R02",
+    "title": "线极化馈源端口编号倒置",
+    "field": "rx_pol",
+    "problem": "双线极化终端改为枚举编号后，同向馈源出现交叉极化损耗。修复端口编号并检查业务恢复。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15,
+    "polarization": "H"
+  },
+  {
+    "id": "R117",
+    "parent": "R02",
+    "title": "自动馈源配置忽略圆极化选择",
+    "field": "rx_pol",
+    "problem": "双制式终端同时上报线极化和圆极化馈源，自动模式误选非活动馈源。让预算使用已选择的端口。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R118",
+    "parent": "R02",
+    "title": "频率合成器步长字段未生效",
+    "field": "carrier_hz",
+    "problem": "新射频模块将载频拆为步数与步长，旧默认步长把 12 GHz 链路模拟到了 24 GHz。恢复实际调谐频率。",
+    "offered_mbps": 3.3,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R119",
+    "parent": "R02",
+    "title": "晴空气体损耗百分位 dB 接口",
+    "field": "gas_db",
+    "problem": "传播模块以百分之一 dB 输出晴空气体损耗。微小的吸收在下游变成数 dB，定位并修复预算接口。",
+    "offered_mbps": 2.8,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R120",
+    "parent": "R03",
+    "title": "成对 PRB 宽度丢失",
+    "field": "bandwidth_hz",
+    "problem": "调度计划使用双 PRB 资源组计量带宽，上游提供的组宽未进入设备配置。恢复该终端的资源预算。",
+    "offered_mbps": 3.4,
+    "max_p95_ms": 15,
+    "bandwidth": 2160000
+  },
+  {
+    "id": "R121",
+    "parent": "R03",
+    "title": "保护带在调度分配中被扣两次",
+    "field": "bandwidth_hz",
+    "problem": "调度器发布扣除保护带后的业务带宽以及已扣的保护宽度。接口再次扣减后只剩较小的 PRB 分配，修正分配。",
+    "offered_mbps": 3.75,
+    "max_p95_ms": 15,
+    "bandwidth": 1980000
+  },
+  {
+    "id": "R122",
+    "parent": "R03",
+    "title": "终端能力上限被解释成单个低档 MCS",
+    "field": "mcs",
+    "problem": "终端声明完整允许的 MCS 列表，能力导入错误地只保留最低项。恢复链路自适应的合法候选集合。",
+    "offered_mbps": 2,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R123",
+    "parent": "R03",
+    "title": "主用与保底调制表选择颠倒",
+    "field": "mcs",
+    "problem": "调度计划同时携带激活表与保底表，发送链始终取保底模式。恢复激活策略并复验业务。",
+    "offered_mbps": 2.4,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R124",
+    "parent": "R03",
+    "title": "传输块字节遥测进入比特速率",
+    "field": "coded_rate",
+    "problem": "接口从 bit/s 切换至 Byte/s 后，应用接收速率下降。保持 NR 有效容量的 bit/s 口径。",
+    "offered_mbps": 1.4,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R125",
+    "parent": "R03",
+    "title": "十毫秒无线帧与下行时隙混淆",
+    "field": "coded_rate",
+    "problem": "新接口传递每个时隙的有效位数，调度器却只按每帧一个时隙分配。恢复 μ=0 的时隙时间。",
+    "offered_mbps": 1.5,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R126",
+    "parent": "R03",
+    "title": "预留业务份额反向应用",
+    "field": "duty",
+    "problem": "保障业务做了容量预留后，用户被分配了预留部分。恢复剩余可调度份额并核对服务速率。",
+    "offered_mbps": 2,
+    "max_p95_ms": 15,
+    "duty": 0.8
+  },
+  {
+    "id": "R127",
+    "parent": "R03",
+    "title": "空闲槽数取代有效下行槽数",
+    "field": "duty",
+    "problem": "新的时隙计划用空闲槽数表达占用，迁移后应用吞吐变低。按周期内可调度的下行槽核对容量。",
+    "offered_mbps": 2.2,
+    "max_p95_ms": 15,
+    "duty": 0.7
+  },
+  {
+    "id": "R128",
+    "parent": "R03",
+    "title": "未交付率被用作译码成功率",
+    "field": "coded_rate",
+    "problem": "OAI 统计流改为报告已调度传输块的未交付率，调制较好时网络层反而降速。修复成功与失败计数口径。",
+    "offered_mbps": 1.6,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R129",
+    "parent": "R03",
+    "title": "千比特遥测速率少乘十进制倍率",
+    "field": "coded_rate",
+    "problem": "新型终端输出 kbit/s 而网络接口接收 bit/s，链路质量看似正常但应用稀疏收包。修复单位交接。",
+    "offered_mbps": 1.1,
+    "max_p95_ms": 15
+  },
+  {
+    "id": "R130",
+    "parent": "R03",
+    "title": "切换保护时隙被当作整秒",
+    "field": "guard_s",
+    "problem": "接入后只需等待五个毫秒时隙，实际业务却中断数秒。修复保护计时与链路激活时间。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15,
+    "guard": 0.005
+  },
+  {
+    "id": "R131",
+    "parent": "R03",
+    "title": "测时接口的 RTT 被用作单向传播时延",
+    "field": "delay_s",
+    "problem": "链路测时字段改为往返值后，吞吐仍正常但时延回归。恢复星地服务单向传播时延。",
+    "offered_mbps": 1,
+    "max_p95_ms": 5.5
+  },
+  {
+    "id": "R132",
+    "parent": "R03",
+    "title": "群延迟微秒读数进入毫秒接口",
+    "field": "extra_delay_s",
+    "problem": "前端报告微秒级群延迟，业务测得异常的百毫秒时延。核查固定处理延迟量纲。",
+    "offered_mbps": 1,
+    "max_p95_ms": 15,
+    "extra_delay": 0.00025
+  },
+  {
+    "id": "R133",
+    "parent": "R03",
+    "title": "单跳处理延迟被当作双向累计",
+    "field": "extra_delay_s",
+    "problem": "出口设备提供双向累计处理时间，模型同时保留单向传播。拆出单向处理时间以恢复端到端 p95。",
+    "offered_mbps": 1,
+    "max_p95_ms": 10,
+    "extra_delay": 0.004
+  }
+]

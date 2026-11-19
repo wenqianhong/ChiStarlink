@@ -1,0 +1,2054 @@
+[
+  {
+    "id": "D101",
+    "parent": "D01",
+    "family": "区域汇聚站接入",
+    "title": "京都 · 区域汇聚站接入",
+    "description": "在给定 UTC 窗口选择一个汇聚站，并为该站设置遮挡掩膜。站点共享业务出口。",
+    "stations": {
+      "京都": [
+        35.01,
+        135.77,
+        0.0
+      ],
+      "蒙得维的亚": [
+        -34.9,
+        -56.16,
+        0.0
+      ]
+    },
+    "default_station": "京都",
+    "start_s": 146460,
+    "duration_s": 18,
+    "regression_start_s": 146482,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "station": "蒙得维的亚",
+      "min_elev_deg": 45
+    },
+    "choices": {
+      "station": [
+        "京都",
+        "蒙得维的亚"
+      ],
+      "min_elev_deg": [
+        10,
+        25,
+        45
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.1,
+    "min_payload_mbps": 1.034,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D102",
+    "parent": "D01",
+    "family": "过境时隙预约",
+    "title": "济州 · 过境时隙预约",
+    "description": "为可延期遥测业务预约一个相对于调度锚点的发射窗口，并设置最小仰角。偏移只影响整段任务的实际执行时刻。",
+    "stations": {
+      "济州": [
+        33.5,
+        126.53,
+        0.0
+      ]
+    },
+    "default_station": "济州",
+    "start_s": 404610,
+    "duration_s": 20,
+    "regression_start_s": 404634,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "start_offset_s": -540,
+      "min_elev_deg": 35
+    },
+    "choices": {
+      "start_offset_s": [
+        -540,
+        -180,
+        0,
+        120
+      ],
+      "min_elev_deg": [
+        10,
+        20,
+        35
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.0,
+    "min_payload_mbps": 0.94,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D103",
+    "parent": "D02",
+    "family": "峰值功率与调制组合",
+    "title": "巴塞罗那 · 峰值功率与调制组合",
+    "description": "从功放档位与终端支持的 MCS 集合中选择组合，保障连续星地下行，且满足峰值功率约束。",
+    "stations": {
+      "巴塞罗那": [
+        41.39,
+        2.17,
+        0.0
+      ]
+    },
+    "default_station": "巴塞罗那",
+    "start_s": 323010,
+    "duration_s": 22,
+    "regression_start_s": 323036,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "tx_w": 0.06,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "tx_w": [
+        0.06,
+        0.3,
+        1.0,
+        2.2
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12,
+          16
+        ],
+        [
+          12,
+          16,
+          18,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 0.95,
+    "min_payload_mbps": 0.893,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D104",
+    "parent": "D03",
+    "family": "低噪声接收前端选型",
+    "title": "开普敦 · 低噪声接收前端选型",
+    "description": "卫星功率受限，接收站可更换低噪声前端和反射面。按设备目录选择噪温和口径，使下行交付达标。",
+    "stations": {
+      "开普敦": [
+        -33.92,
+        18.42,
+        0.0
+      ]
+    },
+    "default_station": "开普敦",
+    "start_s": 274080,
+    "duration_s": 24,
+    "regression_start_s": 274108,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 0.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "noise_k": 850,
+      "rx_diameter_m": 0.105
+    },
+    "choices": {
+      "noise_k": [
+        180,
+        290,
+        500,
+        850
+      ],
+      "rx_diameter_m": [
+        0.105,
+        0.17,
+        0.24,
+        0.3
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 0.95,
+    "min_payload_mbps": 0.893,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D105",
+    "parent": "D03",
+    "family": "指向精度与主瓣增益",
+    "title": "成都 · 指向精度与主瓣增益",
+    "description": "固定功率和频段，比较不同口径带来的峰值增益及跟踪误差损失，选择可用的口径与跟踪配置。",
+    "stations": {
+      "成都": [
+        30.57,
+        104.07,
+        0.0
+      ]
+    },
+    "default_station": "成都",
+    "start_s": 410400,
+    "duration_s": 26,
+    "regression_start_s": 410430,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 0.85,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "rx_diameter_m": 0.3,
+      "pointing_deg": 6
+    },
+    "choices": {
+      "rx_diameter_m": [
+        0.16,
+        0.23,
+        0.3
+      ],
+      "pointing_deg": [
+        0.3,
+        2,
+        4,
+        6
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.0,
+    "min_payload_mbps": 0.94,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D106",
+    "parent": "D04",
+    "family": "受配额限制的 PRB 分配",
+    "title": "惠灵顿 · 受配额限制的 PRB 分配",
+    "description": "在分配的频谱上限下选择接入带宽及 NR 编码目录；调度器只允许使用完整的实测 PRB 分配。",
+    "stations": {
+      "惠灵顿": [
+        -41.29,
+        174.78,
+        0.0
+      ]
+    },
+    "default_station": "惠灵顿",
+    "start_s": 239850,
+    "duration_s": 18,
+    "regression_start_s": 239872,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "bandwidth_hz": 500000,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          14,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.35,
+    "min_payload_mbps": 1.269,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D107",
+    "parent": "D02",
+    "family": "馈线改造与定向发射",
+    "title": "那不勒斯 · 馈线改造与定向发射",
+    "description": "在不得增加发射机功率的前提下，从馈线和定向天线目录选择配置；把馈损及发射增益一并计入 EIRP。",
+    "stations": {
+      "那不勒斯": [
+        40.85,
+        14.27,
+        0.0
+      ]
+    },
+    "default_station": "那不勒斯",
+    "start_s": 2910,
+    "duration_s": 20,
+    "regression_start_s": 2934,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.0,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "feeder_loss_db": 8.5,
+      "tx_gain_dbi": 11.5
+    },
+    "choices": {
+      "feeder_loss_db": [
+        0.8,
+        2.5,
+        5.0,
+        8.5
+      ],
+      "tx_gain_dbi": [
+        11.5,
+        15.0,
+        18.0,
+        20.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 18.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.1,
+    "min_payload_mbps": 1.034,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D108",
+    "parent": "D04",
+    "family": "下行调度份额与频谱",
+    "title": "檀香山 · 下行调度份额与频谱",
+    "description": "下行和其他业务共用时隙。在可用的下行时隙份额及带宽目录中选分配，满足有效吞吐和平均射频功率上限。",
+    "stations": {
+      "檀香山": [
+        21.31,
+        -157.86,
+        0.0
+      ]
+    },
+    "default_station": "檀香山",
+    "start_s": 49260,
+    "duration_s": 22,
+    "regression_start_s": 49286,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.5,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "dl_slots_per_s": 350,
+      "bandwidth_hz": 500000
+    },
+    "choices": {
+      "dl_slots_per_s": [
+        350,
+        500,
+        700,
+        850
+      ],
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 1.05
+    },
+    "offered_mbps": 1.05,
+    "min_payload_mbps": 0.987,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D109",
+    "parent": "D04",
+    "family": "终端能力限制下的编码选择",
+    "title": "金奈 · 终端能力限制下的编码选择",
+    "description": "在窄带终端上，从互不相同的解调能力目录中选择可支持的 MCS 集合并配合发射功率；空口每个时隙最多发送一个传输块。",
+    "stations": {
+      "金奈": [
+        13.08,
+        80.27,
+        0.0
+      ]
+    },
+    "default_station": "金奈",
+    "start_s": 250170,
+    "duration_s": 24,
+    "regression_start_s": 250198,
+    "fixed": {
+      "frequency_hz": 10800000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000,
+      "noise_k": 260,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "mcs": [
+        4
+      ],
+      "tx_w": 0.45
+    },
+    "choices": {
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          14,
+          16
+        ],
+        [
+          14,
+          16,
+          18,
+          20
+        ]
+      ],
+      "tx_w": [
+        0.45,
+        0.75,
+        1.5,
+        2.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.1,
+    "min_payload_mbps": 1.034,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D110",
+    "parent": "D01",
+    "family": "区域汇聚站接入",
+    "title": "阿克拉 · 区域汇聚站接入",
+    "description": "在给定 UTC 窗口选择一个汇聚站，并为该站设置遮挡掩膜。站点共享业务出口。",
+    "stations": {
+      "阿克拉": [
+        5.56,
+        -0.19,
+        0.0
+      ],
+      "奥克兰": [
+        -36.85,
+        174.76,
+        0.0
+      ]
+    },
+    "default_station": "阿克拉",
+    "start_s": 144419,
+    "duration_s": 26,
+    "regression_start_s": 144449,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "station": "奥克兰",
+      "min_elev_deg": 45
+    },
+    "choices": {
+      "station": [
+        "阿克拉",
+        "奥克兰"
+      ],
+      "min_elev_deg": [
+        10,
+        25,
+        45
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.165,
+    "min_payload_mbps": 1.0951,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D111",
+    "parent": "D01",
+    "family": "过境时隙预约",
+    "title": "马赛 · 过境时隙预约",
+    "description": "为可延期遥测业务预约一个相对于调度锚点的发射窗口，并设置最小仰角。偏移只影响整段任务的实际执行时刻。",
+    "stations": {
+      "马赛": [
+        43.3,
+        5.37,
+        0.0
+      ]
+    },
+    "default_station": "马赛",
+    "start_s": 88889,
+    "duration_s": 18,
+    "regression_start_s": 88911,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "start_offset_s": -540,
+      "min_elev_deg": 35
+    },
+    "choices": {
+      "start_offset_s": [
+        -540,
+        -180,
+        0,
+        120
+      ],
+      "min_elev_deg": [
+        10,
+        20,
+        35
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.065,
+    "min_payload_mbps": 1.0011,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D112",
+    "parent": "D02",
+    "family": "峰值功率与调制组合",
+    "title": "釜山 · 峰值功率与调制组合",
+    "description": "从功放档位与终端支持的 MCS 集合中选择组合，保障连续星地下行，且满足峰值功率约束。",
+    "stations": {
+      "釜山": [
+        35.18,
+        129.08,
+        0.0
+      ]
+    },
+    "default_station": "釜山",
+    "start_s": 318539,
+    "duration_s": 20,
+    "regression_start_s": 318563,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "tx_w": 0.06,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "tx_w": [
+        0.06,
+        0.3,
+        1.0,
+        2.2
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12,
+          16
+        ],
+        [
+          12,
+          16,
+          18,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.015,
+    "min_payload_mbps": 0.9541,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D113",
+    "parent": "D03",
+    "family": "低噪声接收前端选型",
+    "title": "伊兹密尔 · 低噪声接收前端选型",
+    "description": "卫星功率受限，接收站可更换低噪声前端和反射面。按设备目录选择噪温和口径，使下行交付达标。",
+    "stations": {
+      "伊兹密尔": [
+        38.42,
+        27.14,
+        0.0
+      ]
+    },
+    "default_station": "伊兹密尔",
+    "start_s": 341399,
+    "duration_s": 22,
+    "regression_start_s": 341425,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 0.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "noise_k": 850,
+      "rx_diameter_m": 0.105
+    },
+    "choices": {
+      "noise_k": [
+        180,
+        290,
+        500,
+        850
+      ],
+      "rx_diameter_m": [
+        0.105,
+        0.17,
+        0.24,
+        0.3
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.015,
+    "min_payload_mbps": 0.9541,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D114",
+    "parent": "D03",
+    "family": "指向精度与主瓣增益",
+    "title": "奎托 · 指向精度与主瓣增益",
+    "description": "固定功率和频段，比较不同口径带来的峰值增益及跟踪误差损失，选择可用的口径与跟踪配置。",
+    "stations": {
+      "奎托": [
+        -0.18,
+        -78.47,
+        0.0
+      ]
+    },
+    "default_station": "奎托",
+    "start_s": 204539,
+    "duration_s": 24,
+    "regression_start_s": 204567,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 0.85,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "rx_diameter_m": 0.3,
+      "pointing_deg": 6
+    },
+    "choices": {
+      "rx_diameter_m": [
+        0.16,
+        0.23,
+        0.3
+      ],
+      "pointing_deg": [
+        0.3,
+        2,
+        4,
+        6
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.065,
+    "min_payload_mbps": 1.0011,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D115",
+    "parent": "D04",
+    "family": "受配额限制的 PRB 分配",
+    "title": "青岛 · 受配额限制的 PRB 分配",
+    "description": "在分配的频谱上限下选择接入带宽及 NR 编码目录；调度器只允许使用完整的实测 PRB 分配。",
+    "stations": {
+      "青岛": [
+        36.07,
+        120.38,
+        0.0
+      ]
+    },
+    "default_station": "青岛",
+    "start_s": 208169,
+    "duration_s": 26,
+    "regression_start_s": 208199,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "bandwidth_hz": 500000,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          14,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.415,
+    "min_payload_mbps": 1.3301,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D116",
+    "parent": "D02",
+    "family": "馈线改造与定向发射",
+    "title": "利马 · 馈线改造与定向发射",
+    "description": "在不得增加发射机功率的前提下，从馈线和定向天线目录选择配置；把馈损及发射增益一并计入 EIRP。",
+    "stations": {
+      "利马": [
+        -12.05,
+        -77.04,
+        0.0
+      ]
+    },
+    "default_station": "利马",
+    "start_s": 376859,
+    "duration_s": 18,
+    "regression_start_s": 376881,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.0,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "feeder_loss_db": 8.5,
+      "tx_gain_dbi": 11.5
+    },
+    "choices": {
+      "feeder_loss_db": [
+        0.8,
+        2.5,
+        5.0,
+        8.5
+      ],
+      "tx_gain_dbi": [
+        11.5,
+        15.0,
+        18.0,
+        20.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 18.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.165,
+    "min_payload_mbps": 1.0951,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D117",
+    "parent": "D04",
+    "family": "下行调度份额与频谱",
+    "title": "大阪 · 下行调度份额与频谱",
+    "description": "下行和其他业务共用时隙。在可用的下行时隙份额及带宽目录中选分配，满足有效吞吐和平均射频功率上限。",
+    "stations": {
+      "大阪": [
+        34.69,
+        135.5,
+        0.0
+      ]
+    },
+    "default_station": "大阪",
+    "start_s": 146459,
+    "duration_s": 20,
+    "regression_start_s": 146483,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.5,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "dl_slots_per_s": 350,
+      "bandwidth_hz": 500000
+    },
+    "choices": {
+      "dl_slots_per_s": [
+        350,
+        500,
+        700,
+        850
+      ],
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 1.05
+    },
+    "offered_mbps": 1.115,
+    "min_payload_mbps": 1.0481,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D118",
+    "parent": "D04",
+    "family": "终端能力限制下的编码选择",
+    "title": "布里斯班 · 终端能力限制下的编码选择",
+    "description": "在窄带终端上，从互不相同的解调能力目录中选择可支持的 MCS 集合并配合发射功率；空口每个时隙最多发送一个传输块。",
+    "stations": {
+      "布里斯班": [
+        -27.47,
+        153.03,
+        0.0
+      ]
+    },
+    "default_station": "布里斯班",
+    "start_s": 325559,
+    "duration_s": 22,
+    "regression_start_s": 325585,
+    "fixed": {
+      "frequency_hz": 11500000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000,
+      "noise_k": 275,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "mcs": [
+        4
+      ],
+      "tx_w": 0.45
+    },
+    "choices": {
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          14,
+          16
+        ],
+        [
+          14,
+          16,
+          18,
+          20
+        ]
+      ],
+      "tx_w": [
+        0.45,
+        0.75,
+        1.5,
+        2.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.165,
+    "min_payload_mbps": 1.0951,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D119",
+    "parent": "D01",
+    "family": "区域汇聚站接入",
+    "title": "旧金山 · 区域汇聚站接入",
+    "description": "在给定 UTC 窗口选择一个汇聚站，并为该站设置遮挡掩膜。站点共享业务出口。",
+    "stations": {
+      "旧金山": [
+        37.77,
+        -122.42,
+        0.0
+      ],
+      "马普托": [
+        -25.97,
+        32.57,
+        0.0
+      ]
+    },
+    "default_station": "旧金山",
+    "start_s": 265558,
+    "duration_s": 24,
+    "regression_start_s": 265586,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "station": "马普托",
+      "min_elev_deg": 45
+    },
+    "choices": {
+      "station": [
+        "旧金山",
+        "马普托"
+      ],
+      "min_elev_deg": [
+        10,
+        25,
+        45
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.23,
+    "min_payload_mbps": 1.1562,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D120",
+    "parent": "D01",
+    "family": "过境时隙预约",
+    "title": "波尔图 · 过境时隙预约",
+    "description": "为可延期遥测业务预约一个相对于调度锚点的发射窗口，并设置最小仰角。偏移只影响整段任务的实际执行时刻。",
+    "stations": {
+      "波尔图": [
+        41.15,
+        -8.61,
+        0.0
+      ]
+    },
+    "default_station": "波尔图",
+    "start_s": 8668,
+    "duration_s": 26,
+    "regression_start_s": 8698,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "start_offset_s": -540,
+      "min_elev_deg": 35
+    },
+    "choices": {
+      "start_offset_s": [
+        -540,
+        -180,
+        0,
+        120
+      ],
+      "min_elev_deg": [
+        10,
+        20,
+        35
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.13,
+    "min_payload_mbps": 1.0622,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D121",
+    "parent": "D02",
+    "family": "峰值功率与调制组合",
+    "title": "蒙得维的亚 · 峰值功率与调制组合",
+    "description": "从功放档位与终端支持的 MCS 集合中选择组合，保障连续星地下行，且满足峰值功率约束。",
+    "stations": {
+      "蒙得维的亚": [
+        -34.9,
+        -56.16,
+        0.0
+      ]
+    },
+    "default_station": "蒙得维的亚",
+    "start_s": 149338,
+    "duration_s": 18,
+    "regression_start_s": 149360,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "tx_w": 0.06,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "tx_w": [
+        0.06,
+        0.3,
+        1.0,
+        2.2
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12,
+          16
+        ],
+        [
+          12,
+          16,
+          18,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.08,
+    "min_payload_mbps": 1.0152,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D122",
+    "parent": "D03",
+    "family": "低噪声接收前端选型",
+    "title": "新加坡 · 低噪声接收前端选型",
+    "description": "卫星功率受限，接收站可更换低噪声前端和反射面。按设备目录选择噪温和口径，使下行交付达标。",
+    "stations": {
+      "新加坡": [
+        1.35,
+        103.82,
+        0.0
+      ]
+    },
+    "default_station": "新加坡",
+    "start_s": 416728,
+    "duration_s": 20,
+    "regression_start_s": 416752,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 0.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "noise_k": 850,
+      "rx_diameter_m": 0.105
+    },
+    "choices": {
+      "noise_k": [
+        180,
+        290,
+        500,
+        850
+      ],
+      "rx_diameter_m": [
+        0.105,
+        0.17,
+        0.24,
+        0.3
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.08,
+    "min_payload_mbps": 1.0152,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D123",
+    "parent": "D03",
+    "family": "指向精度与主瓣增益",
+    "title": "卡萨布兰卡 · 指向精度与主瓣增益",
+    "description": "固定功率和频段，比较不同口径带来的峰值增益及跟踪误差损失，选择可用的口径与跟踪配置。",
+    "stations": {
+      "卡萨布兰卡": [
+        33.57,
+        -7.59,
+        0.0
+      ]
+    },
+    "default_station": "卡萨布兰卡",
+    "start_s": 180898,
+    "duration_s": 22,
+    "regression_start_s": 180924,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 0.85,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "rx_diameter_m": 0.3,
+      "pointing_deg": 6
+    },
+    "choices": {
+      "rx_diameter_m": [
+        0.16,
+        0.23,
+        0.3
+      ],
+      "pointing_deg": [
+        0.3,
+        2,
+        4,
+        6
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.13,
+    "min_payload_mbps": 1.0622,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D124",
+    "parent": "D04",
+    "family": "受配额限制的 PRB 分配",
+    "title": "西安 · 受配额限制的 PRB 分配",
+    "description": "在分配的频谱上限下选择接入带宽及 NR 编码目录；调度器只允许使用完整的实测 PRB 分配。",
+    "stations": {
+      "西安": [
+        34.34,
+        108.94,
+        0.0
+      ]
+    },
+    "default_station": "西安",
+    "start_s": 380188,
+    "duration_s": 24,
+    "regression_start_s": 380216,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "bandwidth_hz": 500000,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          14,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.48,
+    "min_payload_mbps": 1.3912,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D125",
+    "parent": "D02",
+    "family": "馈线改造与定向发射",
+    "title": "奥克兰 · 馈线改造与定向发射",
+    "description": "在不得增加发射机功率的前提下，从馈线和定向天线目录选择配置；把馈损及发射增益一并计入 EIRP。",
+    "stations": {
+      "奥克兰": [
+        -36.85,
+        174.76,
+        0.0
+      ]
+    },
+    "default_station": "奥克兰",
+    "start_s": 67648,
+    "duration_s": 26,
+    "regression_start_s": 67678,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.0,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "feeder_loss_db": 8.5,
+      "tx_gain_dbi": 11.5
+    },
+    "choices": {
+      "feeder_loss_db": [
+        0.8,
+        2.5,
+        5.0,
+        8.5
+      ],
+      "tx_gain_dbi": [
+        11.5,
+        15.0,
+        18.0,
+        20.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 18.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.23,
+    "min_payload_mbps": 1.1562,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D126",
+    "parent": "D04",
+    "family": "下行调度份额与频谱",
+    "title": "马普托 · 下行调度份额与频谱",
+    "description": "下行和其他业务共用时隙。在可用的下行时隙份额及带宽目录中选分配，满足有效吞吐和平均射频功率上限。",
+    "stations": {
+      "马普托": [
+        -25.97,
+        32.57,
+        0.0
+      ]
+    },
+    "default_station": "马普托",
+    "start_s": 268138,
+    "duration_s": 18,
+    "regression_start_s": 268160,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.5,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "dl_slots_per_s": 350,
+      "bandwidth_hz": 500000
+    },
+    "choices": {
+      "dl_slots_per_s": [
+        350,
+        500,
+        700,
+        850
+      ],
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 1.05
+    },
+    "offered_mbps": 1.18,
+    "min_payload_mbps": 1.1092,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D127",
+    "parent": "D04",
+    "family": "终端能力限制下的编码选择",
+    "title": "安卡拉 · 终端能力限制下的编码选择",
+    "description": "在窄带终端上，从互不相同的解调能力目录中选择可支持的 MCS 集合并配合发射功率；空口每个时隙最多发送一个传输块。",
+    "stations": {
+      "安卡拉": [
+        39.93,
+        32.86,
+        0.0
+      ]
+    },
+    "default_station": "安卡拉",
+    "start_s": 169288,
+    "duration_s": 20,
+    "regression_start_s": 169312,
+    "fixed": {
+      "frequency_hz": 12000000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000,
+      "noise_k": 290,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "mcs": [
+        4
+      ],
+      "tx_w": 0.45
+    },
+    "choices": {
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          12,
+          14,
+          16
+        ],
+        [
+          14,
+          16,
+          18,
+          20
+        ]
+      ],
+      "tx_w": [
+        0.45,
+        0.75,
+        1.5,
+        2.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.23,
+    "min_payload_mbps": 1.1562,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D128",
+    "parent": "D01",
+    "family": "区域汇聚站接入",
+    "title": "墨西哥城 · 区域汇聚站接入",
+    "description": "在给定 UTC 窗口选择一个汇聚站，并为该站设置遮挡掩膜。站点共享业务出口。",
+    "stations": {
+      "墨西哥城": [
+        19.43,
+        -99.13,
+        0.0
+      ],
+      "吉隆坡": [
+        3.14,
+        101.69,
+        0.0
+      ]
+    },
+    "default_station": "墨西哥城",
+    "start_s": 425757,
+    "duration_s": 22,
+    "regression_start_s": 425783,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "station": "吉隆坡",
+      "min_elev_deg": 45
+    },
+    "choices": {
+      "station": [
+        "墨西哥城",
+        "吉隆坡"
+      ],
+      "min_elev_deg": [
+        10,
+        25,
+        45
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.295,
+    "min_payload_mbps": 1.2173,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D129",
+    "parent": "D01",
+    "family": "过境时隙预约",
+    "title": "福冈 · 过境时隙预约",
+    "description": "为可延期遥测业务预约一个相对于调度锚点的发射窗口，并设置最小仰角。偏移只影响整段任务的实际执行时刻。",
+    "stations": {
+      "福冈": [
+        33.59,
+        130.4,
+        0.0
+      ]
+    },
+    "default_station": "福冈",
+    "start_s": 318567,
+    "duration_s": 24,
+    "regression_start_s": 318595,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "start_offset_s": -540,
+      "min_elev_deg": 35
+    },
+    "choices": {
+      "start_offset_s": [
+        -540,
+        -180,
+        0,
+        120
+      ],
+      "min_elev_deg": [
+        10,
+        20,
+        35
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.195,
+    "min_payload_mbps": 1.1233,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D130",
+    "parent": "D02",
+    "family": "峰值功率与调制组合",
+    "title": "圣地亚哥 · 峰值功率与调制组合",
+    "description": "从功放档位与终端支持的 MCS 集合中选择组合，保障连续星地下行，且满足峰值功率约束。",
+    "stations": {
+      "圣地亚哥": [
+        -33.45,
+        -70.67,
+        0.0
+      ]
+    },
+    "default_station": "圣地亚哥",
+    "start_s": 124947,
+    "duration_s": 26,
+    "regression_start_s": 124977,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 1.6,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "tx_w": 0.06,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "tx_w": [
+        0.06,
+        0.3,
+        1.0,
+        2.2
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12,
+          16
+        ],
+        [
+          12,
+          16,
+          18,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.145,
+    "min_payload_mbps": 1.0763,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D131",
+    "parent": "D03",
+    "family": "低噪声接收前端选型",
+    "title": "拉各斯 · 低噪声接收前端选型",
+    "description": "卫星功率受限，接收站可更换低噪声前端和反射面。按设备目录选择噪温和口径，使下行交付达标。",
+    "stations": {
+      "拉各斯": [
+        6.46,
+        3.38,
+        0.0
+      ]
+    },
+    "default_station": "拉各斯",
+    "start_s": 58407,
+    "duration_s": 18,
+    "regression_start_s": 58429,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 0.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "noise_k": 850,
+      "rx_diameter_m": 0.105
+    },
+    "choices": {
+      "noise_k": [
+        180,
+        290,
+        500,
+        850
+      ],
+      "rx_diameter_m": [
+        0.105,
+        0.17,
+        0.24,
+        0.3
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.145,
+    "min_payload_mbps": 1.0763,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D132",
+    "parent": "D03",
+    "family": "指向精度与主瓣增益",
+    "title": "里斯本 · 指向精度与主瓣增益",
+    "description": "固定功率和频段，比较不同口径带来的峰值增益及跟踪误差损失，选择可用的口径与跟踪配置。",
+    "stations": {
+      "里斯本": [
+        38.72,
+        -9.14,
+        0.0
+      ]
+    },
+    "default_station": "里斯本",
+    "start_s": 94767,
+    "duration_s": 20,
+    "regression_start_s": 94791,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 0.85,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "rx_diameter_m": 0.3,
+      "pointing_deg": 6
+    },
+    "choices": {
+      "rx_diameter_m": [
+        0.16,
+        0.23,
+        0.3
+      ],
+      "pointing_deg": [
+        0.3,
+        2,
+        4,
+        6
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.195,
+    "min_payload_mbps": 1.1233,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D133",
+    "parent": "D04",
+    "family": "受配额限制的 PRB 分配",
+    "title": "吉隆坡 · 受配额限制的 PRB 分配",
+    "description": "在分配的频谱上限下选择接入带宽及 NR 编码目录；调度器只允许使用完整的实测 PRB 分配。",
+    "stations": {
+      "吉隆坡": [
+        3.14,
+        101.69,
+        0.0
+      ]
+    },
+    "default_station": "吉隆坡",
+    "start_s": 416697,
+    "duration_s": 22,
+    "regression_start_s": 416723,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 1.7,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "bandwidth_hz": 500000,
+      "mcs": [
+        4
+      ]
+    },
+    "choices": {
+      "bandwidth_hz": [
+        500000,
+        1000000,
+        1500000,
+        2000000
+      ],
+      "mcs": [
+        [
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          14,
+          16,
+          18
+        ],
+        [
+          4,
+          8,
+          12,
+          14,
+          16,
+          18,
+          20,
+          26
+        ]
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 20.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.545,
+    "min_payload_mbps": 1.4523,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  },
+  {
+    "id": "D134",
+    "parent": "D02",
+    "family": "馈线改造与定向发射",
+    "title": "都灵 · 馈线改造与定向发射",
+    "description": "在不得增加发射机功率的前提下，从馈线和定向天线目录选择配置；把馈损及发射增益一并计入 EIRP。",
+    "stations": {
+      "都灵": [
+        45.07,
+        7.69,
+        0.0
+      ]
+    },
+    "default_station": "都灵",
+    "start_s": 323097,
+    "duration_s": 24,
+    "regression_start_s": 323125,
+    "fixed": {
+      "frequency_hz": 12700000000.0,
+      "tx_w": 1.0,
+      "bandwidth_hz": 1000000.0,
+      "noise_k": 305,
+      "min_elev_deg": 10.0
+    },
+    "initial": {
+      "feeder_loss_db": 8.5,
+      "tx_gain_dbi": 11.5
+    },
+    "choices": {
+      "feeder_loss_db": [
+        0.8,
+        2.5,
+        5.0,
+        8.5
+      ],
+      "tx_gain_dbi": [
+        11.5,
+        15.0,
+        18.0,
+        20.0
+      ]
+    },
+    "limits": {
+      "tx_w": 2.2,
+      "rx_diameter_m": 0.35,
+      "bandwidth_hz": 2000000.0,
+      "eirp_dbw": 18.0,
+      "mean_tx_w": 2.2
+    },
+    "offered_mbps": 1.295,
+    "min_payload_mbps": 1.2173,
+    "max_p95_ms": 30.0,
+    "min_delivery": 0.98
+  }
+]

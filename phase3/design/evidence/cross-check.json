@@ -1,0 +1,14 @@
+{
+  "stage_count": 170,
+  "samples": 3720,
+  "zero_access_samples": 356,
+  "max_range_difference_m": 62.59948201850057,
+  "max_elevation_difference_deg": 0.008459190945941941,
+  "max_azimuth_difference_deg": 0.6092490221134312,
+  "elevation_at_max_az_difference_deg": 89.28708784947975,
+  "max_3d_direction_difference_deg": 0.00855046392228869,
+  "min_elevation_mask_distance_deg": 34.82144686436964,
+  "geometry": "PyEphem 4.2.1, atmospheric refraction disabled",
+  "resources_and_udp_rechecked": true,
+  "passed": true
+}
